@@ -12,6 +12,7 @@ import time
 from dataclasses import dataclass, field
 from typing import Any
 
+from backend.engine.data_quality.policy import decide_quality_action
 from backend.engine.online.pipeline import Strategy
 
 logger = logging.getLogger(__name__)
@@ -74,7 +75,12 @@ class OfflineEvolutionPipeline:
         scored = []
         for strategy in population:
             sim_result = await self._sandbox_simulate(strategy)
-            strategy.score = sim_result.score
+            quality_decision = decide_quality_action(strategy.data_quality_score)
+            if quality_decision["action"] == "block":
+                strategy.score = 0.0
+            else:
+                weighted = sim_result.score * quality_decision["weight"]
+                strategy.score = round(weighted, 4)
             scored.append((strategy, sim_result))
 
         # Step 3: Select top performers
@@ -93,6 +99,8 @@ class OfflineEvolutionPipeline:
                     "strategy_id": s.strategy_id,
                     "params": s.params,
                     "score": round(s.score, 4),
+                    "data_quality_score": round(s.data_quality_score, 4),
+                    "quality_action": decide_quality_action(s.data_quality_score)["action"],
                 }
                 for s in top_strategies
             ],
@@ -142,6 +150,7 @@ class OfflineEvolutionPipeline:
                 params=child_params,
                 source="offline",
                 generation=generation,
+                data_quality_score=round((p1.data_quality_score + p2.data_quality_score) / 2.0, 4),
             ))
         return offspring
 

@@ -11,6 +11,7 @@ import time
 from dataclasses import dataclass, field
 from typing import Any, Optional
 
+from backend.engine.data_quality.policy import decide_quality_action
 from backend.engine.safety_gate import SafetyGate
 
 logger = logging.getLogger(__name__)
@@ -38,6 +39,7 @@ class Strategy:
     params: dict[str, Any] = field(default_factory=dict)
     source: str = "online"
     score: float = 0.0
+    data_quality_score: float = 1.0
     generation: int = 0
 
 
@@ -95,10 +97,14 @@ class OnlineEvolutionPipeline:
 
         # Step 3: Safety Gate
         gate_passed = self.safety_gate.evaluate(matched)
+        quality_decision = decide_quality_action(matched.data_quality_score)
         result_log["steps"].append({
             "step": "safety_gate",
             "passed": gate_passed,
             "strategy_id": matched.strategy_id,
+            "data_quality_score": matched.data_quality_score,
+            "quality_action": quality_decision["action"],
+            "quality_weight": quality_decision["weight"],
         })
 
         if not gate_passed:

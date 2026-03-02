@@ -1,0 +1,63 @@
+version: 1
+industry_id: petrochemical
+description: Authoritative source whitelist for bootstrap, periodic, and event-triggered crawling.
+sources:
+  - source_id: mem_incident_bulletin
+    scenario_id: device_maintenance
+    domain: mem.gov.cn
+    path_prefix: /gk/sgcc/
+    credibility: A
+    enabled: true
+    refresh_policy:
+      mode: periodic
+      interval: daily
+
+  - source_id: cwru_dataset
+    scenario_id: device_maintenance
+    domain: engineering.case.edu
+    path_prefix: /bearingdatacenter/
+    credibility: A
+    enabled: true
+    refresh_policy:
+      mode: bootstrap
+      interval: one_time
+
+  - source_id: tep_dataset
+    scenario_id: process_optimization
+    domain: archive.ics.uci.edu
+    path_prefix: /ml/datasets/
+    credibility: A
+    enabled: true
+    refresh_policy:
+      mode: bootstrap
+      interval: one_time
+
+  - source_id: nea_policy
+    scenario_id: process_optimization
+    domain: nea.gov.cn
+    path_prefix: /
+    credibility: A
+    enabled: true
+    refresh_policy:
+      mode: periodic
+      interval: weekly
+
+  - source_id: catalyst_papers
+    scenario_id: catalyst_research
+    domain: api.semanticscholar.org
+    path_prefix: /
+    credibility: A
+    enabled: true
+    refresh_policy:
+      mode: periodic
+      interval: daily
+
+  - source_id: catalyst_event_hot_topic
+    scenario_id: catalyst_research
+    domain: api.crossref.org
+    path_prefix: /
+    credibility: B
+    enabled: true
+    refresh_policy:
+      mode: event
+      interval: on_trigger

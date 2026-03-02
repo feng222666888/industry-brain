@@ -15,28 +15,30 @@ logger = logging.getLogger(__name__)
 
 
 async def init_postgres():
-    """Create all PostgreSQL tables + TimescaleDB hypertable for sensor_readings."""
+    """Create all PostgreSQL tables and extensions."""
     async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
-
-        await conn.execute(text("CREATE EXTENSION IF NOT EXISTS timescaledb CASCADE;"))
         await conn.execute(text("CREATE EXTENSION IF NOT EXISTS vector;"))
+        await conn.run_sync(Base.metadata.create_all)
+    logger.info("PostgreSQL pgvector extension and tables created")
 
-        # Convert sensor_readings to hypertable (idempotent check)
-        result = await conn.execute(
-            text("""
-                SELECT EXISTS (
-                    SELECT 1 FROM timescaledb_information.hypertables
-                    WHERE hypertable_name = 'sensor_readings'
-                );
-            """)
-        )
-        is_hypertable = result.scalar()
-        if not is_hypertable:
-            await conn.execute(
-                text("SELECT create_hypertable('sensor_readings', 'time', if_not_exists => TRUE);")
+    try:
+        async with engine.begin() as conn:
+            await conn.execute(text("CREATE EXTENSION IF NOT EXISTS timescaledb CASCADE;"))
+            result = await conn.execute(
+                text("""
+                    SELECT EXISTS (
+                        SELECT 1 FROM timescaledb_information.hypertables
+                        WHERE hypertable_name = 'sensor_readings'
+                    );
+                """)
             )
-            logger.info("Created TimescaleDB hypertable: sensor_readings")
+            if not result.scalar():
+                await conn.execute(
+                    text("SELECT create_hypertable('sensor_readings', 'time', if_not_exists => TRUE);")
+                )
+                logger.info("Created TimescaleDB hypertable: sensor_readings")
+    except Exception as e:
+        logger.warning(f"TimescaleDB setup skipped (extension not available): {e}")
 
     logger.info("PostgreSQL initialization complete")
 

@@ -14,15 +14,15 @@
 我们提供了基于 Docker Compose 的开箱即用部署方案。它会自动启动 PostgreSQL (包含 pgvector 扩展)、Neo4j、Redis 和 Ollama，并初始化种子数据。
 
 ```bash
-cd deploy
-docker compose -f docker-compose.dev.yml up -d
+docker compose -f deploy/docker-compose.dev.yml up -d
 ```
 
 ### 初始化数据
-第一次启动后，需执行初始化脚本将默认的设备、策略等数据注入数据库：
+第一次启动后，执行初始化脚本（自动建表、导入种子数据）：
 ```bash
 ./deploy/init-db.sh
 ```
+> 脚本通过 `docker compose exec` 操作容器内 PostgreSQL，并调用 `uv run` 执行 ORM 建表，无需在宿主机安装 psql。如需切换 compose 文件，可设置 `BRAIN_COMPOSE_FILE` 环境变量。
 
 ## 3. 启动应用服务
 

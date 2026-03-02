@@ -1,0 +1,1 @@
+{"timestamp": "2026-03-02T14:57:02.248637+00:00", "event_type": "pipeline_run", "trigger": "periodic", "selected_sources": ["mem_incident_bulletin", "nea_policy", "catalyst_papers"], "input_records": 3, "kept_records": 3, "new_records": 3, "updated_records": 0, "unchanged_records": 0}

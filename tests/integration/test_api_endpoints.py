@@ -85,3 +85,28 @@ def test_api_device_predict():
     assert data["code"] == 0
     assert data["data"]["device_id"] == "DEV-PUMP-001"
     assert "risk_level" in data["data"]
+
+
+def test_api_governance_audit_events():
+    response = client.get("/api/governance/audit-events?limit=5")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["code"] == 0
+    assert "events" in data["data"]
+
+
+def test_api_governance_source_health():
+    response = client.get("/api/governance/source-health")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["code"] == 0
+    assert "sources" in data["data"]
+    assert data["data"]["count"] >= 1
+
+
+def test_api_governance_quality_report():
+    response = client.get("/api/governance/quality-report")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["code"] == 0
+    assert "summary" in data["data"]

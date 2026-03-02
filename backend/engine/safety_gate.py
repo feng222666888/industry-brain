@@ -24,6 +24,7 @@ SAFE_RANGES = {
 }
 
 MIN_SCORE_THRESHOLD = 0.5
+MIN_DATA_QUALITY_THRESHOLD = 0.5
 
 
 class SafetyGate:
@@ -41,6 +42,18 @@ class SafetyGate:
             checks.append(("score_check", False, f"Score {strategy.score} < threshold {MIN_SCORE_THRESHOLD}"))
         else:
             checks.append(("score_check", True, ""))
+
+        quality_score = self._extract_data_quality_score(strategy)
+        if quality_score < MIN_DATA_QUALITY_THRESHOLD:
+            checks.append(
+                (
+                    "quality_check",
+                    False,
+                    f"Data quality {quality_score} < threshold {MIN_DATA_QUALITY_THRESHOLD}",
+                )
+            )
+        else:
+            checks.append(("quality_check", True, ""))
 
         industry_ranges = SAFE_RANGES.get(strategy.industry_id, {})
         for param_name, value in strategy.params.items():
@@ -65,3 +78,17 @@ class SafetyGate:
             logger.warning(f"Safety gate BLOCKED {strategy.strategy_id}: {failures}")
 
         return passed
+
+    @staticmethod
+    def _extract_data_quality_score(strategy) -> float:
+        """Read quality score from strategy, defaulting to 1.0 for compatibility."""
+        if hasattr(strategy, "data_quality_score"):
+            try:
+                return float(getattr(strategy, "data_quality_score"))
+            except Exception:  # noqa: BLE001
+                return 1.0
+        params = getattr(strategy, "params", {}) or {}
+        try:
+            return float(params.get("data_quality_score", 1.0))
+        except Exception:  # noqa: BLE001
+            return 1.0
