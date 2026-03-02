@@ -6,8 +6,8 @@
 
 确保您的本地机器安装了以下环境：
 - Docker & Docker Compose (版本 >= 24)
-- Python 3.11+ (如需本地开发运行，测试环境可以使用 3.9+)
-- Node.js 20+
+- [uv](https://docs.astral.sh/uv/) (Python 包管理器，安装后会自动管理 Python 3.11+ 运行时)
+- Node.js 20+ 及 [pnpm](https://pnpm.io/)（`npm install -g pnpm`）
 
 ## 2. 一键部署 (POC 模式)
 
@@ -31,9 +31,11 @@ docker compose -f docker-compose.dev.yml up -d
 ### 启动后端
 ```bash
 cd backend
-uv sync  # 或 pip install -r requirements.txt
-python -m uvicorn main:app --reload --port 8000
+uv sync
+PYTHONPATH=.. uv run uvicorn main:app --reload --port 8000
 ```
+> **注意**：`PYTHONPATH=..` 是必须的，因为代码中所有导入均使用绝对路径 `from backend.xxx`，需要将项目根目录加入 Python 搜索路径。
+
 - 后端 API 文档：[http://localhost:8000/docs](http://localhost:8000/docs)
 
 ### 启动前端
@@ -70,8 +72,9 @@ pnpm dev
 项目包含了完整的自动化测试套件，可供验收检查：
 
 ```bash
-# 建议统一执行（含三大场景）
-PYTHONPATH=. pytest tests/unit tests/integration tests/e2e -v
+# 在 backend/ 目录下执行（含三大场景）
+cd backend
+PYTHONPATH=.. uv run pytest tests/unit tests/integration tests/e2e -v
 ```
 
 说明：
@@ -101,6 +104,28 @@ PYTHONPATH=. pytest tests/unit tests/integration tests/e2e -v
 每次新增/变更都执行以下步骤：
 
 1. 建立“变更 -> 测试”映射（本次改了什么，对应补了哪些单测/集成/E2E）
-2. 运行 `PYTHONPATH=. pytest tests/unit tests/integration tests/e2e -v`
+2. 在 `backend/` 下运行 `PYTHONPATH=.. uv run pytest tests/unit tests/integration tests/e2e -v`
 3. 若涉及前端交互，按第 4 节与第 6 节做人工冒烟
 4. 记录未覆盖风险点与后续补测计划（避免“测试假完备”）
+5. 若涉及依赖变更，需同步更新 `backend/pyproject.toml` 与 `backend/requirements.txt`（前者用于本地 `uv sync`，后者用于 `Dockerfile.backend` 构建）
+
+## 8. 数据抓取管道（P5）验证
+
+为验证“白名单调度 + 去重 + 增量状态”执行流，可运行：
+
+```bash
+# 在 backend/ 目录下执行
+cd backend
+uv sync --group pipeline   # 首次需安装 scrapy / playwright 等管道依赖
+
+# 周期任务 dry-run（不落状态）
+PYTHONPATH=.. uv run python -m data_pipeline.scrapers.run_pipeline --trigger periodic --dry-run
+
+# 事件触发任务（落状态）
+PYTHONPATH=.. uv run python -m data_pipeline.scrapers.run_pipeline --trigger event
+```
+
+预期检查点：
+- 能输出 selected sources 数量；
+- 能输出 `new / updated / unchanged` 统计；
+- 非 dry-run 时写入 `data_pipeline/seed_data/petrochemical/source_state.json`。
