@@ -162,7 +162,7 @@ async def list_corrosion_objects(type: str = ""):
 
 
 @router.post("/analyze")
-async def analyze_corrosion(body: Annotated[dict[str, Any], Body()] = {}):
+async def analyze_corrosion(body: Annotated[dict[str, Any], Body(default={})]):
     """Run full corrosion analysis pipeline (identify → risk) via SSE stream."""
     object_id = body.get("object_id", "")
     obj = next((o for o in DEMO_OBJECTS if o["id"] == object_id), None)
@@ -202,7 +202,7 @@ async def analyze_corrosion(body: Annotated[dict[str, Any], Body()] = {}):
 
 
 @router.post("/identify")
-async def identify_only(body: Annotated[dict[str, Any], Body()] = {}):
+async def identify_only(body: Annotated[dict[str, Any], Body(default={})]):
     """Quick identification without full pipeline — returns corrosion mechanisms."""
     from backend.industries.petrochemical.agents.corrosion.identify_agent import (
         CORROSION_KNOWLEDGE_BASE,

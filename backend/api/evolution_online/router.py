@@ -45,7 +45,7 @@ async def gate_stats():
 
 
 @router.post("/trigger", response_model=APIResponse)
-async def trigger_online(body: Annotated[dict[str, Any], Body()] = {}):
+async def trigger_online(body: Annotated[dict[str, Any], Body(default={})]):
     scenario_id = body.get("scenario_id", "process_optimization")
     industry_id = body.get("industry_id", "petrochemical")
 

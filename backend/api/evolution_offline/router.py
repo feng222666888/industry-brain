@@ -47,7 +47,7 @@ async def convergence(
 
 
 @router.post("/run", response_model=APIResponse)
-async def run_offline(body: Annotated[dict[str, Any], Body()] = {}):
+async def run_offline(body: Annotated[dict[str, Any], Body(default={})]):
     n_gens = body.get("generations", 5)
     industry_id = body.get("industry_id", "petrochemical")
     scenario_id = body.get("scenario_id", "process_optimization")

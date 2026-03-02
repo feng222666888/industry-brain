@@ -21,6 +21,7 @@ class KnowledgeGraph:
         if self._driver is None:
             try:
                 from neo4j import GraphDatabase  # type: ignore[import-untyped]
+
                 from backend.config.settings import settings
 
                 uri = self._uri or settings.neo4j_url

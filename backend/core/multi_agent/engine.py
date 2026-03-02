@@ -12,11 +12,12 @@ interface. Can be replaced with full LangGraph when deploying with Python 3.11+.
 from __future__ import annotations
 
 import logging
+from collections.abc import Awaitable, Callable
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Any, Callable, Awaitable, Optional
+from typing import Any
 
-from backend.core.memory.session_memory import SessionMemory, MemoryEntry, session_memory
+from backend.core.memory.session_memory import MemoryEntry, SessionMemory, session_memory
 from backend.core.observability.tracer import SessionTracer
 
 logger = logging.getLogger(__name__)
@@ -33,7 +34,7 @@ class AgentAction(Enum):
 class AgentResult:
     action: AgentAction
     data: dict[str, Any] = field(default_factory=dict)
-    next_agent: Optional[str] = None
+    next_agent: str | None = None
     message: str = ""
 
 
@@ -95,7 +96,7 @@ class MultiAgentEngine:
             steps += 1
             agent_node = self._agents[current_agent]
 
-            span = tracer.start_span(agent_node.name, "execute", current_input)
+            tracer.start_span(agent_node.name, "execute", current_input)
 
             try:
                 result = await agent_node.execute(current_input, session_memory, tracer)

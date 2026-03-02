@@ -90,7 +90,6 @@ async def run(input_data: dict[str, Any], memory, tracer) -> AgentResult:
     }
 
     total_steps = len(template["steps"])
-    total_minutes = sum(s.get("duration_min", 0) for s in template["steps"])
 
     return AgentResult(
         action=AgentAction.COMPLETE,
