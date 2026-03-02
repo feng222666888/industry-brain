@@ -6,9 +6,10 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from typing import Any
 
-from data_pipeline.scrapers.core.dedup import canonicalize_url, deduplicate_records
+from backend.engine.data_quality.scorer import score_record
+from data_pipeline.scrapers.core.dedup import canonicalize_url, content_hash, deduplicate_records
 from data_pipeline.scrapers.core.incremental import detect_change
-from data_pipeline.scrapers.core.models import RawRecord
+from data_pipeline.scrapers.core.models import CuratedRecord, RawRecord
 from data_pipeline.scrapers.core.scheduler import SourceTask
 from data_pipeline.scrapers.core.state_store import load_state, make_state_key, save_state
 
@@ -23,6 +24,7 @@ class PipelineReport:
     new_records: int = 0
     updated_records: int = 0
     unchanged_records: int = 0
+    avg_quality_score: float = 0.0
 
 
 def run_pipeline_once(
@@ -94,6 +96,29 @@ def run_pipeline_once(
             selected.append(record)
         else:
             report.unchanged_records += 1
+
+    curated: list[CuratedRecord] = []
+    quality_scores: list[float] = []
+    for record in selected:
+        scored = score_record({
+            "source_url": record.meta.source_url,
+            "industry_id": record.meta.industry_id,
+            "scenario_id": record.meta.scenario_id,
+            "content_hash": record.meta.content_hash or content_hash(record.content),
+            "content": record.content,
+            "acquired_at": record.meta.acquired_at.isoformat() if record.meta.acquired_at else None,
+            "compliance_ok": True,
+        })
+        q = scored["score"]
+        quality_scores.append(q)
+        curated.append(CuratedRecord(
+            record_id=record.record_id,
+            normalized_title=record.title,
+            normalized_content=record.content,
+            meta=record.meta,
+            quality_score=q,
+        ))
+    report.avg_quality_score = round(sum(quality_scores) / len(quality_scores), 4) if quality_scores else 0.0
 
     if persist_state:
         save_state(state_path, state)

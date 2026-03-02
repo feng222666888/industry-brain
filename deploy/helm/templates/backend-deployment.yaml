@@ -1,0 +1,72 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "brain.fullname" . }}-backend
+  labels:
+    {{- include "brain.labels" . | nindent 4 }}
+    app.kubernetes.io/component: backend
+spec:
+  replicas: {{ .Values.backend.replicas }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "brain.name" . }}
+      app.kubernetes.io/component: backend
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: {{ include "brain.name" . }}
+        app.kubernetes.io/component: backend
+    spec:
+      containers:
+        - name: backend
+          image: "{{ .Values.backend.image.repository }}:{{ .Values.backend.image.tag }}"
+          imagePullPolicy: {{ .Values.backend.image.pullPolicy }}
+          ports:
+            - containerPort: 8000
+              protocol: TCP
+          env:
+            - name: BRAIN_POSTGRES_URL
+              value: {{ .Values.backend.env.BRAIN_POSTGRES_URL | default (printf "postgresql+asyncpg://%s:%s@%s-postgres:5432/%s" .Values.postgres.credentials.username .Values.postgres.credentials.password (include "brain.fullname" .) .Values.postgres.credentials.database) | quote }}
+            - name: BRAIN_NEO4J_URL
+              value: {{ .Values.backend.env.BRAIN_NEO4J_URL | default (printf "bolt://%s-neo4j:7687" (include "brain.fullname" .)) | quote }}
+            - name: BRAIN_NEO4J_USER
+              value: {{ .Values.backend.env.BRAIN_NEO4J_USER | quote }}
+            - name: BRAIN_NEO4J_PASSWORD
+              value: {{ .Values.backend.env.BRAIN_NEO4J_PASSWORD | default .Values.neo4j.auth.password | quote }}
+            - name: BRAIN_REDIS_URL
+              value: {{ .Values.backend.env.BRAIN_REDIS_URL | default (printf "redis://%s-redis:6379/0" (include "brain.fullname" .)) | quote }}
+            - name: BRAIN_CORS_ORIGINS
+              value: {{ .Values.backend.env.BRAIN_CORS_ORIGINS | quote }}
+            - name: BRAIN_LOG_LEVEL
+              value: {{ .Values.backend.env.BRAIN_LOG_LEVEL | quote }}
+          resources:
+            {{- toYaml .Values.backend.resources | nindent 12 }}
+          readinessProbe:
+            httpGet:
+              path: /docs
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 15
+          livenessProbe:
+            httpGet:
+              path: /docs
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 30
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "brain.fullname" . }}-backend
+  labels:
+    {{- include "brain.labels" . | nindent 4 }}
+    app.kubernetes.io/component: backend
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8000
+      targetPort: 8000
+      protocol: TCP
+  selector:
+    app.kubernetes.io/name: {{ include "brain.name" . }}
+    app.kubernetes.io/component: backend

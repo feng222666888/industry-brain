@@ -1,0 +1,64 @@
+{{- if .Values.neo4j.enabled }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "brain.fullname" . }}-neo4j
+  labels:
+    {{- include "brain.labels" . | nindent 4 }}
+    app.kubernetes.io/component: neo4j
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "brain.name" . }}
+      app.kubernetes.io/component: neo4j
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: {{ include "brain.name" . }}
+        app.kubernetes.io/component: neo4j
+    spec:
+      containers:
+        - name: neo4j
+          image: "{{ .Values.neo4j.image.repository }}:{{ .Values.neo4j.image.tag }}"
+          ports:
+            - containerPort: 7687
+            - containerPort: 7474
+          env:
+            - name: NEO4J_AUTH
+              value: "{{ .Values.neo4j.auth.username }}/{{ .Values.neo4j.auth.password }}"
+          volumeMounts:
+            - name: neo4j-data
+              mountPath: /data
+      volumes:
+        - name: neo4j-data
+          persistentVolumeClaim:
+            claimName: {{ include "brain.fullname" . }}-neo4j-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ include "brain.fullname" . }}-neo4j-pvc
+spec:
+  accessModes: [ReadWriteOnce]
+  resources:
+    requests:
+      storage: {{ .Values.neo4j.storage }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "brain.fullname" . }}-neo4j
+spec:
+  type: ClusterIP
+  ports:
+    - name: bolt
+      port: 7687
+      targetPort: 7687
+    - name: http
+      port: 7474
+      targetPort: 7474
+  selector:
+    app.kubernetes.io/name: {{ include "brain.name" . }}
+    app.kubernetes.io/component: neo4j
+{{- end }}

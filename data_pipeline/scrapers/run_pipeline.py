@@ -79,6 +79,7 @@ def main() -> int:
         "new_records": report.new_records,
         "updated_records": report.updated_records,
         "unchanged_records": report.unchanged_records,
+        "avg_quality_score": report.avg_quality_score,
     }
     append_audit_event(audit_payload)
     print("[pipeline] governance audit appended")

@@ -111,12 +111,17 @@ class OnlineEvolutionPipeline:
             result_log["outcome"] = "blocked_by_safety_gate"
             return result_log
 
-        # Step 4: Execution
+        # Step 4: Execution (apply quality weight to effective score)
         exec_result = await self._execute_strategy(matched, signal)
+        effective_weight = quality_decision["weight"]
+        for k in exec_result.metrics:
+            if isinstance(exec_result.metrics[k], (int, float)):
+                exec_result.metrics[k] = round(exec_result.metrics[k] * effective_weight, 4)
         result_log["steps"].append({
             "step": "execution",
             "success": exec_result.success,
             "metrics": exec_result.metrics,
+            "quality_weight_applied": effective_weight,
         })
 
         # Step 5: Asset Settlement
