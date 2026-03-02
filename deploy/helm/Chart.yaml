@@ -1,0 +1,5 @@
+apiVersion: v2
+name: industry-brain
+description: 行业大脑 Helm Chart — 支撑石化、钢铁、新能源汽车等多行业
+version: 0.1.0
+appVersion: "0.1.0"

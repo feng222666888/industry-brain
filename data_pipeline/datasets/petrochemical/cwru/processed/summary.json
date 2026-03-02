@@ -1,0 +1,18 @@
+{
+  "fault_classes": [
+    "normal",
+    "inner_race_fault",
+    "outer_race_fault",
+    "ball_fault"
+  ],
+  "samples_per_class": 50,
+  "window_size": 4096,
+  "sample_rate": 12000,
+  "lifecycle_hours": 720,
+  "features": [
+    "rms",
+    "peak",
+    "kurtosis",
+    "crest_factor"
+  ]
+}

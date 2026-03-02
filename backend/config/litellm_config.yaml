@@ -1,0 +1,41 @@
+model_list:
+  # Agent reasoning (Scenario 3 / 1)
+  - model_name: agent-reasoning
+    litellm_params:
+      model: ollama/deepseek-r1:14b
+      api_base: http://localhost:11434
+    model_info:
+      description: "Primary model for agent tool-calling and reasoning"
+
+  # Vision analysis (Scenario 2)
+  - model_name: vision-analysis
+    litellm_params:
+      model: ollama/qwen2.5-vl:7b
+      api_base: http://localhost:11434
+    model_info:
+      description: "Multimodal model for SEM/TEM image analysis"
+
+  # Knowledge extraction (data pipeline)
+  - model_name: knowledge-extraction
+    litellm_params:
+      model: ollama/deepseek-r1:14b
+      api_base: http://localhost:11434
+    model_info:
+      description: "NER and relation extraction from documents"
+
+  # Embedding (RAG)
+  - model_name: embedding
+    litellm_params:
+      model: ollama/bge-m3
+      api_base: http://localhost:11434
+    model_info:
+      description: "Chinese+English bilingual embedding for RAG"
+
+general_settings:
+  drop_params: true
+
+litellm_settings:
+  num_retries: 2
+  request_timeout: 120
+  fallbacks:
+    - agent-reasoning: [knowledge-extraction]

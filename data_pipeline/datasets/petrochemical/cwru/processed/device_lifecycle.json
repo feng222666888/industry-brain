@@ -1,0 +1,5042 @@
+[
+  {
+    "hour": 0,
+    "health_score": 0.9279,
+    "vibration_rms": 0.052137,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 1,
+    "health_score": 0.9049,
+    "vibration_rms": 0.05796,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 2,
+    "health_score": 0.9458,
+    "vibration_rms": 0.055155,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 3,
+    "health_score": 0.9332,
+    "vibration_rms": 0.058184,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 4,
+    "health_score": 0.9164,
+    "vibration_rms": 0.052246,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 5,
+    "health_score": 0.9488,
+    "vibration_rms": 0.052448,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 6,
+    "health_score": 0.9075,
+    "vibration_rms": 0.050728,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 7,
+    "health_score": 0.9185,
+    "vibration_rms": 0.051944,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 8,
+    "health_score": 0.9253,
+    "vibration_rms": 0.05244,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 9,
+    "health_score": 0.9497,
+    "vibration_rms": 0.05751,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 10,
+    "health_score": 0.9447,
+    "vibration_rms": 0.054251,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 11,
+    "health_score": 0.9021,
+    "vibration_rms": 0.05518,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 12,
+    "health_score": 0.9375,
+    "vibration_rms": 0.058483,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 13,
+    "health_score": 0.9099,
+    "vibration_rms": 0.056676,
+    "temperature": 88.3,
+    "status": "normal"
+  },
+  {
+    "hour": 14,
+    "health_score": 0.9202,
+    "vibration_rms": 0.0595,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 15,
+    "health_score": 0.9194,
+    "vibration_rms": 0.057193,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 16,
+    "health_score": 0.9085,
+    "vibration_rms": 0.055479,
+    "temperature": 88.2,
+    "status": "normal"
+  },
+  {
+    "hour": 17,
+    "health_score": 0.9128,
+    "vibration_rms": 0.054747,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 18,
+    "health_score": 0.9376,
+    "vibration_rms": 0.056377,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 19,
+    "health_score": 0.9239,
+    "vibration_rms": 0.056267,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 20,
+    "health_score": 0.9461,
+    "vibration_rms": 0.052857,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 21,
+    "health_score": 0.934,
+    "vibration_rms": 0.055402,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 22,
+    "health_score": 0.9384,
+    "vibration_rms": 0.056939,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 23,
+    "health_score": 0.9468,
+    "vibration_rms": 0.054076,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 24,
+    "health_score": 0.9292,
+    "vibration_rms": 0.052068,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 25,
+    "health_score": 0.9048,
+    "vibration_rms": 0.055841,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 26,
+    "health_score": 0.9072,
+    "vibration_rms": 0.057656,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 27,
+    "health_score": 0.9497,
+    "vibration_rms": 0.053518,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 28,
+    "health_score": 0.9073,
+    "vibration_rms": 0.059534,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 29,
+    "health_score": 0.9126,
+    "vibration_rms": 0.055461,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 30,
+    "health_score": 0.939,
+    "vibration_rms": 0.052194,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 31,
+    "health_score": 0.9485,
+    "vibration_rms": 0.053361,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 32,
+    "health_score": 0.9298,
+    "vibration_rms": 0.05165,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 33,
+    "health_score": 0.9436,
+    "vibration_rms": 0.056223,
+    "temperature": 85.9,
+    "status": "normal"
+  },
+  {
+    "hour": 34,
+    "health_score": 0.9303,
+    "vibration_rms": 0.055644,
+    "temperature": 86.1,
+    "status": "normal"
+  },
+  {
+    "hour": 35,
+    "health_score": 0.9179,
+    "vibration_rms": 0.051357,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 36,
+    "health_score": 0.9475,
+    "vibration_rms": 0.053791,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 37,
+    "health_score": 0.9337,
+    "vibration_rms": 0.057612,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 38,
+    "health_score": 0.9124,
+    "vibration_rms": 0.058319,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 39,
+    "health_score": 0.9459,
+    "vibration_rms": 0.050194,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 40,
+    "health_score": 0.9,
+    "vibration_rms": 0.0535,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 41,
+    "health_score": 0.9109,
+    "vibration_rms": 0.056518,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 42,
+    "health_score": 0.9025,
+    "vibration_rms": 0.051994,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 43,
+    "health_score": 0.9424,
+    "vibration_rms": 0.051262,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 44,
+    "health_score": 0.9218,
+    "vibration_rms": 0.05218,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 45,
+    "health_score": 0.9117,
+    "vibration_rms": 0.051678,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 46,
+    "health_score": 0.9126,
+    "vibration_rms": 0.051145,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 47,
+    "health_score": 0.9018,
+    "vibration_rms": 0.051081,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 48,
+    "health_score": 0.9344,
+    "vibration_rms": 0.056773,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 49,
+    "health_score": 0.9302,
+    "vibration_rms": 0.05715,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 50,
+    "health_score": 0.9155,
+    "vibration_rms": 0.056272,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 51,
+    "health_score": 0.9114,
+    "vibration_rms": 0.058503,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 52,
+    "health_score": 0.9439,
+    "vibration_rms": 0.059838,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 53,
+    "health_score": 0.9326,
+    "vibration_rms": 0.054284,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 54,
+    "health_score": 0.9247,
+    "vibration_rms": 0.053412,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 55,
+    "health_score": 0.9089,
+    "vibration_rms": 0.051055,
+    "temperature": 88.3,
+    "status": "normal"
+  },
+  {
+    "hour": 56,
+    "health_score": 0.9182,
+    "vibration_rms": 0.058287,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 57,
+    "health_score": 0.9282,
+    "vibration_rms": 0.057338,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 58,
+    "health_score": 0.9365,
+    "vibration_rms": 0.058082,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 59,
+    "health_score": 0.9258,
+    "vibration_rms": 0.054356,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 60,
+    "health_score": 0.9366,
+    "vibration_rms": 0.058517,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 61,
+    "health_score": 0.9457,
+    "vibration_rms": 0.058816,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 62,
+    "health_score": 0.9268,
+    "vibration_rms": 0.056103,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 63,
+    "health_score": 0.9486,
+    "vibration_rms": 0.05851,
+    "temperature": 86.1,
+    "status": "normal"
+  },
+  {
+    "hour": 64,
+    "health_score": 0.9394,
+    "vibration_rms": 0.057978,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 65,
+    "health_score": 0.906,
+    "vibration_rms": 0.057012,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 66,
+    "health_score": 0.9495,
+    "vibration_rms": 0.059481,
+    "temperature": 85.9,
+    "status": "normal"
+  },
+  {
+    "hour": 67,
+    "health_score": 0.914,
+    "vibration_rms": 0.054886,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 68,
+    "health_score": 0.9155,
+    "vibration_rms": 0.056459,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 69,
+    "health_score": 0.9104,
+    "vibration_rms": 0.050931,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 70,
+    "health_score": 0.9154,
+    "vibration_rms": 0.053062,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 71,
+    "health_score": 0.9263,
+    "vibration_rms": 0.055309,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 72,
+    "health_score": 0.9127,
+    "vibration_rms": 0.053308,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 73,
+    "health_score": 0.9365,
+    "vibration_rms": 0.052514,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 74,
+    "health_score": 0.9404,
+    "vibration_rms": 0.051196,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 75,
+    "health_score": 0.9119,
+    "vibration_rms": 0.051851,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 76,
+    "health_score": 0.9258,
+    "vibration_rms": 0.057246,
+    "temperature": 88.1,
+    "status": "normal"
+  },
+  {
+    "hour": 77,
+    "health_score": 0.9238,
+    "vibration_rms": 0.05283,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 78,
+    "health_score": 0.9403,
+    "vibration_rms": 0.052275,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 79,
+    "health_score": 0.9493,
+    "vibration_rms": 0.055341,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 80,
+    "health_score": 0.9013,
+    "vibration_rms": 0.055534,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 81,
+    "health_score": 0.9437,
+    "vibration_rms": 0.058685,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 82,
+    "health_score": 0.9064,
+    "vibration_rms": 0.055741,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 83,
+    "health_score": 0.928,
+    "vibration_rms": 0.051844,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 84,
+    "health_score": 0.9029,
+    "vibration_rms": 0.054777,
+    "temperature": 88.1,
+    "status": "normal"
+  },
+  {
+    "hour": 85,
+    "health_score": 0.93,
+    "vibration_rms": 0.050741,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 86,
+    "health_score": 0.9473,
+    "vibration_rms": 0.051492,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 87,
+    "health_score": 0.9348,
+    "vibration_rms": 0.059939,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 88,
+    "health_score": 0.9118,
+    "vibration_rms": 0.056063,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 89,
+    "health_score": 0.9387,
+    "vibration_rms": 0.055226,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 90,
+    "health_score": 0.9279,
+    "vibration_rms": 0.058602,
+    "temperature": 88.1,
+    "status": "normal"
+  },
+  {
+    "hour": 91,
+    "health_score": 0.9347,
+    "vibration_rms": 0.05621,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 92,
+    "health_score": 0.913,
+    "vibration_rms": 0.059476,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 93,
+    "health_score": 0.9394,
+    "vibration_rms": 0.056604,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 94,
+    "health_score": 0.9413,
+    "vibration_rms": 0.050751,
+    "temperature": 85.9,
+    "status": "normal"
+  },
+  {
+    "hour": 95,
+    "health_score": 0.9275,
+    "vibration_rms": 0.055938,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 96,
+    "health_score": 0.9384,
+    "vibration_rms": 0.05707,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 97,
+    "health_score": 0.9273,
+    "vibration_rms": 0.056874,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 98,
+    "health_score": 0.9106,
+    "vibration_rms": 0.056251,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 99,
+    "health_score": 0.9033,
+    "vibration_rms": 0.054251,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 100,
+    "health_score": 0.9176,
+    "vibration_rms": 0.059084,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 101,
+    "health_score": 0.9464,
+    "vibration_rms": 0.051659,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 102,
+    "health_score": 0.9126,
+    "vibration_rms": 0.055692,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 103,
+    "health_score": 0.9438,
+    "vibration_rms": 0.056887,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 104,
+    "health_score": 0.9029,
+    "vibration_rms": 0.055005,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 105,
+    "health_score": 0.946,
+    "vibration_rms": 0.050399,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 106,
+    "health_score": 0.9339,
+    "vibration_rms": 0.052504,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 107,
+    "health_score": 0.9019,
+    "vibration_rms": 0.05836,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 108,
+    "health_score": 0.9025,
+    "vibration_rms": 0.059996,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 109,
+    "health_score": 0.9365,
+    "vibration_rms": 0.050402,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 110,
+    "health_score": 0.9265,
+    "vibration_rms": 0.056515,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 111,
+    "health_score": 0.9409,
+    "vibration_rms": 0.055853,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 112,
+    "health_score": 0.9254,
+    "vibration_rms": 0.050912,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 113,
+    "health_score": 0.9333,
+    "vibration_rms": 0.056701,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 114,
+    "health_score": 0.9335,
+    "vibration_rms": 0.056937,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 115,
+    "health_score": 0.9027,
+    "vibration_rms": 0.058136,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 116,
+    "health_score": 0.9273,
+    "vibration_rms": 0.053145,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 117,
+    "health_score": 0.9015,
+    "vibration_rms": 0.054042,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 118,
+    "health_score": 0.9006,
+    "vibration_rms": 0.056577,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 119,
+    "health_score": 0.9293,
+    "vibration_rms": 0.051876,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 120,
+    "health_score": 0.9122,
+    "vibration_rms": 0.056254,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 121,
+    "health_score": 0.9398,
+    "vibration_rms": 0.055492,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 122,
+    "health_score": 0.9281,
+    "vibration_rms": 0.056983,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 123,
+    "health_score": 0.9013,
+    "vibration_rms": 0.056089,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 124,
+    "health_score": 0.9421,
+    "vibration_rms": 0.055508,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 125,
+    "health_score": 0.9453,
+    "vibration_rms": 0.059923,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 126,
+    "health_score": 0.9269,
+    "vibration_rms": 0.051175,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 127,
+    "health_score": 0.9251,
+    "vibration_rms": 0.057166,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 128,
+    "health_score": 0.9363,
+    "vibration_rms": 0.058347,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 129,
+    "health_score": 0.9378,
+    "vibration_rms": 0.055513,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 130,
+    "health_score": 0.9039,
+    "vibration_rms": 0.055082,
+    "temperature": 88.2,
+    "status": "normal"
+  },
+  {
+    "hour": 131,
+    "health_score": 0.9068,
+    "vibration_rms": 0.052762,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 132,
+    "health_score": 0.9293,
+    "vibration_rms": 0.059342,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 133,
+    "health_score": 0.909,
+    "vibration_rms": 0.052828,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 134,
+    "health_score": 0.9207,
+    "vibration_rms": 0.059989,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 135,
+    "health_score": 0.9426,
+    "vibration_rms": 0.055386,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 136,
+    "health_score": 0.9224,
+    "vibration_rms": 0.055434,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 137,
+    "health_score": 0.9339,
+    "vibration_rms": 0.051887,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 138,
+    "health_score": 0.9214,
+    "vibration_rms": 0.052336,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 139,
+    "health_score": 0.9478,
+    "vibration_rms": 0.057447,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 140,
+    "health_score": 0.9094,
+    "vibration_rms": 0.053861,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 141,
+    "health_score": 0.909,
+    "vibration_rms": 0.059808,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 142,
+    "health_score": 0.9481,
+    "vibration_rms": 0.055023,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 143,
+    "health_score": 0.9065,
+    "vibration_rms": 0.058742,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 144,
+    "health_score": 0.9237,
+    "vibration_rms": 0.054569,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 145,
+    "health_score": 0.9295,
+    "vibration_rms": 0.056548,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 146,
+    "health_score": 0.9265,
+    "vibration_rms": 0.059692,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 147,
+    "health_score": 0.9154,
+    "vibration_rms": 0.056498,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 148,
+    "health_score": 0.9074,
+    "vibration_rms": 0.058593,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 149,
+    "health_score": 0.9342,
+    "vibration_rms": 0.057187,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 150,
+    "health_score": 0.9064,
+    "vibration_rms": 0.050359,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 151,
+    "health_score": 0.9184,
+    "vibration_rms": 0.059209,
+    "temperature": 88.2,
+    "status": "normal"
+  },
+  {
+    "hour": 152,
+    "health_score": 0.9127,
+    "vibration_rms": 0.05434,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 153,
+    "health_score": 0.9183,
+    "vibration_rms": 0.058726,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 154,
+    "health_score": 0.9153,
+    "vibration_rms": 0.059034,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 155,
+    "health_score": 0.9102,
+    "vibration_rms": 0.052934,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 156,
+    "health_score": 0.9427,
+    "vibration_rms": 0.055312,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 157,
+    "health_score": 0.9104,
+    "vibration_rms": 0.0517,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 158,
+    "health_score": 0.9065,
+    "vibration_rms": 0.056197,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 159,
+    "health_score": 0.9044,
+    "vibration_rms": 0.051431,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 160,
+    "health_score": 0.9373,
+    "vibration_rms": 0.052553,
+    "temperature": 86.0,
+    "status": "normal"
+  },
+  {
+    "hour": 161,
+    "health_score": 0.9098,
+    "vibration_rms": 0.059012,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 162,
+    "health_score": 0.9421,
+    "vibration_rms": 0.054417,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 163,
+    "health_score": 0.9206,
+    "vibration_rms": 0.056389,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 164,
+    "health_score": 0.9375,
+    "vibration_rms": 0.058453,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 165,
+    "health_score": 0.9308,
+    "vibration_rms": 0.054832,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 166,
+    "health_score": 0.9214,
+    "vibration_rms": 0.055748,
+    "temperature": 88.2,
+    "status": "normal"
+  },
+  {
+    "hour": 167,
+    "health_score": 0.9352,
+    "vibration_rms": 0.059779,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 168,
+    "health_score": 0.9363,
+    "vibration_rms": 0.055659,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 169,
+    "health_score": 0.9128,
+    "vibration_rms": 0.05049,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 170,
+    "health_score": 0.9252,
+    "vibration_rms": 0.059042,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 171,
+    "health_score": 0.9101,
+    "vibration_rms": 0.056071,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 172,
+    "health_score": 0.9182,
+    "vibration_rms": 0.056209,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 173,
+    "health_score": 0.914,
+    "vibration_rms": 0.056592,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 174,
+    "health_score": 0.9186,
+    "vibration_rms": 0.059034,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 175,
+    "health_score": 0.9346,
+    "vibration_rms": 0.054408,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 176,
+    "health_score": 0.9134,
+    "vibration_rms": 0.050901,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 177,
+    "health_score": 0.9126,
+    "vibration_rms": 0.051756,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 178,
+    "health_score": 0.923,
+    "vibration_rms": 0.059715,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 179,
+    "health_score": 0.9043,
+    "vibration_rms": 0.058305,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 180,
+    "health_score": 0.9088,
+    "vibration_rms": 0.054818,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 181,
+    "health_score": 0.9127,
+    "vibration_rms": 0.053387,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 182,
+    "health_score": 0.9019,
+    "vibration_rms": 0.051408,
+    "temperature": 88.4,
+    "status": "normal"
+  },
+  {
+    "hour": 183,
+    "health_score": 0.907,
+    "vibration_rms": 0.057242,
+    "temperature": 88.4,
+    "status": "normal"
+  },
+  {
+    "hour": 184,
+    "health_score": 0.9016,
+    "vibration_rms": 0.058046,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 185,
+    "health_score": 0.9105,
+    "vibration_rms": 0.050139,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 186,
+    "health_score": 0.9273,
+    "vibration_rms": 0.056728,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 187,
+    "health_score": 0.9208,
+    "vibration_rms": 0.058224,
+    "temperature": 88.1,
+    "status": "normal"
+  },
+  {
+    "hour": 188,
+    "health_score": 0.9446,
+    "vibration_rms": 0.052338,
+    "temperature": 85.9,
+    "status": "normal"
+  },
+  {
+    "hour": 189,
+    "health_score": 0.9058,
+    "vibration_rms": 0.055614,
+    "temperature": 88.2,
+    "status": "normal"
+  },
+  {
+    "hour": 190,
+    "health_score": 0.9389,
+    "vibration_rms": 0.050632,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 191,
+    "health_score": 0.9045,
+    "vibration_rms": 0.053022,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 192,
+    "health_score": 0.943,
+    "vibration_rms": 0.059463,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 193,
+    "health_score": 0.9254,
+    "vibration_rms": 0.050972,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 194,
+    "health_score": 0.9432,
+    "vibration_rms": 0.054536,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 195,
+    "health_score": 0.9128,
+    "vibration_rms": 0.05946,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 196,
+    "health_score": 0.9129,
+    "vibration_rms": 0.051545,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 197,
+    "health_score": 0.945,
+    "vibration_rms": 0.054893,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 198,
+    "health_score": 0.9024,
+    "vibration_rms": 0.050327,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 199,
+    "health_score": 0.9278,
+    "vibration_rms": 0.059506,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 200,
+    "health_score": 0.945,
+    "vibration_rms": 0.056857,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 201,
+    "health_score": 0.9011,
+    "vibration_rms": 0.053587,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 202,
+    "health_score": 0.9405,
+    "vibration_rms": 0.051222,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 203,
+    "health_score": 0.9273,
+    "vibration_rms": 0.056628,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 204,
+    "health_score": 0.9201,
+    "vibration_rms": 0.050214,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 205,
+    "health_score": 0.9378,
+    "vibration_rms": 0.051259,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 206,
+    "health_score": 0.9466,
+    "vibration_rms": 0.057652,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 207,
+    "health_score": 0.9392,
+    "vibration_rms": 0.058697,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 208,
+    "health_score": 0.9426,
+    "vibration_rms": 0.059005,
+    "temperature": 85.9,
+    "status": "normal"
+  },
+  {
+    "hour": 209,
+    "health_score": 0.9071,
+    "vibration_rms": 0.051447,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 210,
+    "health_score": 0.9375,
+    "vibration_rms": 0.051745,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 211,
+    "health_score": 0.9487,
+    "vibration_rms": 0.050149,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 212,
+    "health_score": 0.9381,
+    "vibration_rms": 0.053238,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 213,
+    "health_score": 0.9474,
+    "vibration_rms": 0.057417,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 214,
+    "health_score": 0.9127,
+    "vibration_rms": 0.054762,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 215,
+    "health_score": 0.9243,
+    "vibration_rms": 0.051091,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 216,
+    "health_score": 0.9027,
+    "vibration_rms": 0.050434,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 217,
+    "health_score": 0.9067,
+    "vibration_rms": 0.055215,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 218,
+    "health_score": 0.9018,
+    "vibration_rms": 0.050608,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 219,
+    "health_score": 0.9299,
+    "vibration_rms": 0.056861,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 220,
+    "health_score": 0.9045,
+    "vibration_rms": 0.050735,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 221,
+    "health_score": 0.9196,
+    "vibration_rms": 0.050657,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 222,
+    "health_score": 0.9183,
+    "vibration_rms": 0.055484,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 223,
+    "health_score": 0.9003,
+    "vibration_rms": 0.055306,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 224,
+    "health_score": 0.9197,
+    "vibration_rms": 0.050992,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 225,
+    "health_score": 0.9074,
+    "vibration_rms": 0.056509,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 226,
+    "health_score": 0.914,
+    "vibration_rms": 0.05215,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 227,
+    "health_score": 0.9386,
+    "vibration_rms": 0.053389,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 228,
+    "health_score": 0.9292,
+    "vibration_rms": 0.050951,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 229,
+    "health_score": 0.9167,
+    "vibration_rms": 0.053743,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 230,
+    "health_score": 0.9039,
+    "vibration_rms": 0.050671,
+    "temperature": 88.1,
+    "status": "normal"
+  },
+  {
+    "hour": 231,
+    "health_score": 0.9453,
+    "vibration_rms": 0.050966,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 232,
+    "health_score": 0.9094,
+    "vibration_rms": 0.055564,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 233,
+    "health_score": 0.9219,
+    "vibration_rms": 0.053296,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 234,
+    "health_score": 0.9323,
+    "vibration_rms": 0.056653,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 235,
+    "health_score": 0.9066,
+    "vibration_rms": 0.057211,
+    "temperature": 88.3,
+    "status": "normal"
+  },
+  {
+    "hour": 236,
+    "health_score": 0.92,
+    "vibration_rms": 0.053516,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 237,
+    "health_score": 0.9394,
+    "vibration_rms": 0.056567,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 238,
+    "health_score": 0.9446,
+    "vibration_rms": 0.058454,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 239,
+    "health_score": 0.9119,
+    "vibration_rms": 0.055741,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 240,
+    "health_score": 0.9077,
+    "vibration_rms": 0.059745,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 241,
+    "health_score": 0.9193,
+    "vibration_rms": 0.056427,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 242,
+    "health_score": 0.9035,
+    "vibration_rms": 0.058295,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 243,
+    "health_score": 0.941,
+    "vibration_rms": 0.057027,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 244,
+    "health_score": 0.933,
+    "vibration_rms": 0.050061,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 245,
+    "health_score": 0.9217,
+    "vibration_rms": 0.054008,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 246,
+    "health_score": 0.9183,
+    "vibration_rms": 0.050307,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 247,
+    "health_score": 0.9392,
+    "vibration_rms": 0.054198,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 248,
+    "health_score": 0.9315,
+    "vibration_rms": 0.057216,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 249,
+    "health_score": 0.9216,
+    "vibration_rms": 0.05085,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 250,
+    "health_score": 0.9421,
+    "vibration_rms": 0.056178,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 251,
+    "health_score": 0.9364,
+    "vibration_rms": 0.056619,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 252,
+    "health_score": 0.9279,
+    "vibration_rms": 0.052732,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 253,
+    "health_score": 0.9443,
+    "vibration_rms": 0.054299,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 254,
+    "health_score": 0.9161,
+    "vibration_rms": 0.054866,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 255,
+    "health_score": 0.9477,
+    "vibration_rms": 0.053953,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 256,
+    "health_score": 0.9496,
+    "vibration_rms": 0.053014,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 257,
+    "health_score": 0.9431,
+    "vibration_rms": 0.052555,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 258,
+    "health_score": 0.9496,
+    "vibration_rms": 0.05747,
+    "temperature": 86.1,
+    "status": "normal"
+  },
+  {
+    "hour": 259,
+    "health_score": 0.931,
+    "vibration_rms": 0.057037,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 260,
+    "health_score": 0.9083,
+    "vibration_rms": 0.058062,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 261,
+    "health_score": 0.9069,
+    "vibration_rms": 0.050423,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 262,
+    "health_score": 0.9039,
+    "vibration_rms": 0.058621,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 263,
+    "health_score": 0.9213,
+    "vibration_rms": 0.057095,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 264,
+    "health_score": 0.9442,
+    "vibration_rms": 0.050209,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 265,
+    "health_score": 0.9099,
+    "vibration_rms": 0.056181,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 266,
+    "health_score": 0.904,
+    "vibration_rms": 0.050881,
+    "temperature": 88.1,
+    "status": "normal"
+  },
+  {
+    "hour": 267,
+    "health_score": 0.9378,
+    "vibration_rms": 0.055889,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 268,
+    "health_score": 0.9302,
+    "vibration_rms": 0.053103,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 269,
+    "health_score": 0.9333,
+    "vibration_rms": 0.051681,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 270,
+    "health_score": 0.9443,
+    "vibration_rms": 0.0551,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 271,
+    "health_score": 0.9325,
+    "vibration_rms": 0.057274,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 272,
+    "health_score": 0.9092,
+    "vibration_rms": 0.052363,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 273,
+    "health_score": 0.9401,
+    "vibration_rms": 0.056024,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 274,
+    "health_score": 0.9172,
+    "vibration_rms": 0.051771,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 275,
+    "health_score": 0.9253,
+    "vibration_rms": 0.057544,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 276,
+    "health_score": 0.9276,
+    "vibration_rms": 0.059242,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 277,
+    "health_score": 0.9182,
+    "vibration_rms": 0.056245,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 278,
+    "health_score": 0.9186,
+    "vibration_rms": 0.05151,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 279,
+    "health_score": 0.9279,
+    "vibration_rms": 0.053028,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 280,
+    "health_score": 0.9472,
+    "vibration_rms": 0.055073,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 281,
+    "health_score": 0.9274,
+    "vibration_rms": 0.050569,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 282,
+    "health_score": 0.9462,
+    "vibration_rms": 0.058643,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 283,
+    "health_score": 0.9192,
+    "vibration_rms": 0.055071,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 284,
+    "health_score": 0.9223,
+    "vibration_rms": 0.057918,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 285,
+    "health_score": 0.9275,
+    "vibration_rms": 0.058098,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 286,
+    "health_score": 0.9339,
+    "vibration_rms": 0.054756,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 287,
+    "health_score": 0.9469,
+    "vibration_rms": 0.051035,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 288,
+    "health_score": 0.9328,
+    "vibration_rms": 0.057143,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 289,
+    "health_score": 0.9414,
+    "vibration_rms": 0.052477,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 290,
+    "health_score": 0.928,
+    "vibration_rms": 0.055227,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 291,
+    "health_score": 0.9314,
+    "vibration_rms": 0.052829,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 292,
+    "health_score": 0.9331,
+    "vibration_rms": 0.055979,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 293,
+    "health_score": 0.9176,
+    "vibration_rms": 0.050659,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 294,
+    "health_score": 0.9161,
+    "vibration_rms": 0.052841,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 295,
+    "health_score": 0.9172,
+    "vibration_rms": 0.059063,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 296,
+    "health_score": 0.9333,
+    "vibration_rms": 0.055827,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 297,
+    "health_score": 0.9325,
+    "vibration_rms": 0.059677,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 298,
+    "health_score": 0.9304,
+    "vibration_rms": 0.05595,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 299,
+    "health_score": 0.9345,
+    "vibration_rms": 0.053767,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 300,
+    "health_score": 0.9093,
+    "vibration_rms": 0.056701,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 301,
+    "health_score": 0.9131,
+    "vibration_rms": 0.056854,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 302,
+    "health_score": 0.9177,
+    "vibration_rms": 0.054234,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 303,
+    "health_score": 0.9319,
+    "vibration_rms": 0.051803,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 304,
+    "health_score": 0.9026,
+    "vibration_rms": 0.054863,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 305,
+    "health_score": 0.9431,
+    "vibration_rms": 0.050772,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 306,
+    "health_score": 0.9449,
+    "vibration_rms": 0.057709,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 307,
+    "health_score": 0.9058,
+    "vibration_rms": 0.050377,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 308,
+    "health_score": 0.9117,
+    "vibration_rms": 0.05131,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 309,
+    "health_score": 0.9419,
+    "vibration_rms": 0.058313,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 310,
+    "health_score": 0.9095,
+    "vibration_rms": 0.051655,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 311,
+    "health_score": 0.9295,
+    "vibration_rms": 0.056764,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 312,
+    "health_score": 0.9278,
+    "vibration_rms": 0.052849,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 313,
+    "health_score": 0.9276,
+    "vibration_rms": 0.05534,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 314,
+    "health_score": 0.9096,
+    "vibration_rms": 0.05469,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 315,
+    "health_score": 0.9316,
+    "vibration_rms": 0.059471,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 316,
+    "health_score": 0.9269,
+    "vibration_rms": 0.052818,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 317,
+    "health_score": 0.9236,
+    "vibration_rms": 0.059663,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 318,
+    "health_score": 0.9099,
+    "vibration_rms": 0.051384,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 319,
+    "health_score": 0.9179,
+    "vibration_rms": 0.058741,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 320,
+    "health_score": 0.9449,
+    "vibration_rms": 0.058459,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 321,
+    "health_score": 0.9357,
+    "vibration_rms": 0.057631,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 322,
+    "health_score": 0.9047,
+    "vibration_rms": 0.051473,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 323,
+    "health_score": 0.9027,
+    "vibration_rms": 0.05222,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 324,
+    "health_score": 0.9325,
+    "vibration_rms": 0.050267,
+    "temperature": 86.1,
+    "status": "normal"
+  },
+  {
+    "hour": 325,
+    "health_score": 0.9249,
+    "vibration_rms": 0.052358,
+    "temperature": 88.1,
+    "status": "normal"
+  },
+  {
+    "hour": 326,
+    "health_score": 0.9313,
+    "vibration_rms": 0.050282,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 327,
+    "health_score": 0.908,
+    "vibration_rms": 0.0565,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 328,
+    "health_score": 0.9431,
+    "vibration_rms": 0.052869,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 329,
+    "health_score": 0.9152,
+    "vibration_rms": 0.051388,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 330,
+    "health_score": 0.9276,
+    "vibration_rms": 0.050053,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 331,
+    "health_score": 0.9372,
+    "vibration_rms": 0.05835,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 332,
+    "health_score": 0.9136,
+    "vibration_rms": 0.055278,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 333,
+    "health_score": 0.9356,
+    "vibration_rms": 0.053012,
+    "temperature": 86.1,
+    "status": "normal"
+  },
+  {
+    "hour": 334,
+    "health_score": 0.929,
+    "vibration_rms": 0.057939,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 335,
+    "health_score": 0.9445,
+    "vibration_rms": 0.059051,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 336,
+    "health_score": 0.9492,
+    "vibration_rms": 0.055154,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 337,
+    "health_score": 0.9428,
+    "vibration_rms": 0.054292,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 338,
+    "health_score": 0.938,
+    "vibration_rms": 0.054166,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 339,
+    "health_score": 0.9457,
+    "vibration_rms": 0.059747,
+    "temperature": 85.9,
+    "status": "normal"
+  },
+  {
+    "hour": 340,
+    "health_score": 0.9237,
+    "vibration_rms": 0.055073,
+    "temperature": 88.1,
+    "status": "normal"
+  },
+  {
+    "hour": 341,
+    "health_score": 0.9223,
+    "vibration_rms": 0.053905,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 342,
+    "health_score": 0.9182,
+    "vibration_rms": 0.05981,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 343,
+    "health_score": 0.9492,
+    "vibration_rms": 0.057885,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 344,
+    "health_score": 0.9134,
+    "vibration_rms": 0.056283,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 345,
+    "health_score": 0.9132,
+    "vibration_rms": 0.053325,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 346,
+    "health_score": 0.9227,
+    "vibration_rms": 0.058135,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 347,
+    "health_score": 0.911,
+    "vibration_rms": 0.054646,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 348,
+    "health_score": 0.9184,
+    "vibration_rms": 0.058115,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 349,
+    "health_score": 0.9112,
+    "vibration_rms": 0.054577,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 350,
+    "health_score": 0.9478,
+    "vibration_rms": 0.051995,
+    "temperature": 85.9,
+    "status": "normal"
+  },
+  {
+    "hour": 351,
+    "health_score": 0.9033,
+    "vibration_rms": 0.055154,
+    "temperature": 88.4,
+    "status": "normal"
+  },
+  {
+    "hour": 352,
+    "health_score": 0.9228,
+    "vibration_rms": 0.052533,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 353,
+    "health_score": 0.9404,
+    "vibration_rms": 0.05357,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 354,
+    "health_score": 0.9067,
+    "vibration_rms": 0.053319,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 355,
+    "health_score": 0.9316,
+    "vibration_rms": 0.058895,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 356,
+    "health_score": 0.9053,
+    "vibration_rms": 0.053866,
+    "temperature": 88.4,
+    "status": "normal"
+  },
+  {
+    "hour": 357,
+    "health_score": 0.9252,
+    "vibration_rms": 0.054975,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 358,
+    "health_score": 0.924,
+    "vibration_rms": 0.058011,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 359,
+    "health_score": 0.9461,
+    "vibration_rms": 0.056025,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 360,
+    "health_score": 0.9227,
+    "vibration_rms": 0.053212,
+    "temperature": 86.3,
+    "status": "normal"
+  },
+  {
+    "hour": 361,
+    "health_score": 0.917,
+    "vibration_rms": 0.053065,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 362,
+    "health_score": 0.9287,
+    "vibration_rms": 0.056898,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 363,
+    "health_score": 0.9479,
+    "vibration_rms": 0.0587,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 364,
+    "health_score": 0.9001,
+    "vibration_rms": 0.052746,
+    "temperature": 88.5,
+    "status": "normal"
+  },
+  {
+    "hour": 365,
+    "health_score": 0.9026,
+    "vibration_rms": 0.05075,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 366,
+    "health_score": 0.9318,
+    "vibration_rms": 0.058011,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 367,
+    "health_score": 0.9024,
+    "vibration_rms": 0.051428,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 368,
+    "health_score": 0.9109,
+    "vibration_rms": 0.050348,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 369,
+    "health_score": 0.9111,
+    "vibration_rms": 0.053663,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 370,
+    "health_score": 0.9216,
+    "vibration_rms": 0.056051,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 371,
+    "health_score": 0.9026,
+    "vibration_rms": 0.05372,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 372,
+    "health_score": 0.9213,
+    "vibration_rms": 0.055295,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 373,
+    "health_score": 0.9175,
+    "vibration_rms": 0.052496,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 374,
+    "health_score": 0.9132,
+    "vibration_rms": 0.05499,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 375,
+    "health_score": 0.9219,
+    "vibration_rms": 0.052618,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 376,
+    "health_score": 0.9277,
+    "vibration_rms": 0.059964,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 377,
+    "health_score": 0.9042,
+    "vibration_rms": 0.054912,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 378,
+    "health_score": 0.9074,
+    "vibration_rms": 0.05452,
+    "temperature": 88.2,
+    "status": "normal"
+  },
+  {
+    "hour": 379,
+    "health_score": 0.9277,
+    "vibration_rms": 0.050878,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 380,
+    "health_score": 0.9077,
+    "vibration_rms": 0.053196,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 381,
+    "health_score": 0.9468,
+    "vibration_rms": 0.055422,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 382,
+    "health_score": 0.9074,
+    "vibration_rms": 0.057118,
+    "temperature": 88.2,
+    "status": "normal"
+  },
+  {
+    "hour": 383,
+    "health_score": 0.9181,
+    "vibration_rms": 0.057937,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 384,
+    "health_score": 0.9439,
+    "vibration_rms": 0.05201,
+    "temperature": 86.1,
+    "status": "normal"
+  },
+  {
+    "hour": 385,
+    "health_score": 0.9105,
+    "vibration_rms": 0.050263,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 386,
+    "health_score": 0.9316,
+    "vibration_rms": 0.058037,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 387,
+    "health_score": 0.9194,
+    "vibration_rms": 0.050862,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 388,
+    "health_score": 0.9,
+    "vibration_rms": 0.057189,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 389,
+    "health_score": 0.9115,
+    "vibration_rms": 0.058233,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 390,
+    "health_score": 0.9014,
+    "vibration_rms": 0.056423,
+    "temperature": 87.4,
+    "status": "normal"
+  },
+  {
+    "hour": 391,
+    "health_score": 0.916,
+    "vibration_rms": 0.053445,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 392,
+    "health_score": 0.911,
+    "vibration_rms": 0.056398,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 393,
+    "health_score": 0.9017,
+    "vibration_rms": 0.054326,
+    "temperature": 88.3,
+    "status": "normal"
+  },
+  {
+    "hour": 394,
+    "health_score": 0.9472,
+    "vibration_rms": 0.051242,
+    "temperature": 86.1,
+    "status": "normal"
+  },
+  {
+    "hour": 395,
+    "health_score": 0.9418,
+    "vibration_rms": 0.053227,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 396,
+    "health_score": 0.9327,
+    "vibration_rms": 0.059409,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 397,
+    "health_score": 0.9077,
+    "vibration_rms": 0.052506,
+    "temperature": 87.7,
+    "status": "normal"
+  },
+  {
+    "hour": 398,
+    "health_score": 0.9225,
+    "vibration_rms": 0.051252,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 399,
+    "health_score": 0.9233,
+    "vibration_rms": 0.055026,
+    "temperature": 86.5,
+    "status": "normal"
+  },
+  {
+    "hour": 400,
+    "health_score": 0.9029,
+    "vibration_rms": 0.051542,
+    "temperature": 87.8,
+    "status": "normal"
+  },
+  {
+    "hour": 401,
+    "health_score": 0.914,
+    "vibration_rms": 0.056051,
+    "temperature": 88.0,
+    "status": "normal"
+  },
+  {
+    "hour": 402,
+    "health_score": 0.9218,
+    "vibration_rms": 0.058252,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 403,
+    "health_score": 0.9477,
+    "vibration_rms": 0.056415,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 404,
+    "health_score": 0.9174,
+    "vibration_rms": 0.05767,
+    "temperature": 87.1,
+    "status": "normal"
+  },
+  {
+    "hour": 405,
+    "health_score": 0.9181,
+    "vibration_rms": 0.05498,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 406,
+    "health_score": 0.9355,
+    "vibration_rms": 0.059567,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 407,
+    "health_score": 0.9098,
+    "vibration_rms": 0.05685,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 408,
+    "health_score": 0.9464,
+    "vibration_rms": 0.050599,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 409,
+    "health_score": 0.9258,
+    "vibration_rms": 0.05204,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 410,
+    "health_score": 0.9344,
+    "vibration_rms": 0.057184,
+    "temperature": 87.5,
+    "status": "normal"
+  },
+  {
+    "hour": 411,
+    "health_score": 0.907,
+    "vibration_rms": 0.059754,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 412,
+    "health_score": 0.9315,
+    "vibration_rms": 0.055617,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 413,
+    "health_score": 0.9267,
+    "vibration_rms": 0.052675,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 414,
+    "health_score": 0.9452,
+    "vibration_rms": 0.052902,
+    "temperature": 86.6,
+    "status": "normal"
+  },
+  {
+    "hour": 415,
+    "health_score": 0.9192,
+    "vibration_rms": 0.052483,
+    "temperature": 87.9,
+    "status": "normal"
+  },
+  {
+    "hour": 416,
+    "health_score": 0.942,
+    "vibration_rms": 0.053274,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 417,
+    "health_score": 0.9344,
+    "vibration_rms": 0.057631,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 418,
+    "health_score": 0.9243,
+    "vibration_rms": 0.054988,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 419,
+    "health_score": 0.9488,
+    "vibration_rms": 0.059452,
+    "temperature": 86.8,
+    "status": "normal"
+  },
+  {
+    "hour": 420,
+    "health_score": 0.9017,
+    "vibration_rms": 0.052151,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 421,
+    "health_score": 0.9475,
+    "vibration_rms": 0.054949,
+    "temperature": 87.6,
+    "status": "normal"
+  },
+  {
+    "hour": 422,
+    "health_score": 0.9173,
+    "vibration_rms": 0.054706,
+    "temperature": 87.3,
+    "status": "normal"
+  },
+  {
+    "hour": 423,
+    "health_score": 0.9076,
+    "vibration_rms": 0.054309,
+    "temperature": 88.2,
+    "status": "normal"
+  },
+  {
+    "hour": 424,
+    "health_score": 0.9136,
+    "vibration_rms": 0.057639,
+    "temperature": 87.0,
+    "status": "normal"
+  },
+  {
+    "hour": 425,
+    "health_score": 0.93,
+    "vibration_rms": 0.055703,
+    "temperature": 86.4,
+    "status": "normal"
+  },
+  {
+    "hour": 426,
+    "health_score": 0.9223,
+    "vibration_rms": 0.050735,
+    "temperature": 87.2,
+    "status": "normal"
+  },
+  {
+    "hour": 427,
+    "health_score": 0.9118,
+    "vibration_rms": 0.052797,
+    "temperature": 88.3,
+    "status": "normal"
+  },
+  {
+    "hour": 428,
+    "health_score": 0.916,
+    "vibration_rms": 0.051188,
+    "temperature": 88.2,
+    "status": "normal"
+  },
+  {
+    "hour": 429,
+    "health_score": 0.9303,
+    "vibration_rms": 0.057949,
+    "temperature": 86.7,
+    "status": "normal"
+  },
+  {
+    "hour": 430,
+    "health_score": 0.9031,
+    "vibration_rms": 0.05755,
+    "temperature": 86.9,
+    "status": "normal"
+  },
+  {
+    "hour": 431,
+    "health_score": 0.9245,
+    "vibration_rms": 0.055001,
+    "temperature": 86.2,
+    "status": "normal"
+  },
+  {
+    "hour": 432,
+    "health_score": 0.9527,
+    "vibration_rms": 0.059991,
+    "temperature": 86.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 433,
+    "health_score": 0.9575,
+    "vibration_rms": 0.07041,
+    "temperature": 86.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 434,
+    "health_score": 0.9532,
+    "vibration_rms": 0.072836,
+    "temperature": 86.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 435,
+    "health_score": 0.9648,
+    "vibration_rms": 0.078846,
+    "temperature": 86.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 436,
+    "health_score": 0.9501,
+    "vibration_rms": 0.083738,
+    "temperature": 86.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 437,
+    "health_score": 0.9558,
+    "vibration_rms": 0.070105,
+    "temperature": 87.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 438,
+    "health_score": 0.9474,
+    "vibration_rms": 0.083548,
+    "temperature": 87.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 439,
+    "health_score": 0.95,
+    "vibration_rms": 0.089458,
+    "temperature": 87.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 440,
+    "health_score": 0.9504,
+    "vibration_rms": 0.068577,
+    "temperature": 86.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 441,
+    "health_score": 0.9543,
+    "vibration_rms": 0.093487,
+    "temperature": 87.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 442,
+    "health_score": 0.9449,
+    "vibration_rms": 0.093864,
+    "temperature": 87.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 443,
+    "health_score": 0.9351,
+    "vibration_rms": 0.093315,
+    "temperature": 87.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 444,
+    "health_score": 0.9468,
+    "vibration_rms": 0.0811,
+    "temperature": 87.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 445,
+    "health_score": 0.929,
+    "vibration_rms": 0.107335,
+    "temperature": 86.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 446,
+    "health_score": 0.927,
+    "vibration_rms": 0.090522,
+    "temperature": 86.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 447,
+    "health_score": 0.9388,
+    "vibration_rms": 0.095645,
+    "temperature": 87.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 448,
+    "health_score": 0.9417,
+    "vibration_rms": 0.11174,
+    "temperature": 87.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 449,
+    "health_score": 0.9229,
+    "vibration_rms": 0.09192,
+    "temperature": 86.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 450,
+    "health_score": 0.9265,
+    "vibration_rms": 0.109867,
+    "temperature": 87.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 451,
+    "health_score": 0.9246,
+    "vibration_rms": 0.097418,
+    "temperature": 88.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 452,
+    "health_score": 0.9235,
+    "vibration_rms": 0.105073,
+    "temperature": 87.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 453,
+    "health_score": 0.9294,
+    "vibration_rms": 0.115966,
+    "temperature": 87.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 454,
+    "health_score": 0.9255,
+    "vibration_rms": 0.104657,
+    "temperature": 86.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 455,
+    "health_score": 0.9228,
+    "vibration_rms": 0.107857,
+    "temperature": 88.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 456,
+    "health_score": 0.916,
+    "vibration_rms": 0.112003,
+    "temperature": 86.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 457,
+    "health_score": 0.9224,
+    "vibration_rms": 0.115067,
+    "temperature": 86.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 458,
+    "health_score": 0.9253,
+    "vibration_rms": 0.13164,
+    "temperature": 86.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 459,
+    "health_score": 0.9074,
+    "vibration_rms": 0.130299,
+    "temperature": 87.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 460,
+    "health_score": 0.9229,
+    "vibration_rms": 0.136774,
+    "temperature": 88.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 461,
+    "health_score": 0.9178,
+    "vibration_rms": 0.123158,
+    "temperature": 86.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 462,
+    "health_score": 0.9143,
+    "vibration_rms": 0.127058,
+    "temperature": 87.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 463,
+    "health_score": 0.9035,
+    "vibration_rms": 0.133261,
+    "temperature": 86.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 464,
+    "health_score": 0.9074,
+    "vibration_rms": 0.149102,
+    "temperature": 87.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 465,
+    "health_score": 0.8977,
+    "vibration_rms": 0.141804,
+    "temperature": 87.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 466,
+    "health_score": 0.8982,
+    "vibration_rms": 0.145651,
+    "temperature": 87.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 467,
+    "health_score": 0.9044,
+    "vibration_rms": 0.129353,
+    "temperature": 87.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 468,
+    "health_score": 0.9043,
+    "vibration_rms": 0.133016,
+    "temperature": 88.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 469,
+    "health_score": 0.8884,
+    "vibration_rms": 0.148733,
+    "temperature": 88.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 470,
+    "health_score": 0.8948,
+    "vibration_rms": 0.162495,
+    "temperature": 88.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 471,
+    "health_score": 0.8945,
+    "vibration_rms": 0.14265,
+    "temperature": 88.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 472,
+    "health_score": 0.8898,
+    "vibration_rms": 0.158266,
+    "temperature": 88.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 473,
+    "health_score": 0.8835,
+    "vibration_rms": 0.158335,
+    "temperature": 87.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 474,
+    "health_score": 0.8945,
+    "vibration_rms": 0.171433,
+    "temperature": 88.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 475,
+    "health_score": 0.8818,
+    "vibration_rms": 0.172023,
+    "temperature": 87.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 476,
+    "health_score": 0.8951,
+    "vibration_rms": 0.177693,
+    "temperature": 87.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 477,
+    "health_score": 0.8849,
+    "vibration_rms": 0.178098,
+    "temperature": 88.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 478,
+    "health_score": 0.8919,
+    "vibration_rms": 0.178525,
+    "temperature": 86.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 479,
+    "health_score": 0.883,
+    "vibration_rms": 0.157663,
+    "temperature": 88.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 480,
+    "health_score": 0.8757,
+    "vibration_rms": 0.18634,
+    "temperature": 88.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 481,
+    "health_score": 0.8782,
+    "vibration_rms": 0.187046,
+    "temperature": 88.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 482,
+    "health_score": 0.876,
+    "vibration_rms": 0.166895,
+    "temperature": 87.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 483,
+    "health_score": 0.8682,
+    "vibration_rms": 0.177101,
+    "temperature": 87.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 484,
+    "health_score": 0.8671,
+    "vibration_rms": 0.187654,
+    "temperature": 88.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 485,
+    "health_score": 0.873,
+    "vibration_rms": 0.190496,
+    "temperature": 87.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 486,
+    "health_score": 0.8771,
+    "vibration_rms": 0.196911,
+    "temperature": 88.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 487,
+    "health_score": 0.8686,
+    "vibration_rms": 0.174824,
+    "temperature": 88.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 488,
+    "health_score": 0.8604,
+    "vibration_rms": 0.178663,
+    "temperature": 87.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 489,
+    "health_score": 0.86,
+    "vibration_rms": 0.18449,
+    "temperature": 87.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 490,
+    "health_score": 0.8684,
+    "vibration_rms": 0.20751,
+    "temperature": 87.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 491,
+    "health_score": 0.8661,
+    "vibration_rms": 0.181454,
+    "temperature": 88.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 492,
+    "health_score": 0.8639,
+    "vibration_rms": 0.185197,
+    "temperature": 87.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 493,
+    "health_score": 0.8545,
+    "vibration_rms": 0.197718,
+    "temperature": 88.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 494,
+    "health_score": 0.8646,
+    "vibration_rms": 0.208884,
+    "temperature": 87.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 495,
+    "health_score": 0.8473,
+    "vibration_rms": 0.217484,
+    "temperature": 87.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 496,
+    "health_score": 0.8556,
+    "vibration_rms": 0.198796,
+    "temperature": 87.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 497,
+    "health_score": 0.8447,
+    "vibration_rms": 0.216876,
+    "temperature": 88.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 498,
+    "health_score": 0.8483,
+    "vibration_rms": 0.213144,
+    "temperature": 88.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 499,
+    "health_score": 0.8491,
+    "vibration_rms": 0.218812,
+    "temperature": 87.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 500,
+    "health_score": 0.8416,
+    "vibration_rms": 0.223753,
+    "temperature": 89.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 501,
+    "health_score": 0.8366,
+    "vibration_rms": 0.216736,
+    "temperature": 88.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 502,
+    "health_score": 0.8349,
+    "vibration_rms": 0.222481,
+    "temperature": 87.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 503,
+    "health_score": 0.8426,
+    "vibration_rms": 0.222942,
+    "temperature": 88.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 504,
+    "health_score": 0.833,
+    "vibration_rms": 0.219844,
+    "temperature": 88.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 505,
+    "health_score": 0.8307,
+    "vibration_rms": 0.218384,
+    "temperature": 88.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 506,
+    "health_score": 0.8285,
+    "vibration_rms": 0.229756,
+    "temperature": 89.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 507,
+    "health_score": 0.8341,
+    "vibration_rms": 0.232064,
+    "temperature": 88.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 508,
+    "health_score": 0.8245,
+    "vibration_rms": 0.23276,
+    "temperature": 89.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 509,
+    "health_score": 0.8361,
+    "vibration_rms": 0.23299,
+    "temperature": 89.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 510,
+    "health_score": 0.8349,
+    "vibration_rms": 0.240683,
+    "temperature": 87.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 511,
+    "health_score": 0.8252,
+    "vibration_rms": 0.227468,
+    "temperature": 89.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 512,
+    "health_score": 0.8354,
+    "vibration_rms": 0.229848,
+    "temperature": 89.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 513,
+    "health_score": 0.8156,
+    "vibration_rms": 0.242266,
+    "temperature": 89.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 514,
+    "health_score": 0.8286,
+    "vibration_rms": 0.261572,
+    "temperature": 88.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 515,
+    "health_score": 0.8201,
+    "vibration_rms": 0.26423,
+    "temperature": 88.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 516,
+    "health_score": 0.8274,
+    "vibration_rms": 0.26387,
+    "temperature": 88.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 517,
+    "health_score": 0.822,
+    "vibration_rms": 0.258743,
+    "temperature": 88.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 518,
+    "health_score": 0.8197,
+    "vibration_rms": 0.251544,
+    "temperature": 88.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 519,
+    "health_score": 0.8157,
+    "vibration_rms": 0.259199,
+    "temperature": 89.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 520,
+    "health_score": 0.8078,
+    "vibration_rms": 0.24566,
+    "temperature": 87.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 521,
+    "health_score": 0.8076,
+    "vibration_rms": 0.267983,
+    "temperature": 89.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 522,
+    "health_score": 0.8106,
+    "vibration_rms": 0.274701,
+    "temperature": 88.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 523,
+    "health_score": 0.8053,
+    "vibration_rms": 0.260492,
+    "temperature": 89.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 524,
+    "health_score": 0.8112,
+    "vibration_rms": 0.25783,
+    "temperature": 89.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 525,
+    "health_score": 0.8034,
+    "vibration_rms": 0.279648,
+    "temperature": 89.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 526,
+    "health_score": 0.7936,
+    "vibration_rms": 0.265071,
+    "temperature": 88.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 527,
+    "health_score": 0.7923,
+    "vibration_rms": 0.279045,
+    "temperature": 89.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 528,
+    "health_score": 0.791,
+    "vibration_rms": 0.28555,
+    "temperature": 88.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 529,
+    "health_score": 0.793,
+    "vibration_rms": 0.272074,
+    "temperature": 89.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 530,
+    "health_score": 0.7878,
+    "vibration_rms": 0.282895,
+    "temperature": 88.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 531,
+    "health_score": 0.8013,
+    "vibration_rms": 0.291946,
+    "temperature": 88.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 532,
+    "health_score": 0.7953,
+    "vibration_rms": 0.292398,
+    "temperature": 88.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 533,
+    "health_score": 0.7877,
+    "vibration_rms": 0.278742,
+    "temperature": 89.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 534,
+    "health_score": 0.7844,
+    "vibration_rms": 0.285682,
+    "temperature": 88.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 535,
+    "health_score": 0.7973,
+    "vibration_rms": 0.30528,
+    "temperature": 89.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 536,
+    "health_score": 0.7892,
+    "vibration_rms": 0.293927,
+    "temperature": 89.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 537,
+    "health_score": 0.7944,
+    "vibration_rms": 0.311581,
+    "temperature": 89.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 538,
+    "health_score": 0.789,
+    "vibration_rms": 0.295118,
+    "temperature": 89.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 539,
+    "health_score": 0.7747,
+    "vibration_rms": 0.299072,
+    "temperature": 89.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 540,
+    "health_score": 0.7795,
+    "vibration_rms": 0.31548,
+    "temperature": 88.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 541,
+    "health_score": 0.7825,
+    "vibration_rms": 0.316396,
+    "temperature": 90.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 542,
+    "health_score": 0.7779,
+    "vibration_rms": 0.323478,
+    "temperature": 89.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 543,
+    "health_score": 0.7677,
+    "vibration_rms": 0.303952,
+    "temperature": 88.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 544,
+    "health_score": 0.7763,
+    "vibration_rms": 0.326556,
+    "temperature": 90.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 545,
+    "health_score": 0.7635,
+    "vibration_rms": 0.322849,
+    "temperature": 88.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 546,
+    "health_score": 0.7654,
+    "vibration_rms": 0.323543,
+    "temperature": 89.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 547,
+    "health_score": 0.7758,
+    "vibration_rms": 0.3112,
+    "temperature": 89.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 548,
+    "health_score": 0.7712,
+    "vibration_rms": 0.324543,
+    "temperature": 89.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 549,
+    "health_score": 0.7724,
+    "vibration_rms": 0.319989,
+    "temperature": 90.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 550,
+    "health_score": 0.7536,
+    "vibration_rms": 0.340337,
+    "temperature": 90.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 551,
+    "health_score": 0.754,
+    "vibration_rms": 0.344432,
+    "temperature": 89.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 552,
+    "health_score": 0.7549,
+    "vibration_rms": 0.334799,
+    "temperature": 89.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 553,
+    "health_score": 0.7666,
+    "vibration_rms": 0.335451,
+    "temperature": 90.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 554,
+    "health_score": 0.7543,
+    "vibration_rms": 0.337121,
+    "temperature": 89.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 555,
+    "health_score": 0.7502,
+    "vibration_rms": 0.338718,
+    "temperature": 89.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 556,
+    "health_score": 0.7453,
+    "vibration_rms": 0.354995,
+    "temperature": 89.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 557,
+    "health_score": 0.7585,
+    "vibration_rms": 0.355208,
+    "temperature": 89.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 558,
+    "health_score": 0.7483,
+    "vibration_rms": 0.346876,
+    "temperature": 89.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 559,
+    "health_score": 0.7413,
+    "vibration_rms": 0.340045,
+    "temperature": 90.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 560,
+    "health_score": 0.7482,
+    "vibration_rms": 0.346972,
+    "temperature": 89.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 561,
+    "health_score": 0.7416,
+    "vibration_rms": 0.348062,
+    "temperature": 90.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 562,
+    "health_score": 0.7433,
+    "vibration_rms": 0.358527,
+    "temperature": 90.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 563,
+    "health_score": 0.7368,
+    "vibration_rms": 0.365759,
+    "temperature": 90.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 564,
+    "health_score": 0.7428,
+    "vibration_rms": 0.358051,
+    "temperature": 89.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 565,
+    "health_score": 0.7442,
+    "vibration_rms": 0.350634,
+    "temperature": 90.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 566,
+    "health_score": 0.7364,
+    "vibration_rms": 0.375285,
+    "temperature": 90.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 567,
+    "health_score": 0.7378,
+    "vibration_rms": 0.351762,
+    "temperature": 89.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 568,
+    "health_score": 0.7403,
+    "vibration_rms": 0.380578,
+    "temperature": 90.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 569,
+    "health_score": 0.737,
+    "vibration_rms": 0.366816,
+    "temperature": 90.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 570,
+    "health_score": 0.7246,
+    "vibration_rms": 0.377882,
+    "temperature": 89.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 571,
+    "health_score": 0.7284,
+    "vibration_rms": 0.370085,
+    "temperature": 90.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 572,
+    "health_score": 0.73,
+    "vibration_rms": 0.379607,
+    "temperature": 90.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 573,
+    "health_score": 0.7248,
+    "vibration_rms": 0.363532,
+    "temperature": 90.2,
+    "status": "degrading"
+  },
+  {
+    "hour": 574,
+    "health_score": 0.7136,
+    "vibration_rms": 0.381438,
+    "temperature": 89.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 575,
+    "health_score": 0.7312,
+    "vibration_rms": 0.368292,
+    "temperature": 90.7,
+    "status": "degrading"
+  },
+  {
+    "hour": 576,
+    "health_score": 0.7235,
+    "vibration_rms": 0.394185,
+    "temperature": 91.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 577,
+    "health_score": 0.7105,
+    "vibration_rms": 0.375112,
+    "temperature": 89.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 578,
+    "health_score": 0.7105,
+    "vibration_rms": 0.390238,
+    "temperature": 91.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 579,
+    "health_score": 0.7103,
+    "vibration_rms": 0.388574,
+    "temperature": 90.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 580,
+    "health_score": 0.7115,
+    "vibration_rms": 0.395839,
+    "temperature": 91.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 581,
+    "health_score": 0.7062,
+    "vibration_rms": 0.401632,
+    "temperature": 91.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 582,
+    "health_score": 0.7131,
+    "vibration_rms": 0.40908,
+    "temperature": 90.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 583,
+    "health_score": 0.7002,
+    "vibration_rms": 0.396933,
+    "temperature": 90.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 584,
+    "health_score": 0.6978,
+    "vibration_rms": 0.388061,
+    "temperature": 89.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 585,
+    "health_score": 0.705,
+    "vibration_rms": 0.403017,
+    "temperature": 91.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 586,
+    "health_score": 0.7047,
+    "vibration_rms": 0.417961,
+    "temperature": 89.6,
+    "status": "degrading"
+  },
+  {
+    "hour": 587,
+    "health_score": 0.7022,
+    "vibration_rms": 0.395721,
+    "temperature": 89.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 588,
+    "health_score": 0.7074,
+    "vibration_rms": 0.423293,
+    "temperature": 90.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 589,
+    "health_score": 0.6893,
+    "vibration_rms": 0.401119,
+    "temperature": 91.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 590,
+    "health_score": 0.7047,
+    "vibration_rms": 0.418016,
+    "temperature": 89.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 591,
+    "health_score": 0.7036,
+    "vibration_rms": 0.412768,
+    "temperature": 91.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 592,
+    "health_score": 0.6951,
+    "vibration_rms": 0.428123,
+    "temperature": 91.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 593,
+    "health_score": 0.6896,
+    "vibration_rms": 0.410086,
+    "temperature": 90.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 594,
+    "health_score": 0.6848,
+    "vibration_rms": 0.43504,
+    "temperature": 90.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 595,
+    "health_score": 0.6963,
+    "vibration_rms": 0.422174,
+    "temperature": 91.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 596,
+    "health_score": 0.6795,
+    "vibration_rms": 0.444099,
+    "temperature": 91.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 597,
+    "health_score": 0.685,
+    "vibration_rms": 0.445896,
+    "temperature": 89.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 598,
+    "health_score": 0.6821,
+    "vibration_rms": 0.444049,
+    "temperature": 90.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 599,
+    "health_score": 0.687,
+    "vibration_rms": 0.449757,
+    "temperature": 90.5,
+    "status": "degrading"
+  },
+  {
+    "hour": 600,
+    "health_score": 0.6855,
+    "vibration_rms": 0.424222,
+    "temperature": 90.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 601,
+    "health_score": 0.6882,
+    "vibration_rms": 0.440274,
+    "temperature": 90.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 602,
+    "health_score": 0.6855,
+    "vibration_rms": 0.440733,
+    "temperature": 91.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 603,
+    "health_score": 0.6782,
+    "vibration_rms": 0.432571,
+    "temperature": 91.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 604,
+    "health_score": 0.6793,
+    "vibration_rms": 0.453615,
+    "temperature": 90.0,
+    "status": "degrading"
+  },
+  {
+    "hour": 605,
+    "health_score": 0.6648,
+    "vibration_rms": 0.455795,
+    "temperature": 91.3,
+    "status": "degrading"
+  },
+  {
+    "hour": 606,
+    "health_score": 0.6748,
+    "vibration_rms": 0.446167,
+    "temperature": 90.1,
+    "status": "degrading"
+  },
+  {
+    "hour": 607,
+    "health_score": 0.6584,
+    "vibration_rms": 0.448137,
+    "temperature": 90.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 608,
+    "health_score": 0.6621,
+    "vibration_rms": 0.445086,
+    "temperature": 90.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 609,
+    "health_score": 0.664,
+    "vibration_rms": 0.459976,
+    "temperature": 90.9,
+    "status": "degrading"
+  },
+  {
+    "hour": 610,
+    "health_score": 0.6539,
+    "vibration_rms": 0.456173,
+    "temperature": 90.4,
+    "status": "degrading"
+  },
+  {
+    "hour": 611,
+    "health_score": 0.6636,
+    "vibration_rms": 0.457511,
+    "temperature": 90.8,
+    "status": "degrading"
+  },
+  {
+    "hour": 612,
+    "health_score": 0.6646,
+    "vibration_rms": 0.481024,
+    "temperature": 90.2,
+    "status": "fault"
+  },
+  {
+    "hour": 613,
+    "health_score": 0.6909,
+    "vibration_rms": 0.527046,
+    "temperature": 91.6,
+    "status": "fault"
+  },
+  {
+    "hour": 614,
+    "health_score": 0.6703,
+    "vibration_rms": 0.472826,
+    "temperature": 90.7,
+    "status": "fault"
+  },
+  {
+    "hour": 615,
+    "health_score": 0.6444,
+    "vibration_rms": 0.487979,
+    "temperature": 91.3,
+    "status": "fault"
+  },
+  {
+    "hour": 616,
+    "health_score": 0.6365,
+    "vibration_rms": 0.503293,
+    "temperature": 91.3,
+    "status": "fault"
+  },
+  {
+    "hour": 617,
+    "health_score": 0.6534,
+    "vibration_rms": 0.479302,
+    "temperature": 90.7,
+    "status": "fault"
+  },
+  {
+    "hour": 618,
+    "health_score": 0.6373,
+    "vibration_rms": 0.52778,
+    "temperature": 91.6,
+    "status": "fault"
+  },
+  {
+    "hour": 619,
+    "health_score": 0.6306,
+    "vibration_rms": 0.490965,
+    "temperature": 91.2,
+    "status": "fault"
+  },
+  {
+    "hour": 620,
+    "health_score": 0.6641,
+    "vibration_rms": 0.513614,
+    "temperature": 91.3,
+    "status": "fault"
+  },
+  {
+    "hour": 621,
+    "health_score": 0.6527,
+    "vibration_rms": 0.51803,
+    "temperature": 90.9,
+    "status": "fault"
+  },
+  {
+    "hour": 622,
+    "health_score": 0.6491,
+    "vibration_rms": 0.565057,
+    "temperature": 92.2,
+    "status": "fault"
+  },
+  {
+    "hour": 623,
+    "health_score": 0.611,
+    "vibration_rms": 0.526579,
+    "temperature": 92.7,
+    "status": "fault"
+  },
+  {
+    "hour": 624,
+    "health_score": 0.61,
+    "vibration_rms": 0.53069,
+    "temperature": 92.8,
+    "status": "fault"
+  },
+  {
+    "hour": 625,
+    "health_score": 0.6443,
+    "vibration_rms": 0.533501,
+    "temperature": 91.7,
+    "status": "fault"
+  },
+  {
+    "hour": 626,
+    "health_score": 0.6162,
+    "vibration_rms": 0.560885,
+    "temperature": 91.2,
+    "status": "fault"
+  },
+  {
+    "hour": 627,
+    "health_score": 0.6063,
+    "vibration_rms": 0.584764,
+    "temperature": 91.7,
+    "status": "fault"
+  },
+  {
+    "hour": 628,
+    "health_score": 0.589,
+    "vibration_rms": 0.569182,
+    "temperature": 92.3,
+    "status": "fault"
+  },
+  {
+    "hour": 629,
+    "health_score": 0.6064,
+    "vibration_rms": 0.583241,
+    "temperature": 92.0,
+    "status": "fault"
+  },
+  {
+    "hour": 630,
+    "health_score": 0.6227,
+    "vibration_rms": 0.570263,
+    "temperature": 92.1,
+    "status": "fault"
+  },
+  {
+    "hour": 631,
+    "health_score": 0.5928,
+    "vibration_rms": 0.561269,
+    "temperature": 92.5,
+    "status": "fault"
+  },
+  {
+    "hour": 632,
+    "health_score": 0.6076,
+    "vibration_rms": 0.606245,
+    "temperature": 91.7,
+    "status": "fault"
+  },
+  {
+    "hour": 633,
+    "health_score": 0.5875,
+    "vibration_rms": 0.597889,
+    "temperature": 91.7,
+    "status": "fault"
+  },
+  {
+    "hour": 634,
+    "health_score": 0.5913,
+    "vibration_rms": 0.609071,
+    "temperature": 92.7,
+    "status": "fault"
+  },
+  {
+    "hour": 635,
+    "health_score": 0.5579,
+    "vibration_rms": 0.635738,
+    "temperature": 92.6,
+    "status": "fault"
+  },
+  {
+    "hour": 636,
+    "health_score": 0.57,
+    "vibration_rms": 0.60164,
+    "temperature": 93.3,
+    "status": "fault"
+  },
+  {
+    "hour": 637,
+    "health_score": 0.5804,
+    "vibration_rms": 0.609232,
+    "temperature": 92.9,
+    "status": "fault"
+  },
+  {
+    "hour": 638,
+    "health_score": 0.5596,
+    "vibration_rms": 0.64201,
+    "temperature": 92.7,
+    "status": "fault"
+  },
+  {
+    "hour": 639,
+    "health_score": 0.5694,
+    "vibration_rms": 0.581799,
+    "temperature": 93.0,
+    "status": "fault"
+  },
+  {
+    "hour": 640,
+    "health_score": 0.5662,
+    "vibration_rms": 0.60803,
+    "temperature": 92.8,
+    "status": "fault"
+  },
+  {
+    "hour": 641,
+    "health_score": 0.5314,
+    "vibration_rms": 0.662948,
+    "temperature": 93.4,
+    "status": "fault"
+  },
+  {
+    "hour": 642,
+    "health_score": 0.545,
+    "vibration_rms": 0.649104,
+    "temperature": 93.8,
+    "status": "fault"
+  },
+  {
+    "hour": 643,
+    "health_score": 0.5424,
+    "vibration_rms": 0.594362,
+    "temperature": 92.4,
+    "status": "fault"
+  },
+  {
+    "hour": 644,
+    "health_score": 0.5422,
+    "vibration_rms": 0.639652,
+    "temperature": 93.0,
+    "status": "fault"
+  },
+  {
+    "hour": 645,
+    "health_score": 0.5413,
+    "vibration_rms": 0.63844,
+    "temperature": 92.7,
+    "status": "fault"
+  },
+  {
+    "hour": 646,
+    "health_score": 0.547,
+    "vibration_rms": 0.654495,
+    "temperature": 92.8,
+    "status": "fault"
+  },
+  {
+    "hour": 647,
+    "health_score": 0.5214,
+    "vibration_rms": 0.614002,
+    "temperature": 92.4,
+    "status": "fault"
+  },
+  {
+    "hour": 648,
+    "health_score": 0.5208,
+    "vibration_rms": 0.693605,
+    "temperature": 92.4,
+    "status": "fault"
+  },
+  {
+    "hour": 649,
+    "health_score": 0.5429,
+    "vibration_rms": 0.63263,
+    "temperature": 92.5,
+    "status": "fault"
+  },
+  {
+    "hour": 650,
+    "health_score": 0.5144,
+    "vibration_rms": 0.642475,
+    "temperature": 93.2,
+    "status": "fault"
+  },
+  {
+    "hour": 651,
+    "health_score": 0.5113,
+    "vibration_rms": 0.665609,
+    "temperature": 93.7,
+    "status": "fault"
+  },
+  {
+    "hour": 652,
+    "health_score": 0.4993,
+    "vibration_rms": 0.659206,
+    "temperature": 94.1,
+    "status": "fault"
+  },
+  {
+    "hour": 653,
+    "health_score": 0.4849,
+    "vibration_rms": 0.707749,
+    "temperature": 94.0,
+    "status": "fault"
+  },
+  {
+    "hour": 654,
+    "health_score": 0.5089,
+    "vibration_rms": 0.657593,
+    "temperature": 94.3,
+    "status": "fault"
+  },
+  {
+    "hour": 655,
+    "health_score": 0.483,
+    "vibration_rms": 0.66303,
+    "temperature": 93.1,
+    "status": "fault"
+  },
+  {
+    "hour": 656,
+    "health_score": 0.4947,
+    "vibration_rms": 0.730381,
+    "temperature": 93.0,
+    "status": "fault"
+  },
+  {
+    "hour": 657,
+    "health_score": 0.4828,
+    "vibration_rms": 0.673089,
+    "temperature": 94.0,
+    "status": "fault"
+  },
+  {
+    "hour": 658,
+    "health_score": 0.4799,
+    "vibration_rms": 0.665298,
+    "temperature": 94.0,
+    "status": "fault"
+  },
+  {
+    "hour": 659,
+    "health_score": 0.464,
+    "vibration_rms": 0.714969,
+    "temperature": 93.8,
+    "status": "fault"
+  },
+  {
+    "hour": 660,
+    "health_score": 0.4852,
+    "vibration_rms": 0.688685,
+    "temperature": 94.2,
+    "status": "fault"
+  },
+  {
+    "hour": 661,
+    "health_score": 0.4863,
+    "vibration_rms": 0.681857,
+    "temperature": 92.9,
+    "status": "fault"
+  },
+  {
+    "hour": 662,
+    "health_score": 0.4853,
+    "vibration_rms": 0.696438,
+    "temperature": 93.4,
+    "status": "fault"
+  },
+  {
+    "hour": 663,
+    "health_score": 0.4604,
+    "vibration_rms": 0.707099,
+    "temperature": 94.8,
+    "status": "fault"
+  },
+  {
+    "hour": 664,
+    "health_score": 0.4597,
+    "vibration_rms": 0.741869,
+    "temperature": 94.3,
+    "status": "fault"
+  },
+  {
+    "hour": 665,
+    "health_score": 0.4597,
+    "vibration_rms": 0.742331,
+    "temperature": 93.8,
+    "status": "fault"
+  },
+  {
+    "hour": 666,
+    "health_score": 0.4673,
+    "vibration_rms": 0.749389,
+    "temperature": 94.6,
+    "status": "fault"
+  },
+  {
+    "hour": 667,
+    "health_score": 0.4561,
+    "vibration_rms": 0.728425,
+    "temperature": 94.4,
+    "status": "fault"
+  },
+  {
+    "hour": 668,
+    "health_score": 0.4209,
+    "vibration_rms": 0.719975,
+    "temperature": 93.9,
+    "status": "fault"
+  },
+  {
+    "hour": 669,
+    "health_score": 0.4278,
+    "vibration_rms": 0.728532,
+    "temperature": 95.0,
+    "status": "fault"
+  },
+  {
+    "hour": 670,
+    "health_score": 0.4339,
+    "vibration_rms": 0.751978,
+    "temperature": 93.8,
+    "status": "fault"
+  },
+  {
+    "hour": 671,
+    "health_score": 0.4234,
+    "vibration_rms": 0.738008,
+    "temperature": 94.9,
+    "status": "fault"
+  },
+  {
+    "hour": 672,
+    "health_score": 0.4347,
+    "vibration_rms": 0.779399,
+    "temperature": 95.5,
+    "status": "fault"
+  },
+  {
+    "hour": 673,
+    "health_score": 0.4236,
+    "vibration_rms": 0.771579,
+    "temperature": 93.9,
+    "status": "fault"
+  },
+  {
+    "hour": 674,
+    "health_score": 0.4074,
+    "vibration_rms": 0.773117,
+    "temperature": 94.0,
+    "status": "fault"
+  },
+  {
+    "hour": 675,
+    "health_score": 0.4055,
+    "vibration_rms": 0.742433,
+    "temperature": 94.2,
+    "status": "fault"
+  },
+  {
+    "hour": 676,
+    "health_score": 0.4241,
+    "vibration_rms": 0.823403,
+    "temperature": 94.6,
+    "status": "fault"
+  },
+  {
+    "hour": 677,
+    "health_score": 0.4039,
+    "vibration_rms": 0.805702,
+    "temperature": 94.8,
+    "status": "fault"
+  },
+  {
+    "hour": 678,
+    "health_score": 0.417,
+    "vibration_rms": 0.794652,
+    "temperature": 93.9,
+    "status": "fault"
+  },
+  {
+    "hour": 679,
+    "health_score": 0.3724,
+    "vibration_rms": 0.82107,
+    "temperature": 95.0,
+    "status": "fault"
+  },
+  {
+    "hour": 680,
+    "health_score": 0.3804,
+    "vibration_rms": 0.807824,
+    "temperature": 94.6,
+    "status": "fault"
+  },
+  {
+    "hour": 681,
+    "health_score": 0.3854,
+    "vibration_rms": 0.828846,
+    "temperature": 95.8,
+    "status": "fault"
+  },
+  {
+    "hour": 682,
+    "health_score": 0.3858,
+    "vibration_rms": 0.783131,
+    "temperature": 94.4,
+    "status": "fault"
+  },
+  {
+    "hour": 683,
+    "health_score": 0.3929,
+    "vibration_rms": 0.844566,
+    "temperature": 94.8,
+    "status": "fault"
+  },
+  {
+    "hour": 684,
+    "health_score": 0.3911,
+    "vibration_rms": 0.786662,
+    "temperature": 95.6,
+    "status": "fault"
+  },
+  {
+    "hour": 685,
+    "health_score": 0.3732,
+    "vibration_rms": 0.867145,
+    "temperature": 94.6,
+    "status": "fault"
+  },
+  {
+    "hour": 686,
+    "health_score": 0.3832,
+    "vibration_rms": 0.8527,
+    "temperature": 94.8,
+    "status": "fault"
+  },
+  {
+    "hour": 687,
+    "health_score": 0.3875,
+    "vibration_rms": 0.833201,
+    "temperature": 94.9,
+    "status": "fault"
+  },
+  {
+    "hour": 688,
+    "health_score": 0.3742,
+    "vibration_rms": 0.836977,
+    "temperature": 96.4,
+    "status": "fault"
+  },
+  {
+    "hour": 689,
+    "health_score": 0.3679,
+    "vibration_rms": 0.825437,
+    "temperature": 96.1,
+    "status": "fault"
+  },
+  {
+    "hour": 690,
+    "health_score": 0.3544,
+    "vibration_rms": 0.839162,
+    "temperature": 96.1,
+    "status": "fault"
+  },
+  {
+    "hour": 691,
+    "health_score": 0.3525,
+    "vibration_rms": 0.829019,
+    "temperature": 95.0,
+    "status": "fault"
+  },
+  {
+    "hour": 692,
+    "health_score": 0.327,
+    "vibration_rms": 0.836926,
+    "temperature": 95.2,
+    "status": "fault"
+  },
+  {
+    "hour": 693,
+    "health_score": 0.33,
+    "vibration_rms": 0.847487,
+    "temperature": 96.1,
+    "status": "fault"
+  },
+  {
+    "hour": 694,
+    "health_score": 0.3245,
+    "vibration_rms": 0.885954,
+    "temperature": 95.7,
+    "status": "fault"
+  },
+  {
+    "hour": 695,
+    "health_score": 0.3175,
+    "vibration_rms": 0.902901,
+    "temperature": 97.2,
+    "status": "fault"
+  },
+  {
+    "hour": 696,
+    "health_score": 0.334,
+    "vibration_rms": 0.846507,
+    "temperature": 96.9,
+    "status": "fault"
+  },
+  {
+    "hour": 697,
+    "health_score": 0.3351,
+    "vibration_rms": 0.91702,
+    "temperature": 97.0,
+    "status": "fault"
+  },
+  {
+    "hour": 698,
+    "health_score": 0.335,
+    "vibration_rms": 0.858299,
+    "temperature": 96.7,
+    "status": "fault"
+  },
+  {
+    "hour": 699,
+    "health_score": 0.3,
+    "vibration_rms": 0.909689,
+    "temperature": 97.2,
+    "status": "fault"
+  },
+  {
+    "hour": 700,
+    "health_score": 0.3214,
+    "vibration_rms": 0.911506,
+    "temperature": 96.2,
+    "status": "fault"
+  },
+  {
+    "hour": 701,
+    "health_score": 0.308,
+    "vibration_rms": 0.883534,
+    "temperature": 96.2,
+    "status": "fault"
+  },
+  {
+    "hour": 702,
+    "health_score": 0.2976,
+    "vibration_rms": 0.917357,
+    "temperature": 97.3,
+    "status": "fault"
+  },
+  {
+    "hour": 703,
+    "health_score": 0.2755,
+    "vibration_rms": 0.912545,
+    "temperature": 96.4,
+    "status": "fault"
+  },
+  {
+    "hour": 704,
+    "health_score": 0.3135,
+    "vibration_rms": 0.905452,
+    "temperature": 97.2,
+    "status": "fault"
+  },
+  {
+    "hour": 705,
+    "health_score": 0.2789,
+    "vibration_rms": 0.880753,
+    "temperature": 97.4,
+    "status": "fault"
+  },
+  {
+    "hour": 706,
+    "health_score": 0.295,
+    "vibration_rms": 0.94366,
+    "temperature": 96.5,
+    "status": "fault"
+  },
+  {
+    "hour": 707,
+    "health_score": 0.2874,
+    "vibration_rms": 0.918473,
+    "temperature": 95.8,
+    "status": "fault"
+  },
+  {
+    "hour": 708,
+    "health_score": 0.2767,
+    "vibration_rms": 0.911871,
+    "temperature": 96.7,
+    "status": "fault"
+  },
+  {
+    "hour": 709,
+    "health_score": 0.2564,
+    "vibration_rms": 0.920557,
+    "temperature": 97.8,
+    "status": "fault"
+  },
+  {
+    "hour": 710,
+    "health_score": 0.2586,
+    "vibration_rms": 0.949938,
+    "temperature": 97.3,
+    "status": "fault"
+  },
+  {
+    "hour": 711,
+    "health_score": 0.2618,
+    "vibration_rms": 0.935833,
+    "temperature": 97.4,
+    "status": "fault"
+  },
+  {
+    "hour": 712,
+    "health_score": 0.2358,
+    "vibration_rms": 0.920929,
+    "temperature": 98.0,
+    "status": "fault"
+  },
+  {
+    "hour": 713,
+    "health_score": 0.2521,
+    "vibration_rms": 0.927532,
+    "temperature": 97.9,
+    "status": "fault"
+  },
+  {
+    "hour": 714,
+    "health_score": 0.2471,
+    "vibration_rms": 0.922276,
+    "temperature": 98.2,
+    "status": "fault"
+  },
+  {
+    "hour": 715,
+    "health_score": 0.2309,
+    "vibration_rms": 0.981939,
+    "temperature": 96.8,
+    "status": "fault"
+  },
+  {
+    "hour": 716,
+    "health_score": 0.2492,
+    "vibration_rms": 0.9442,
+    "temperature": 98.1,
+    "status": "fault"
+  },
+  {
+    "hour": 717,
+    "health_score": 0.2262,
+    "vibration_rms": 0.988478,
+    "temperature": 97.1,
+    "status": "fault"
+  },
+  {
+    "hour": 718,
+    "health_score": 0.2269,
+    "vibration_rms": 1.013045,
+    "temperature": 96.9,
+    "status": "fault"
+  },
+  {
+    "hour": 719,
+    "health_score": 0.224,
+    "vibration_rms": 0.969811,
+    "temperature": 98.0,
+    "status": "fault"
+  }
+]

@@ -1,0 +1,83 @@
+# Industry Brain Helm Chart Values
+# 行业大脑 Helm 部署配置
+
+# --- Backend ---
+backend:
+  image:
+    repository: industry-brain/backend
+    tag: "0.1.0"
+    pullPolicy: IfNotPresent
+  replicas: 2
+  resources:
+    requests:
+      cpu: 500m
+      memory: 1Gi
+    limits:
+      cpu: 2000m
+      memory: 4Gi
+  env:
+    BRAIN_POSTGRES_URL: ""
+    BRAIN_NEO4J_URL: ""
+    BRAIN_NEO4J_USER: neo4j
+    BRAIN_NEO4J_PASSWORD: ""
+    BRAIN_REDIS_URL: ""
+    BRAIN_CORS_ORIGINS: '["*"]'
+    BRAIN_LOG_LEVEL: INFO
+
+# --- Frontend ---
+frontend:
+  image:
+    repository: industry-brain/frontend
+    tag: "0.1.0"
+    pullPolicy: IfNotPresent
+  replicas: 1
+
+# --- PostgreSQL (with pgvector) ---
+postgres:
+  enabled: true
+  image:
+    repository: pgvector/pgvector
+    tag: pg17
+  storage: 10Gi
+  credentials:
+    username: brain
+    password: brain
+    database: industry_brain
+
+# --- Neo4j ---
+neo4j:
+  enabled: true
+  image:
+    repository: neo4j
+    tag: 5-community
+  storage: 5Gi
+  auth:
+    username: neo4j
+    password: ""
+
+# --- Redis ---
+redis:
+  enabled: true
+  image:
+    repository: redis
+    tag: 7-alpine
+
+# --- Ollama (AI models) ---
+ollama:
+  enabled: true
+  image:
+    repository: ollama/ollama
+    tag: latest
+  storage: 20Gi
+
+# --- Ingress ---
+ingress:
+  enabled: true
+  host: brain.example.com
+  # annotations:
+  #   kubernetes.io/ingress.class: nginx
+  #   cert-manager.io/cluster-issuer: letsencrypt-prod
+  # tls:
+  #   - secretName: brain-tls
+  #     hosts:
+  #       - brain.example.com
