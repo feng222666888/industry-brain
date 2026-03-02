@@ -26,10 +26,20 @@ chore: update dependencies
 
 1. 从 `dev` 创建 `feature/xxx` 分支
 2. 完成开发 + 本地测试通过
-3. 提交PR到 `dev`，填写PR模板
+3. 提交PR到 `dev`，填写PR模板（数据治理影响声明 + 变更->测试映射为必填）
 4. 至少1人Code Review通过
 5. CI（lint + test + build）全部通过
 6. Squash Merge合入 `dev`
+
+### 变更门禁（强制）
+
+- 若变更涉及 `data_pipeline/`、`backend/engine/`、`backend/industries/`，必须同步更新 `tests/`。
+- CI 会执行 `scripts/check_test_mapping.py`，关键代码变更但未修改测试将直接失败。
+- 本地建议统一执行：
+
+```bash
+PYTHONPATH=. pytest tests/unit tests/integration tests/e2e -v
+```
 
 ## 代码规范
 

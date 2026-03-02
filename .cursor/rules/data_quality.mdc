@@ -1,13 +1,19 @@
 ---
 description: Ensure data quality, authenticity, and robust mock generation for AI scenarios
-globs: data_pipeline/**/*.py, backend/engine/**/*.py
+globs: data_pipeline/**/*.py, backend/engine/**/*.py, backend/industries/**/*.py
+alwaysApply: false
 ---
 # Data Quality and Authenticity Rules
 
-- Currently, factory sensor data (like CWRU bearings or TEP process data) is primarily generated synthetically or derived from open academic datasets, because real proprietary factory data cannot be scraped directly.
-- Whenever adding or modifying data generation/scraping logic, ensure a self-reflection on data quality:
-  1. Does this data represent real-world physical and chemical boundaries? (e.g., temperatures, pressures)
-  2. Are the anomalies and faults realistically simulated with appropriate noise?
-  3. Is the knowledge graph built strictly on authentic open literature/standards?
-- Ensure the `data_pipeline/governance/` module validates semantic consistency, data completeness, and compliance (e.g., robots.txt).
-- The self-evolution engine relies heavily on this data. When updating the evolution logic (`backend/engine/`), ensure the sandbox simulation properly penalizes unrealistic physical configurations.
+- Source priority: authority open data / standards first, synthetic data only for demo gaps.
+- Every dataset must include metadata: source URL, acquisition date, scenario_id, industry_id.
+- For data updates, run governance checks:
+  - `quality`: completeness + physical ranges
+  - `semantic`: term normalization by industry dictionary
+  - `compliance`: URL legality baseline check
+- For synthetic generation, explicitly document assumptions and parameter ranges.
+- For evolution engine data usage, add guardrails so unsafe/unrealistic params are penalized or blocked.
+- Mandatory evidence in delivery notes:
+  - data source list (or synthetic rationale)
+  - governance checks impacted
+  - related test file updates

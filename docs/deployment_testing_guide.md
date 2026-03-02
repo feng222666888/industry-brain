@@ -70,10 +70,37 @@ pnpm dev
 项目包含了完整的自动化测试套件，可供验收检查：
 
 ```bash
-# 运行单元和集成测试
-python -m pytest tests/unit tests/integration -v
-
-# 运行核心端到端测试 (Agent 链路与进化引擎)
-python tests/e2e/test_scenario3_device.py
-python tests/e2e/test_scenario1_optimize.py
+# 建议统一执行（含三大场景）
+PYTHONPATH=. pytest tests/unit tests/integration tests/e2e -v
 ```
+
+说明：
+- `tests/unit/`：底层逻辑（安全门、数据治理、Agent 输出结构）
+- `tests/integration/`：FastAPI 接口契约（device / optimize / catalyst / evolution）
+- `tests/e2e/`：场景链路（工艺寻优、催化剂研发、设备预测性维护）
+
+## 6. 人工验收最小清单（推荐）
+
+在自动化通过后，建议按以下最小清单进行人工验收：
+
+1. **场景1 工艺寻优**
+   - 页面可加载推荐参数
+   - 推荐后收率提升、能耗下降数值有变化
+2. **场景2 催化剂研发**
+   - 图像分析接口返回特征、文献、知识图谱匹配
+   - 知识图谱节点/边可视化正常
+3. **场景3 设备维护**
+   - 一键诊断可展示 monitor -> diagnosis -> repair 三阶段
+   - 高风险工况触发维修建议与 SOP
+4. **进化引擎**
+   - 时间线可查看多代策略演化
+   - 安全门可拦截越界参数并记录日志
+
+## 7. 变更后的自检与回归策略
+
+每次新增/变更都执行以下步骤：
+
+1. 建立“变更 -> 测试”映射（本次改了什么，对应补了哪些单测/集成/E2E）
+2. 运行 `PYTHONPATH=. pytest tests/unit tests/integration tests/e2e -v`
+3. 若涉及前端交互，按第 4 节与第 6 节做人工冒烟
+4. 记录未覆盖风险点与后续补测计划（避免“测试假完备”）

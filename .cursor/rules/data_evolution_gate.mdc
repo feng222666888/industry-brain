@@ -1,0 +1,22 @@
+---
+description: Mandatory gate for data authenticity and evolution safety
+alwaysApply: true
+---
+# Data-Evolution Mandatory Gate
+
+- Doc is advisory; Rule + CI + tests are mandatory.
+- Any change touching data pipeline, governance, or evolution logic must include:
+  1. change-to-test mapping
+  2. quality/semantic/compliance impact note
+  3. regression evidence (`pytest` result)
+- Never mark task complete if one of the above is missing.
+- For synthetic data updates, explicitly state:
+  - why synthetic is needed
+  - physical range assumptions
+  - known bias risk
+- For evolution strategy logic updates, verify:
+  - safety gate still blocks out-of-range params
+  - low-quality data does not bypass guardrails
+- Required command before handoff:
+  - `PYTHONPATH=. pytest tests/unit tests/integration tests/e2e -v`
+- If a requirement cannot be automated now, add manual check steps and a follow-up test TODO in docs.
