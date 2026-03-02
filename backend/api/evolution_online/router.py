@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 import time
-from typing import Any
+from typing import Annotated, Any
 
 from fastapi import APIRouter, Body
 
 from backend.engine.evolution_service import get_evolution_service
-from backend.engine.safety_gate import MIN_SCORE_THRESHOLD, MIN_DATA_QUALITY_THRESHOLD
+from backend.engine.safety_gate import MIN_DATA_QUALITY_THRESHOLD, MIN_SCORE_THRESHOLD
 from backend.models.schemas import APIResponse
 
 router = APIRouter()
@@ -45,7 +45,7 @@ async def gate_stats():
 
 
 @router.post("/trigger", response_model=APIResponse)
-async def trigger_online(body: dict[str, Any] = Body(default={})):
+async def trigger_online(body: Annotated[dict[str, Any], Body()] = {}):
     scenario_id = body.get("scenario_id", "process_optimization")
     industry_id = body.get("industry_id", "petrochemical")
 

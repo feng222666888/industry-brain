@@ -7,21 +7,21 @@ from __future__ import annotations
 
 import json
 import logging
-from typing import AsyncGenerator
+from collections.abc import AsyncGenerator
 
 from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
 
+from backend.industries.petrochemical.agents.device.monitor_agent import (
+    _classify_fault,
+    _compute_features,
+)
+from backend.industries.petrochemical.agents.device.pipeline import device_pipeline
 from backend.models.schemas import (
     APIResponse,
     DiagnoseRequest,
     PredictRequest,
     PredictResult,
-)
-from backend.industries.petrochemical.agents.device.pipeline import device_pipeline
-from backend.industries.petrochemical.agents.device.monitor_agent import (
-    _compute_features,
-    _classify_fault,
 )
 
 logger = logging.getLogger(__name__)

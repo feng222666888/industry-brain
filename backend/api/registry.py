@@ -2,21 +2,21 @@
 
 from fastapi import FastAPI
 
-from backend.api.device.router import router as device_router
-from backend.api.optimize.router import router as optimize_router
+from backend.api.agent_factory.router import router as agent_factory_router
 from backend.api.catalyst.router import router as catalyst_router
+from backend.api.corrosion.router import router as corrosion_router
+from backend.api.device.router import router as device_router
 from backend.api.evolution.router import router as evolution_router
+from backend.api.evolution_offline.router import router as evolution_offline_router
+from backend.api.evolution_online.router import router as evolution_online_router
 from backend.api.governance.router import router as governance_router
 from backend.api.knowledge.router import router as knowledge_router
-from backend.api.agent_factory.router import router as agent_factory_router
 from backend.api.memory.router import router as memory_router
+from backend.api.model_gateway.router import router as model_gateway_router
 from backend.api.multi_agent.router import router as multi_agent_router
 from backend.api.observability.router import router as observability_router
+from backend.api.optimize.router import router as optimize_router
 from backend.api.tools.router import router as tools_router
-from backend.api.model_gateway.router import router as model_gateway_router
-from backend.api.evolution_online.router import router as evolution_online_router
-from backend.api.evolution_offline.router import router as evolution_offline_router
-from backend.api.corrosion.router import router as corrosion_router
 
 
 def register_routes(app: FastAPI) -> None:
