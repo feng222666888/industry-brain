@@ -1,21 +1,22 @@
 """Pydantic schemas for API request/response — aligned with docs/api_spec.md."""
 
 from datetime import datetime
+from typing import Optional, Union, List, Dict, Any
 
 from pydantic import BaseModel, Field
 
 
 class APIResponse(BaseModel):
     code: int = 0
-    data: dict | list | None = None
+    data: Optional[Union[Dict[str, Any], List[Any]]] = None
     message: str = "ok"
 
 
 # === Device (Scenario 3) ===
 
 class SensorDataInput(BaseModel):
-    vibration: list[float] = Field(default_factory=list)
-    temperature: list[float] = Field(default_factory=list)
+    vibration: List[float] = Field(default_factory=list)
+    temperature: List[float] = Field(default_factory=list)
     sampling_rate_hz: int = 1000
     window_seconds: int = 10
 
@@ -30,10 +31,10 @@ class PredictResult(BaseModel):
     device_id: str
     health_score: float
     risk_level: str
-    predicted_failure: str | None = None
+    predicted_failure: Optional[str] = None
     confidence: float = 0.0
-    remaining_useful_life_hours: int | None = None
-    recommended_action: str | None = None
+    remaining_useful_life_hours: Optional[int] = None
+    recommended_action: Optional[str] = None
 
 
 class DeviceHealth(BaseModel):
@@ -41,8 +42,8 @@ class DeviceHealth(BaseModel):
     device_name: str
     device_type: str
     current_health_score: float
-    health_trend: list[dict] = Field(default_factory=list)
-    active_alerts: list[dict] = Field(default_factory=list)
+    health_trend: List[Dict[str, Any]] = Field(default_factory=list)
+    active_alerts: List[Dict[str, Any]] = Field(default_factory=list)
 
 
 class DiagnoseRequest(BaseModel):
@@ -54,7 +55,7 @@ class DiagnoseRequest(BaseModel):
 # === Agent ===
 
 class ChatRequest(BaseModel):
-    session_id: str | None = None
+    session_id: Optional[str] = None
     message: str
     agent_type: str = "device_diagnosis"
     industry_id: str = "petrochemical"
@@ -65,9 +66,9 @@ class AgentTraceItem(BaseModel):
     action: str
     input_summary: str = ""
     output_summary: str = ""
-    tools_called: list[str] = Field(default_factory=list)
+    tools_called: List[str] = Field(default_factory=list)
     latency_ms: int = 0
-    timestamp: datetime | None = None
+    timestamp: Optional[datetime] = None
 
 
 # === Evolution ===
@@ -78,16 +79,16 @@ class EvolutionStrategyOut(BaseModel):
     scenario_id: str
     generation: int
     score: float
-    params: dict = Field(default_factory=dict)
+    params: Dict[str, Any] = Field(default_factory=dict)
     source: str = "offline"
-    created_at: datetime | None = None
+    created_at: Optional[datetime] = None
 
 
 class GenerationPoint(BaseModel):
     generation: int
     best_score: float
     strategy_count: int
-    timestamp: datetime | None = None
+    timestamp: Optional[datetime] = None
 
 
 # === Knowledge ===
@@ -96,19 +97,19 @@ class GraphNode(BaseModel):
     id: str
     label: str
     type: str
-    properties: dict = Field(default_factory=dict)
+    properties: Dict[str, Any] = Field(default_factory=dict)
 
 
 class GraphEdge(BaseModel):
     source: str
     target: str
     relation: str
-    properties: dict = Field(default_factory=dict)
+    properties: Dict[str, Any] = Field(default_factory=dict)
 
 
 class GraphResult(BaseModel):
-    nodes: list[GraphNode] = Field(default_factory=list)
-    edges: list[GraphEdge] = Field(default_factory=list)
+    nodes: List[GraphNode] = Field(default_factory=list)
+    edges: List[GraphEdge] = Field(default_factory=list)
 
 
 class SearchRequest(BaseModel):
@@ -121,4 +122,4 @@ class SearchResultItem(BaseModel):
     content: str
     source: str
     relevance_score: float
-    metadata: dict = Field(default_factory=dict)
+    metadata: Dict[str, Any] = Field(default_factory=dict)

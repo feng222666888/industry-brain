@@ -1,0 +1,14 @@
+---
+description: Ensure test completeness and continuous testing for Industry Brain
+globs: backend/**/*.py, frontend/**/*.ts, frontend/**/*.tsx
+---
+# Testing Rules and Strategy
+
+- Every time you implement a new feature, add corresponding unit and integration tests in the `tests/` directory.
+- After creating or modifying a feature, ALWAYS run `python3 -m pytest tests/unit tests/integration` to verify your changes.
+- Self-Reflection Strategy: Before declaring a task complete, ask yourself:
+  1. Did I cover the happy path?
+  2. Did I cover edge cases and negative paths (e.g., out-of-range inputs, API errors)?
+  3. Are there E2E paths that need updating in `tests/e2e/`?
+- For backend features, use `pytest` and `FastAPI TestClient` for endpoint integration testing.
+- For frontend changes, manually verify if E2E/Playwright isn't available, but write logic tests for utility functions.
