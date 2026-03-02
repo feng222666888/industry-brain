@@ -41,7 +41,7 @@ export default function CockpitPage() {
   const [stats, setStats] = useState<Stats>({
     deviceOnline: "96.8%",
     yieldGain: "+¥285万/月",
-    agentCount: "5个活跃",
+    agentCount: "7个活跃",
     evolutionGen: "—",
     deviceWarnings: 2,
   });
@@ -133,7 +133,7 @@ export default function CockpitPage() {
           </Link>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <Link href="/device" className="group rounded-xl border border-slate-700 bg-slate-800 p-6 transition hover:border-slate-600">
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-700 text-2xl">⚙️</div>
             <h3 className="font-semibold text-slate-200">设备预测维护</h3>
@@ -158,6 +158,15 @@ export default function CockpitPage() {
             <p className="mt-2 text-blue-400">3 分析任务完成</p>
             <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-slate-700">
               <div className="h-full rounded-full bg-blue-500" style={{ width: "85%" }} />
+            </div>
+            <p className="mt-3 text-sm text-blue-500 group-hover:text-blue-400">进入 →</p>
+          </Link>
+          <Link href="/corrosion" className="group rounded-xl border border-slate-700 bg-slate-800 p-6 transition hover:border-slate-600">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-700 text-2xl">🛡️</div>
+            <h3 className="font-semibold text-slate-200">智能防腐蚀</h3>
+            <p className="mt-2 text-emerald-400">6 对象监测中</p>
+            <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-slate-700">
+              <div className="h-full rounded-full bg-emerald-500" style={{ width: "78%" }} />
             </div>
             <p className="mt-3 text-sm text-blue-500 group-hover:text-blue-400">进入 →</p>
           </Link>

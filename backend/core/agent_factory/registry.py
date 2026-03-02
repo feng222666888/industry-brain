@@ -120,3 +120,17 @@ agent_registry.register(
     industry_id="petrochemical",
     scenario_id="catalyst_research",
 )
+agent_registry.register(
+    name="corrosion_identify_agent",
+    module_path="industries.petrochemical.agents.corrosion.identify_agent",
+    description="腐蚀识别Agent，基于设备/管道元数据识别适用的腐蚀机理",
+    industry_id="petrochemical",
+    scenario_id="corrosion_prevention",
+)
+agent_registry.register(
+    name="corrosion_risk_agent",
+    module_path="industries.petrochemical.agents.corrosion.risk_agent",
+    description="腐蚀风险Agent，评估腐蚀机理的风险等级(A/B/C)并给出检修建议",
+    industry_id="petrochemical",
+    scenario_id="corrosion_prevention",
+)

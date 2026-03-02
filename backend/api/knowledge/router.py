@@ -19,6 +19,17 @@ DEMO_GRAPH_NODES = [
     {"id": "vibration", "label": "振动频谱分析", "type": "process"},
     {"id": "sem_image", "label": "SEM电镜图像", "type": "material"},
     {"id": "pore_struct", "label": "孔道结构", "type": "material"},
+    {"id": "h2s", "label": "硫化氢(H₂S)", "type": "molecule"},
+    {"id": "co2_mol", "label": "二氧化碳(CO₂)", "type": "molecule"},
+    {"id": "cl_ion", "label": "氯离子(Cl⁻)", "type": "molecule"},
+    {"id": "naphthenic_acid", "label": "环烷酸", "type": "molecule"},
+    {"id": "wet_h2s_crack", "label": "湿硫化氢破坏", "type": "corrosion"},
+    {"id": "amine_scc", "label": "胺应力腐蚀开裂", "type": "corrosion"},
+    {"id": "hcl_corrosion", "label": "盐酸腐蚀", "type": "corrosion"},
+    {"id": "naphthenic_corr", "label": "高温环烷酸腐蚀", "type": "corrosion"},
+    {"id": "carbon_steel", "label": "碳钢", "type": "material"},
+    {"id": "pipeline_h2s", "label": "含硫管线", "type": "equipment"},
+    {"id": "cdu_tower", "label": "常压塔", "type": "equipment"},
 ]
 
 DEMO_GRAPH_EDGES = [
@@ -31,6 +42,15 @@ DEMO_GRAPH_EDGES = [
     {"source": "sem_image", "target": "pore_struct", "relation": "表征对象"},
     {"source": "zeolite_y", "target": "pore_struct", "relation": "微观结构"},
     {"source": "zeolite_y", "target": "sem_image", "relation": "观测手段"},
+    {"source": "h2s", "target": "wet_h2s_crack", "relation": "引发机理"},
+    {"source": "pipeline_h2s", "target": "wet_h2s_crack", "relation": "腐蚀风险"},
+    {"source": "h2s", "target": "carbon_steel", "relation": "腐蚀对象"},
+    {"source": "cl_ion", "target": "hcl_corrosion", "relation": "引发机理"},
+    {"source": "naphthenic_acid", "target": "naphthenic_corr", "relation": "引发机理"},
+    {"source": "cdu_tower", "target": "naphthenic_corr", "relation": "腐蚀风险"},
+    {"source": "cdu_tower", "target": "hcl_corrosion", "relation": "腐蚀风险"},
+    {"source": "co2_mol", "target": "carbon_steel", "relation": "腐蚀对象"},
+    {"source": "amine_scc", "target": "carbon_steel", "relation": "影响材质"},
 ]
 
 TERM_MAP = [
@@ -46,6 +66,12 @@ TERM_MAP = [
     {"raw": "转化率", "standard": "Conversion", "domain": "工艺指标"},
     {"raw": "选择性", "standard": "Selectivity", "domain": "工艺指标"},
     {"raw": "收率", "standard": "Yield", "domain": "工艺指标"},
+    {"raw": "应力腐蚀", "standard": "SCC", "domain": "腐蚀机理"},
+    {"raw": "氢致开裂", "standard": "HIC", "domain": "腐蚀机理"},
+    {"raw": "硫化氢腐蚀", "standard": "H₂S Corrosion", "domain": "腐蚀机理"},
+    {"raw": "环烷酸腐蚀", "standard": "NAC", "domain": "腐蚀机理"},
+    {"raw": "壁厚减薄", "standard": "Wall Thinning", "domain": "腐蚀检测"},
+    {"raw": "腐蚀速率", "standard": "Corrosion Rate (mm/yr)", "domain": "腐蚀检测"},
 ]
 
 SCENARIO_CONFIGS = [
@@ -69,6 +95,13 @@ SCENARIO_CONFIGS = [
         "signal_type": "analysis_result",
         "strategy_type": "inference_rule",
         "sandbox_type": "literature_validation",
+    },
+    {
+        "id": "corrosion_prevention",
+        "name": "智能防腐蚀分析",
+        "signal_type": "corrosion_data",
+        "strategy_type": "risk_assessment",
+        "sandbox_type": "corrosion_simulation",
     },
 ]
 

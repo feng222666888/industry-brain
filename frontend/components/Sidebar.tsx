@@ -27,6 +27,7 @@ const NAV: NavGroup[] = [
       { href: "/device", label: "设备预测维护", icon: "⚙️" },
       { href: "/optimize", label: "工艺参数寻优", icon: "📈" },
       { href: "/catalyst", label: "催化剂研发", icon: "🧪" },
+      { href: "/corrosion", label: "智能防腐蚀", icon: "🛡️" },
     ],
   },
   {

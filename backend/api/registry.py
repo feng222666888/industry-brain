@@ -16,6 +16,7 @@ from backend.api.tools.router import router as tools_router
 from backend.api.model_gateway.router import router as model_gateway_router
 from backend.api.evolution_online.router import router as evolution_online_router
 from backend.api.evolution_offline.router import router as evolution_offline_router
+from backend.api.corrosion.router import router as corrosion_router
 
 
 def register_routes(app: FastAPI) -> None:
@@ -23,6 +24,7 @@ def register_routes(app: FastAPI) -> None:
     app.include_router(device_router, prefix="/api/device", tags=["设备维护"])
     app.include_router(optimize_router, prefix="/api/optimize", tags=["工艺寻优"])
     app.include_router(catalyst_router, prefix="/api/catalyst", tags=["催化剂识别"])
+    app.include_router(corrosion_router, prefix="/api/corrosion", tags=["智能防腐蚀"])
     app.include_router(evolution_router, prefix="/api/evolution", tags=["进化引擎"])
     app.include_router(governance_router, prefix="/api/governance", tags=["数据治理"])
 
