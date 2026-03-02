@@ -13,6 +13,8 @@ CRITICAL_PREFIXES = (
     "data_pipeline/",
     "backend/engine/",
     "backend/industries/",
+    "backend/api/",
+    "backend/core/",
 )
 
 
@@ -72,10 +74,34 @@ def main() -> int:
     print(f"[check_test_mapping] changed={len(changed)} critical={len(critical_changed)} tests={len(test_changed)}")
     if critical_changed and not test_changed:
         print("[check_test_mapping] FAIL: critical code changed but no test file changed.")
-        print("Critical files:")
+        print()
+        print("Critical files changed (require test coverage):")
         for item in critical_changed:
             print(f"  - {item}")
-        print("Please add/update tests under tests/ and include mapping in PR template.")
+        print()
+        print("Expected test locations:")
+        for item in critical_changed:
+            module = item.replace("/", "_").replace(".py", "")
+            if "backend/api/" in item:
+                print(f"  - tests/integration/test_api_endpoints.py  (add tests for {item})")
+            elif "backend/industries/" in item and "/agents/" in item:
+                parts = item.split("/")
+                agent_name = parts[-1].replace(".py", "")
+                print(f"  - tests/unit/test_{agent_name}.py")
+            elif "backend/engine/" in item:
+                parts = item.split("/")
+                fname = parts[-1].replace(".py", "")
+                print(f"  - tests/unit/test_{fname}.py")
+            elif "backend/core/" in item:
+                parts = item.split("/")
+                fname = parts[-1].replace(".py", "")
+                print(f"  - tests/unit/test_{fname}.py")
+            elif "data_pipeline/" in item:
+                parts = item.split("/")
+                fname = parts[-1].replace(".py", "")
+                print(f"  - tests/unit/test_{fname}.py")
+        print()
+        print("Run locally: PYTHONPATH=. pytest tests/ -v")
         return 1
 
     print("[check_test_mapping] PASS")

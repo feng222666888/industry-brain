@@ -8,8 +8,8 @@ from __future__ import annotations
 
 from backend.core.multi_agent.engine import MultiAgentEngine
 from backend.industries.petrochemical.agents.device import (
-    monitor_agent,
     diagnosis_agent,
+    monitor_agent,
     repair_agent,
 )
 

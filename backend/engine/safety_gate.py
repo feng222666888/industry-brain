@@ -84,7 +84,7 @@ class SafetyGate:
         """Read quality score from strategy, defaulting to 1.0 for compatibility."""
         if hasattr(strategy, "data_quality_score"):
             try:
-                return float(getattr(strategy, "data_quality_score"))
+                return float(strategy.data_quality_score)
             except Exception:  # noqa: BLE001
                 return 1.0
         params = getattr(strategy, "params", {}) or {}

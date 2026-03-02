@@ -9,7 +9,7 @@ from __future__ import annotations
 import logging
 import time
 from dataclasses import dataclass, field
-from typing import Any, Optional
+from typing import Any
 
 from backend.engine.data_quality.policy import decide_quality_action
 from backend.engine.safety_gate import SafetyGate
@@ -143,7 +143,7 @@ class OnlineEvolutionPipeline:
             data=raw_data,
         )
 
-    def _match_strategy(self, signal: Signal) -> Optional[Strategy]:
+    def _match_strategy(self, signal: Signal) -> Strategy | None:
         """Find the best matching strategy from the repository."""
         candidates = [
             s for s in self._strategy_repo

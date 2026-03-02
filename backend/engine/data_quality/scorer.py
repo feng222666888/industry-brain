@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from typing import Any
 
 
@@ -20,8 +20,8 @@ def _freshness_score(acquired_at: str | None, max_age_days: int = 30) -> float:
         return 0.0
     try:
         ts = datetime.fromisoformat(acquired_at.replace("Z", "+00:00"))
-        now = datetime.now(timezone.utc)
-        age_days = max(0.0, (now - ts.astimezone(timezone.utc)).total_seconds() / 86400.0)
+        now = datetime.now(UTC)
+        age_days = max(0.0, (now - ts.astimezone(UTC)).total_seconds() / 86400.0)
         score = 1.0 - min(1.0, age_days / float(max_age_days))
         return round(score, 4)
     except Exception:  # noqa: BLE001

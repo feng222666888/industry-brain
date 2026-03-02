@@ -6,8 +6,8 @@ Supports SSE streaming of trace events to the frontend in real-time.
 
 from __future__ import annotations
 
-import time
 import logging
+import time
 from dataclasses import dataclass, field
 from typing import Any
 

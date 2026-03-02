@@ -8,13 +8,14 @@ from __future__ import annotations
 
 import json
 import logging
-from typing import Any, AsyncGenerator
+from collections.abc import AsyncGenerator
+from typing import Annotated, Any
 
 from fastapi import APIRouter, Body
 from fastapi.responses import StreamingResponse
 
-from backend.models.schemas import APIResponse
 from backend.industries.petrochemical.agents.corrosion.pipeline import corrosion_pipeline
+from backend.models.schemas import APIResponse
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
@@ -161,8 +162,9 @@ async def list_corrosion_objects(type: str = ""):
 
 
 @router.post("/analyze")
-async def analyze_corrosion(body: dict[str, Any] = Body(default={})):
+async def analyze_corrosion(body: Annotated[dict[str, Any] | None, Body()] = None):
     """Run full corrosion analysis pipeline (identify → risk) via SSE stream."""
+    body = body or {}
     object_id = body.get("object_id", "")
     obj = next((o for o in DEMO_OBJECTS if o["id"] == object_id), None)
 
@@ -201,8 +203,9 @@ async def analyze_corrosion(body: dict[str, Any] = Body(default={})):
 
 
 @router.post("/identify")
-async def identify_only(body: dict[str, Any] = Body(default={})):
+async def identify_only(body: Annotated[dict[str, Any] | None, Body()] = None):
     """Quick identification without full pipeline — returns corrosion mechanisms."""
+    body = body or {}
     from backend.industries.petrochemical.agents.corrosion.identify_agent import (
         CORROSION_KNOWLEDGE_BASE,
     )

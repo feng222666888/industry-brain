@@ -30,7 +30,7 @@ def _compute_score(params: dict[str, Any]) -> float:
     """Compute process score (0-1) from params — matches offline sandbox logic."""
     scores = []
     for name, weight in WEIGHTS.items():
-        val = params.get(name, (OPTIMAL[name] if name in OPTIMAL else 0))
+        val = params.get(name, OPTIMAL.get(name, 0))
         opt = OPTIMAL.get(name, val)
         rng = RANGES.get(name, 1.0)
         s = max(0.0, 1.0 - abs(val - opt) / rng)

@@ -1,0 +1,92 @@
+---
+description: 测试门控 — 每次研发后必须补测试并通过完整测试套件，不得跳过
+alwaysApply: true
+---
+
+# 测试门控 (Test Gate)
+
+## ⛔ 硬性约束：每次代码变更后，当次会话必须完成全部 Gate
+
+### Gate 1 — 识别测试缺口
+
+对照下表，检查本次变更的每个文件是否有对应测试：
+
+| 变更文件路径 | 必须对应的测试文件 |
+|---|---|
+| `backend/api/{module}/router.py` | `tests/integration/test_api_endpoints.py`（新增 module 的用例） |
+| `backend/industries/{x}/agents/{y}/*.py` | `tests/unit/test_{y}_{agent}.py` |
+| `backend/engine/*.py` | `tests/unit/test_{module}.py` |
+| `backend/core/{x}/*.py` | `tests/unit/test_{x}.py` |
+| `data_pipeline/**/*.py` | `tests/unit/test_{module}.py` |
+
+如果对应测试文件**不存在**，必须在当次会话内创建，不得推迟。
+
+### Gate 2 — 测试写作规范
+
+**Agent 单元测试模板：**
+
+```python
+import asyncio
+from backend.core.memory.session_memory import session_memory
+from backend.core.observability.tracer import SessionTracer
+from backend.industries.petrochemical.agents.{module}.{agent} import run
+
+def test_{agent}_output_structure():
+    tracer = SessionTracer("test-session")
+    session_memory.create_session("test-session", context={})
+    result = asyncio.run(run({"input": "..."}, session_memory, tracer))
+    assert result.data is not None
+    assert "expected_key" in result.data
+```
+
+**API 集成测试模板：**
+
+```python
+from fastapi.testclient import TestClient
+from backend.main import app
+client = TestClient(app)
+
+def test_api_{module}_{endpoint}():
+    response = client.get("/api/{module}/{endpoint}")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["code"] == 0
+    assert "expected_field" in data["data"]
+```
+
+### Gate 3 — 运行测试套件
+
+```bash
+# 快速跑（本地开发常用）
+make test
+
+# 带覆盖率
+make test-cov
+
+# 与 CI 完全一致
+make check
+```
+
+**所有用例必须 PASS，FAILED/ERROR 数为 0，方可结束会话。**
+
+### Gate 4 — check_test_mapping 验证
+
+```bash
+python scripts/check_test_mapping.py
+```
+
+若输出 `FAIL`，说明有变更文件未配套测试，必须补写后重跑。
+
+---
+
+## 测试文件命名约定
+
+- 单元测试：`tests/unit/test_{module_name}.py`
+- 集成测试：`tests/integration/test_api_endpoints.py`（追加用例）
+- 端到端：`tests/e2e/test_scenario{N}_{name}.py`
+
+## 严禁
+
+- ❌ 新增 `backend/api/{module}/router.py` 但不在 `tests/integration/` 中增加用例
+- ❌ 新增 Agent 文件但没有对应 `tests/unit/test_{agent}.py`
+- ❌ 有测试失败时结束会话或提交代码
