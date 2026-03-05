@@ -1,0 +1,92 @@
+[
+  {
+    "device_id": "DEV-PUMP-001",
+    "device_name": "循环水泵-001",
+    "device_type": "centrifugal_pump",
+    "parent_unit": "FCC-催化裂化装置",
+    "installation_date": "2020-03-15",
+    "rated_power_kw": 185,
+    "rated_flow_m3h": 220
+  },
+  {
+    "device_id": "DEV-PUMP-002",
+    "device_name": "进料泵-002",
+    "device_type": "centrifugal_pump",
+    "parent_unit": "FCC-催化裂化装置",
+    "installation_date": "2021-06-20",
+    "rated_power_kw": 220,
+    "rated_flow_m3h": 280
+  },
+  {
+    "device_id": "DEV-COMP-001",
+    "device_name": "富气压缩机-001",
+    "device_type": "compressor",
+    "parent_unit": "FCC-催化裂化装置",
+    "installation_date": "2019-11-10",
+    "rated_power_kw": 1200,
+    "rated_flow_m3h": 350
+  },
+  {
+    "device_id": "DEV-HX-001",
+    "device_name": "原料预热器-001",
+    "device_type": "heat_exchanger",
+    "parent_unit": "常减压蒸馏装置",
+    "installation_date": "2020-08-05",
+    "rated_power_kw": 0,
+    "rated_flow_m3h": 180
+  },
+  {
+    "device_id": "DEV-REACT-001",
+    "device_name": "催化反应器-001",
+    "device_type": "reactor",
+    "parent_unit": "FCC-催化裂化装置",
+    "installation_date": "2018-05-12",
+    "rated_power_kw": 0,
+    "rated_flow_m3h": 120
+  },
+  {
+    "device_id": "DEV-PUMP-003",
+    "device_name": "常压塔底泵-003",
+    "device_type": "centrifugal_pump",
+    "parent_unit": "常减压蒸馏装置",
+    "installation_date": "2021-09-18",
+    "rated_power_kw": 150,
+    "rated_flow_m3h": 310
+  },
+  {
+    "device_id": "DEV-COMP-002",
+    "device_name": "循环气压缩机-002",
+    "device_type": "compressor",
+    "parent_unit": "FCC-催化裂化装置",
+    "installation_date": "2020-12-03",
+    "rated_power_kw": 800,
+    "rated_flow_m3h": 280
+  },
+  {
+    "device_id": "DEV-PUMP-004",
+    "device_name": "回流泵-004",
+    "device_type": "centrifugal_pump",
+    "parent_unit": "常减压蒸馏装置",
+    "installation_date": "2022-02-14",
+    "rated_power_kw": 95,
+    "rated_flow_m3h": 160
+  },
+  {
+    "device_id": "DEV-HX-002",
+    "device_name": "产品冷却器-002",
+    "device_type": "heat_exchanger",
+    "parent_unit": "FCC-催化裂化装置",
+    "installation_date": "2021-04-22",
+    "rated_power_kw": 0,
+    "rated_flow_m3h": 200
+  },
+  {
+    "device_id": "DEV-PUMP-005",
+    "device_name": "循环冷却水泵-005",
+    "device_type": "centrifugal_pump",
+    "parent_unit": "公用工程",
+    "installation_date": "2019-07-30",
+    "rated_power_kw": 110,
+    "rated_flow_m3h": 190
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "industry_statistics": {
+    "equipment_characteristics": {
+      "high_pressure_high_temperature_equipment_percent": 60,
+      "maintenance_cost_percent_of_production_cost": 35,
+      "data_systems_count": 5,
+      "departments_required_for_full_status": 3
+    },
+    "management_challenges": {
+      "safety_incidents_from_equipment_failure_percent": 62,
+      "dynamic_equipment_anomalies_percent": 47,
+      "traditional_inspection_miss_rate_percent": 15,
+      "unplanned_downtime_annual_loss_per_plant_yuan": 20000000
+    },
+    "maintenance_modes": {
+      "reactive_maintenance": {
+        "description": "故障发生后才处理，损失已造成",
+        "prevalence": "high"
+      },
+      "scheduled_maintenance": {
+        "description": "按时间表维护，可能过度或不足",
+        "prevalence": "medium"
+      },
+      "experience_dependent": {
+        "description": "依赖老师傅经验，难以标准化",
+        "prevalence": "high"
+      }
+    },
+    "predictive_maintenance_benefits": {
+      "maintenance_cost_reduction_range_percent": [22, 28],
+      "unplanned_downtime_reduction_percent": 65,
+      "fault_handling_time_reduction": "从4.2小时缩至1.5小时",
+      "prediction_accuracy_target_percent": 85,
+      "prediction_accuracy_achieved_percent": 92,
+      "sop_completeness_target_percent": 100,
+      "end_to_end_latency_target_seconds": 10
+    },
+    "key_performance_indicators": {
+      "prediction_accuracy": {
+        "target": 0.85,
+        "best_practice": 0.92,
+        "description": "故障预测的准确度"
+      },
+      "sop_completeness": {
+        "target": 1.0,
+        "description": "生成的维修方案完整性，包含安全措施、工具清单、备件清单、步骤完整性"
+      },
+      "end_to_end_latency": {
+        "target_seconds": 10,
+        "description": "从告警到生成SOP的时间"
+      },
+      "roi_indicators": [
+        "节电率",
+        "成本节约",
+        "故障率下降",
+        "设备寿命延长"
+      ]
+    },
+    "industry_trends": {
+      "digital_transformation": {
+        "policy_driver": "国家《'十四五'原材料工业发展规划》要求推进设备管理数字化",
+        "regulatory_requirement": "应急管理部将设备完整性管理列为安全生产核心指标"
+      },
+      "market_growth": {
+        "domestic_equipment_management_system_market_share_2025_target_percent": 60,
+        "current_market_share_percent": 35
+      },
+      "technology_direction": {
+        "digital_twin": "数字孪生技术与绿色智能融合成主流方向",
+        "ai_integration": "AI大模型在设备优化中的应用加速"
+      }
+    }
+  }
+}

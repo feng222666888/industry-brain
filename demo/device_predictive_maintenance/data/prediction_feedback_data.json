@@ -1,0 +1,132 @@
+{
+  "DEV-PUMP-001": [
+    {
+      "id": "pred-001",
+      "timestamp": "2026-03-05 08:30:15",
+      "sensor_data": {
+        "vibration": 4.2,
+        "temperature": 72,
+        "rpm": 2980,
+        "flow": 156
+      },
+      "prediction": {
+        "3_days": 0.35,
+        "7_days": 0.68
+      },
+      "feedback": "incorrect"
+    },
+    {
+      "id": "pred-002",
+      "timestamp": "2026-03-04 14:22:08",
+      "sensor_data": {
+        "vibration": 3.8,
+        "temperature": 68,
+        "rpm": 2985,
+        "flow": 162
+      },
+      "prediction": {
+        "3_days": 0.18,
+        "7_days": 0.32
+      },
+      "feedback": "correct"
+    },
+    {
+      "id": "pred-003",
+      "timestamp": "2026-03-03 10:15:42",
+      "sensor_data": {
+        "vibration": 3.5,
+        "temperature": 65,
+        "rpm": 2990,
+        "flow": 165
+      },
+      "prediction": {
+        "3_days": 0.12,
+        "7_days": 0.25
+      },
+      "feedback": "correct"
+    }
+  ],
+  "DEV-PUMP-002": [
+    {
+      "id": "pred-004",
+      "timestamp": "2026-03-05 09:15:30",
+      "sensor_data": {
+        "vibration": 2.1,
+        "temperature": 58,
+        "rpm": 3000,
+        "flow": 280
+      },
+      "prediction": {
+        "3_days": 0.05,
+        "7_days": 0.12
+      },
+      "feedback": null
+    },
+    {
+      "id": "pred-005",
+      "timestamp": "2026-03-04 16:45:12",
+      "sensor_data": {
+        "vibration": 2.0,
+        "temperature": 57,
+        "rpm": 3002,
+        "flow": 282
+      },
+      "prediction": {
+        "3_days": 0.03,
+        "7_days": 0.08
+      },
+      "feedback": "correct"
+    }
+  ],
+  "DEV-COMPRESSOR-001": [
+    {
+      "id": "pred-006",
+      "timestamp": "2026-03-05 07:20:45",
+      "sensor_data": {
+        "vibration": 1.8,
+        "temperature": 85,
+        "rpm": 3600,
+        "flow": 350
+      },
+      "prediction": {
+        "3_days": 0.12,
+        "7_days": 0.28
+      },
+      "feedback": null
+    }
+  ],
+  "DEV-HEAT-EXCHANGER-001": [
+    {
+      "id": "pred-007",
+      "timestamp": "2026-03-05 11:10:20",
+      "sensor_data": {
+        "vibration": 0.5,
+        "temperature": 120,
+        "rpm": 0,
+        "flow": 180
+      },
+      "prediction": {
+        "3_days": 0.08,
+        "7_days": 0.18
+      },
+      "feedback": null
+    }
+  ],
+  "DEV-VALVE-001": [
+    {
+      "id": "pred-008",
+      "timestamp": "2026-03-05 09:45:33",
+      "sensor_data": {
+        "vibration": 0.3,
+        "temperature": 45,
+        "rpm": 0,
+        "flow": 95
+      },
+      "prediction": {
+        "3_days": 0.28,
+        "7_days": 0.52
+      },
+      "feedback": null
+    }
+  ]
+}

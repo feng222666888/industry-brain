@@ -1,0 +1,120 @@
+{
+  "fault_patterns": {
+    "inner_race_fault": {
+      "description": "轴承内圈故障",
+      "symptoms": [
+        "振动RMS值升高",
+        "频谱中出现162Hz特征频率",
+        "温度轻微上升"
+      ],
+      "root_causes": [
+        {
+          "cause": "润滑不足",
+          "probability": 0.45,
+          "evidence": "润滑油粘度下降或油量不足"
+        },
+        {
+          "cause": "安装不当",
+          "probability": 0.25,
+          "evidence": "轴承安装时过盈量不合适"
+        },
+        {
+          "cause": "疲劳磨损",
+          "probability": 0.2,
+          "evidence": "超过额定使用寿命"
+        },
+        {
+          "cause": "污染物侵入",
+          "probability": 0.1,
+          "evidence": "密封失效导致颗粒物进入"
+        }
+      ],
+      "severity": "medium",
+      "urgency": "需在72小时内安排检修"
+    },
+    "outer_race_fault": {
+      "description": "轴承外圈故障",
+      "symptoms": [
+        "振动RMS值升高",
+        "频谱中出现105Hz特征频率",
+        "温度上升"
+      ],
+      "root_causes": [
+        {
+          "cause": "腐蚀",
+          "probability": 0.4,
+          "evidence": "工艺介质泄漏或环境湿度过高"
+        },
+        {
+          "cause": "过载运行",
+          "probability": 0.35,
+          "evidence": "长期超负荷运行"
+        },
+        {
+          "cause": "装配游隙不当",
+          "probability": 0.25,
+          "evidence": "轴承游隙过小"
+        }
+      ],
+      "severity": "medium",
+      "urgency": "需在48小时内安排检修"
+    },
+    "ball_fault": {
+      "description": "轴承滚动体故障",
+      "symptoms": [
+        "振动RMS值显著升高",
+        "频谱中出现141Hz特征频率",
+        "温度明显上升"
+      ],
+      "root_causes": [
+        {
+          "cause": "材料疲劳",
+          "probability": 0.5,
+          "evidence": "滚动体表面疲劳剥落"
+        },
+        {
+          "cause": "润滑膜破裂",
+          "probability": 0.3,
+          "evidence": "高速运转下润滑膜无法保持"
+        },
+        {
+          "cause": "异物压痕",
+          "probability": 0.2,
+          "evidence": "硬质颗粒嵌入滚动体表面"
+        }
+      ],
+      "severity": "high",
+      "urgency": "需在24小时内安排检修"
+    }
+  },
+  "maintenance_sop_templates": {
+    "润滑不足": {
+      "title": "轴承润滑维护标准操作规程",
+      "estimated_duration_hours": 4,
+      "tools_required": [
+        "润滑脂注射枪",
+        "扭矩扳手",
+        "振动检测仪",
+        "红外测温仪"
+      ],
+      "spare_parts": [
+        "SKF LGMT 2润滑脂（或等效）",
+        "密封垫圈（按设备型号）"
+      ]
+    },
+    "安装不当": {
+      "title": "轴承重新安装标准操作规程",
+      "estimated_duration_hours": 8,
+      "tools_required": [
+        "液压拉拔器",
+        "加热器",
+        "扭矩扳手",
+        "游隙测量仪"
+      ],
+      "spare_parts": [
+        "新轴承（按设备型号）",
+        "密封件"
+      ]
+    }
+  }
+}

@@ -1,0 +1,481 @@
+[
+  {
+    "log_id": "MAINT-012",
+    "device_id": "DEV-PUMP-002",
+    "device_name": "进料泵-002",
+    "maintenance_type": "corrective",
+    "maintenance_name": "纠正性维护",
+    "started_at": "2026-02-08T15:57:23.185123",
+    "completed_at": "2026-02-08T21:57:23.185123",
+    "duration_hours": 6,
+    "technician": "技师-03",
+    "cost_yuan": 29450,
+    "spare_parts_used": [
+      "密封件",
+      "O型圈"
+    ]
+  },
+  {
+    "log_id": "MAINT-007",
+    "device_id": "DEV-PUMP-001",
+    "device_name": "循环水泵-001",
+    "maintenance_type": "emergency",
+    "maintenance_name": "紧急维修",
+    "started_at": "2026-02-04T15:57:23.185088",
+    "completed_at": "2026-02-04T23:57:23.185088",
+    "duration_hours": 8,
+    "technician": "技师-06",
+    "cost_yuan": 14752,
+    "spare_parts_used": [
+      "过滤器"
+    ]
+  },
+  {
+    "log_id": "MAINT-025",
+    "device_id": "DEV-COMP-001",
+    "device_name": "富气压缩机-001",
+    "maintenance_type": "corrective",
+    "maintenance_name": "纠正性维护",
+    "started_at": "2026-01-20T15:57:23.185194",
+    "completed_at": "2026-01-20T21:57:23.185194",
+    "duration_hours": 6,
+    "technician": "技师-10",
+    "cost_yuan": 11147,
+    "spare_parts_used": [
+      "密封件",
+      "O型圈"
+    ]
+  },
+  {
+    "log_id": "MAINT-023",
+    "device_id": "DEV-PUMP-003",
+    "device_name": "常压塔底泵-003",
+    "maintenance_type": "corrective",
+    "maintenance_name": "纠正性维护",
+    "started_at": "2026-01-16T15:57:23.185183",
+    "completed_at": "2026-01-16T21:57:23.185183",
+    "duration_hours": 6,
+    "technician": "技师-07",
+    "cost_yuan": 35122,
+    "spare_parts_used": [
+      "轴承",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-018",
+    "device_id": "DEV-PUMP-003",
+    "device_name": "常压塔底泵-003",
+    "maintenance_type": "emergency",
+    "maintenance_name": "紧急维修",
+    "started_at": "2026-01-07T15:57:23.185156",
+    "completed_at": "2026-01-07T23:57:23.185156",
+    "duration_hours": 8,
+    "technician": "技师-03",
+    "cost_yuan": 31859,
+    "spare_parts_used": [
+      "轴承",
+      "密封件",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-015",
+    "device_id": "DEV-REACT-001",
+    "device_name": "催化反应器-001",
+    "maintenance_type": "corrective",
+    "maintenance_name": "纠正性维护",
+    "started_at": "2026-01-01T15:57:23.185139",
+    "completed_at": "2026-01-01T21:57:23.185139",
+    "duration_hours": 6,
+    "technician": "技师-04",
+    "cost_yuan": 9011,
+    "spare_parts_used": [
+      "密封件",
+      "O型圈"
+    ]
+  },
+  {
+    "log_id": "MAINT-029",
+    "device_id": "DEV-COMP-001",
+    "device_name": "富气压缩机-001",
+    "maintenance_type": "corrective",
+    "maintenance_name": "纠正性维护",
+    "started_at": "2025-12-29T15:57:23.185216",
+    "completed_at": "2025-12-29T21:57:23.185216",
+    "duration_hours": 6,
+    "technician": "技师-04",
+    "cost_yuan": 49219,
+    "spare_parts_used": [
+      "密封件",
+      "O型圈"
+    ]
+  },
+  {
+    "log_id": "MAINT-020",
+    "device_id": "DEV-PUMP-004",
+    "device_name": "回流泵-004",
+    "maintenance_type": "emergency",
+    "maintenance_name": "紧急维修",
+    "started_at": "2025-12-28T15:57:23.185167",
+    "completed_at": "2025-12-28T23:57:23.185167",
+    "duration_hours": 8,
+    "technician": "技师-10",
+    "cost_yuan": 26854,
+    "spare_parts_used": [
+      "轴承",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-011",
+    "device_id": "DEV-PUMP-004",
+    "device_name": "回流泵-004",
+    "maintenance_type": "preventive",
+    "maintenance_name": "预防性维护",
+    "started_at": "2025-12-13T15:57:23.185116",
+    "completed_at": "2025-12-13T19:57:23.185116",
+    "duration_hours": 4,
+    "technician": "技师-06",
+    "cost_yuan": 12459,
+    "spare_parts_used": [
+      "轴承",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-021",
+    "device_id": "DEV-COMP-001",
+    "device_name": "富气压缩机-001",
+    "maintenance_type": "emergency",
+    "maintenance_name": "紧急维修",
+    "started_at": "2025-12-11T15:57:23.185173",
+    "completed_at": "2025-12-11T23:57:23.185173",
+    "duration_hours": 8,
+    "technician": "技师-04",
+    "cost_yuan": 31615,
+    "spare_parts_used": [
+      "轴承",
+      "密封件",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-030",
+    "device_id": "DEV-REACT-001",
+    "device_name": "催化反应器-001",
+    "maintenance_type": "corrective",
+    "maintenance_name": "纠正性维护",
+    "started_at": "2025-12-06T15:57:23.185221",
+    "completed_at": "2025-12-06T21:57:23.185221",
+    "duration_hours": 6,
+    "technician": "技师-05",
+    "cost_yuan": 40014,
+    "spare_parts_used": [
+      "轴承",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-026",
+    "device_id": "DEV-REACT-001",
+    "device_name": "催化反应器-001",
+    "maintenance_type": "emergency",
+    "maintenance_name": "紧急维修",
+    "started_at": "2025-12-04T15:57:23.185199",
+    "completed_at": "2025-12-04T23:57:23.185199",
+    "duration_hours": 8,
+    "technician": "技师-08",
+    "cost_yuan": 17702,
+    "spare_parts_used": [
+      "轴承",
+      "密封件",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-016",
+    "device_id": "DEV-COMP-001",
+    "device_name": "富气压缩机-001",
+    "maintenance_type": "emergency",
+    "maintenance_name": "紧急维修",
+    "started_at": "2025-12-02T15:57:23.185144",
+    "completed_at": "2025-12-02T23:57:23.185144",
+    "duration_hours": 8,
+    "technician": "技师-09",
+    "cost_yuan": 26962,
+    "spare_parts_used": [
+      "轴承",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-019",
+    "device_id": "DEV-HX-002",
+    "device_name": "产品冷却器-002",
+    "maintenance_type": "preventive",
+    "maintenance_name": "预防性维护",
+    "started_at": "2025-11-26T15:57:23.185162",
+    "completed_at": "2025-11-26T19:57:23.185162",
+    "duration_hours": 4,
+    "technician": "技师-07",
+    "cost_yuan": 42814,
+    "spare_parts_used": [
+      "密封件",
+      "O型圈"
+    ]
+  },
+  {
+    "log_id": "MAINT-009",
+    "device_id": "DEV-PUMP-003",
+    "device_name": "常压塔底泵-003",
+    "maintenance_type": "corrective",
+    "maintenance_name": "纠正性维护",
+    "started_at": "2025-11-22T15:57:23.185103",
+    "completed_at": "2025-11-22T21:57:23.185103",
+    "duration_hours": 6,
+    "technician": "技师-05",
+    "cost_yuan": 9861,
+    "spare_parts_used": [
+      "轴承",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-002",
+    "device_id": "DEV-COMP-001",
+    "device_name": "富气压缩机-001",
+    "maintenance_type": "corrective",
+    "maintenance_name": "纠正性维护",
+    "started_at": "2025-11-20T15:57:23.184926",
+    "completed_at": "2025-11-20T21:57:23.184926",
+    "duration_hours": 6,
+    "technician": "技师-01",
+    "cost_yuan": 45763,
+    "spare_parts_used": [
+      "轴承",
+      "密封件",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-027",
+    "device_id": "DEV-HX-002",
+    "device_name": "产品冷却器-002",
+    "maintenance_type": "preventive",
+    "maintenance_name": "预防性维护",
+    "started_at": "2025-11-16T15:57:23.185204",
+    "completed_at": "2025-11-16T19:57:23.185204",
+    "duration_hours": 4,
+    "technician": "技师-03",
+    "cost_yuan": 10804,
+    "spare_parts_used": [
+      "轴承",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-010",
+    "device_id": "DEV-PUMP-004",
+    "device_name": "回流泵-004",
+    "maintenance_type": "emergency",
+    "maintenance_name": "紧急维修",
+    "started_at": "2025-11-08T15:57:23.185109",
+    "completed_at": "2025-11-08T23:57:23.185109",
+    "duration_hours": 8,
+    "technician": "技师-06",
+    "cost_yuan": 30385,
+    "spare_parts_used": [
+      "过滤器"
+    ]
+  },
+  {
+    "log_id": "MAINT-008",
+    "device_id": "DEV-REACT-001",
+    "device_name": "催化反应器-001",
+    "maintenance_type": "emergency",
+    "maintenance_name": "紧急维修",
+    "started_at": "2025-11-08T15:57:23.185096",
+    "completed_at": "2025-11-08T23:57:23.185096",
+    "duration_hours": 8,
+    "technician": "技师-06",
+    "cost_yuan": 37811,
+    "spare_parts_used": [
+      "密封件",
+      "O型圈"
+    ]
+  },
+  {
+    "log_id": "MAINT-013",
+    "device_id": "DEV-PUMP-004",
+    "device_name": "回流泵-004",
+    "maintenance_type": "emergency",
+    "maintenance_name": "紧急维修",
+    "started_at": "2025-11-05T15:57:23.185128",
+    "completed_at": "2025-11-05T23:57:23.185128",
+    "duration_hours": 8,
+    "technician": "技师-02",
+    "cost_yuan": 35825,
+    "spare_parts_used": [
+      "过滤器"
+    ]
+  },
+  {
+    "log_id": "MAINT-014",
+    "device_id": "DEV-PUMP-002",
+    "device_name": "进料泵-002",
+    "maintenance_type": "preventive",
+    "maintenance_name": "预防性维护",
+    "started_at": "2025-11-02T15:57:23.185133",
+    "completed_at": "2025-11-02T19:57:23.185133",
+    "duration_hours": 4,
+    "technician": "技师-07",
+    "cost_yuan": 12977,
+    "spare_parts_used": [
+      "过滤器"
+    ]
+  },
+  {
+    "log_id": "MAINT-001",
+    "device_id": "DEV-COMP-002",
+    "device_name": "循环气压缩机-002",
+    "maintenance_type": "preventive",
+    "maintenance_name": "预防性维护",
+    "started_at": "2025-10-19T15:57:23.184865",
+    "completed_at": "2025-10-19T19:57:23.184865",
+    "duration_hours": 4,
+    "technician": "技师-10",
+    "cost_yuan": 5231,
+    "spare_parts_used": [
+      "过滤器"
+    ]
+  },
+  {
+    "log_id": "MAINT-006",
+    "device_id": "DEV-COMP-001",
+    "device_name": "富气压缩机-001",
+    "maintenance_type": "corrective",
+    "maintenance_name": "纠正性维护",
+    "started_at": "2025-10-10T15:57:23.185060",
+    "completed_at": "2025-10-10T21:57:23.185060",
+    "duration_hours": 6,
+    "technician": "技师-09",
+    "cost_yuan": 13776,
+    "spare_parts_used": [
+      "轴承",
+      "密封件",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-022",
+    "device_id": "DEV-PUMP-002",
+    "device_name": "进料泵-002",
+    "maintenance_type": "preventive",
+    "maintenance_name": "预防性维护",
+    "started_at": "2025-10-08T15:57:23.185178",
+    "completed_at": "2025-10-08T19:57:23.185178",
+    "duration_hours": 4,
+    "technician": "技师-09",
+    "cost_yuan": 10101,
+    "spare_parts_used": [
+      "轴承",
+      "润滑脂"
+    ]
+  },
+  {
+    "log_id": "MAINT-005",
+    "device_id": "DEV-HX-002",
+    "device_name": "产品冷却器-002",
+    "maintenance_type": "preventive",
+    "maintenance_name": "预防性维护",
+    "started_at": "2025-10-07T15:57:23.185012",
+    "completed_at": "2025-10-07T19:57:23.185012",
+    "duration_hours": 4,
+    "technician": "技师-02",
+    "cost_yuan": 32105,
+    "spare_parts_used": [
+      "密封件",
+      "O型圈"
+    ]
+  },
+  {
+    "log_id": "MAINT-028",
+    "device_id": "DEV-COMP-002",
+    "device_name": "循环气压缩机-002",
+    "maintenance_type": "emergency",
+    "maintenance_name": "紧急维修",
+    "started_at": "2025-10-04T15:57:23.185211",
+    "completed_at": "2025-10-04T23:57:23.185211",
+    "duration_hours": 8,
+    "technician": "技师-02",
+    "cost_yuan": 30470,
+    "spare_parts_used": [
+      "密封件",
+      "O型圈"
+    ]
+  },
+  {
+    "log_id": "MAINT-003",
+    "device_id": "DEV-PUMP-001",
+    "device_name": "循环水泵-001",
+    "maintenance_type": "corrective",
+    "maintenance_name": "纠正性维护",
+    "started_at": "2025-10-03T15:57:23.184942",
+    "completed_at": "2025-10-03T21:57:23.184942",
+    "duration_hours": 6,
+    "technician": "技师-10",
+    "cost_yuan": 28372,
+    "spare_parts_used": [
+      "密封件",
+      "O型圈"
+    ]
+  },
+  {
+    "log_id": "MAINT-017",
+    "device_id": "DEV-PUMP-002",
+    "device_name": "进料泵-002",
+    "maintenance_type": "corrective",
+    "maintenance_name": "纠正性维护",
+    "started_at": "2025-09-28T15:57:23.185150",
+    "completed_at": "2025-09-28T21:57:23.185150",
+    "duration_hours": 6,
+    "technician": "技师-06",
+    "cost_yuan": 48719,
+    "spare_parts_used": [
+      "过滤器"
+    ]
+  },
+  {
+    "log_id": "MAINT-004",
+    "device_id": "DEV-PUMP-002",
+    "device_name": "进料泵-002",
+    "maintenance_type": "emergency",
+    "maintenance_name": "紧急维修",
+    "started_at": "2025-09-18T15:57:23.184949",
+    "completed_at": "2025-09-18T23:57:23.184949",
+    "duration_hours": 8,
+    "technician": "技师-07",
+    "cost_yuan": 6861,
+    "spare_parts_used": [
+      "密封件",
+      "O型圈"
+    ]
+  },
+  {
+    "log_id": "MAINT-024",
+    "device_id": "DEV-PUMP-001",
+    "device_name": "循环水泵-001",
+    "maintenance_type": "corrective",
+    "maintenance_name": "纠正性维护",
+    "started_at": "2025-09-17T15:57:23.185189",
+    "completed_at": "2025-09-17T21:57:23.185189",
+    "duration_hours": 6,
+    "technician": "技师-01",
+    "cost_yuan": 12734,
+    "spare_parts_used": [
+      "密封件",
+      "O型圈"
+    ]
+  }
+]

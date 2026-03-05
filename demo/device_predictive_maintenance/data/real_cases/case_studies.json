@@ -1,0 +1,148 @@
+{
+  "case_studies": [
+    {
+      "case_id": "CASE-001",
+      "title": "千万吨级炼化企业的成功转型",
+      "source": "https://blog.csdn.net/CPCIIoT/article/details/149836054",
+      "company_type": "千万吨级炼化企业",
+      "implementation_period": "2022-2024",
+      "key_metrics": {
+        "devices_monitored": 32,
+        "device_type": "关键泵组",
+        "prediction_accuracy": 0.92,
+        "prediction_lead_time_days": 14,
+        "maintenance_cost_reduction_percent": 28,
+        "unplanned_downtime_reduction_percent": 65,
+        "mtbf_improvement_percent": 130,
+        "major_fault_reduction_percent": 55,
+        "annual_cost_savings_yuan": 45000000,
+        "heat_exchanger_cleaning_cycle_extension": "3个月延长至6个月",
+        "heat_exchanger_annual_savings_yuan": 8000000,
+        "operation_cycle_extension": "18个月延长至36个月",
+        "fault_rate_reduction_percent": 72
+      },
+      "technical_highlights": [
+        "在32台关键泵组安装振动传感器",
+        "通过频谱分析提前发现轴承隐患",
+        "基于压缩机振动频谱分析，提前14天预测磨损趋势",
+        "换热器清洗周期从3个月延长至6个月"
+      ],
+      "business_impact": {
+        "cost_savings": "年节约成本4500万元",
+        "reliability": "装置运行周期从18个月延长至36个月",
+        "safety": "关键设备故障率下降72%"
+      }
+    },
+    {
+      "case_id": "CASE-002",
+      "title": "中国石化西北油田AI抽油机优化项目",
+      "source": "http://www.sinopecnews.com.cn/xnews/content/2025-04/16/content_7123552.html",
+      "company_type": "中国石化西北油田",
+      "implementation_period": "2025年3月启动",
+      "key_metrics": {
+        "wells_covered": 40,
+        "area": "塔河二区",
+        "system_type": "抽油井生产参数智能优化管理系统",
+        "automation_level": "全自动化闭环",
+        "models_deployed": [
+          "动液面计算模型",
+          "抽油井间开预测模型",
+          "以产定参智能化调控"
+        ]
+      },
+      "technical_highlights": [
+        "运用AI大模型开发智能优化系统",
+        "实现'以产定参'的智能化调控",
+        "系统流程：数据触发—模型计算—方案生成—审核执行"
+      ],
+      "business_impact": {
+        "efficiency": "降低过采导致的设备损耗",
+        "automation": "全自动化闭环管理"
+      }
+    },
+    {
+      "case_id": "CASE-003",
+      "title": "胜利油田智能调优规模化应用",
+      "source": "http://slof.sinopec.com/slof/news/com_news/20250911/news_20250911_395776482514.shtml",
+      "company_type": "胜利油田孤岛采油厂",
+      "implementation_period": "2024-2025",
+      "key_metrics": {
+        "wells_covered": 632,
+        "total_energy_savings_kwh": 430000,
+        "daily_energy_savings_per_well_kwh": 12.7,
+        "energy_savings_rate_percent": 10.8,
+        "cost_savings_yuan": 121000,
+        "pump_efficiency_improvement_percent": 6.8
+      },
+      "technical_highlights": [
+        "632口油井纳入智能调优系统",
+        "AI实时监测动液面进行智能诊断",
+        "自动优化冲次参数",
+        "提升泵效6-8%"
+      ],
+      "business_impact": {
+        "energy": "累计节电量43万千瓦时",
+        "cost": "节约电费12.1万元",
+        "efficiency": "单井日均节电12.7千瓦时，节电率10.8%"
+      }
+    },
+    {
+      "case_id": "CASE-004",
+      "title": "大型乙烯企业备件管理创新",
+      "source": "https://blog.csdn.net/CPCIIoT/article/details/149836054",
+      "company_type": "大型乙烯企业",
+      "implementation_period": "2023",
+      "key_metrics": {
+        "demand_prediction_accuracy": 0.85,
+        "inventory_turnover_days_before": 98,
+        "inventory_turnover_days_after": 56,
+        "spare_parts_capital_reduction_percent": 45,
+        "incident_date": "2023年8月",
+        "incident_type": "压缩机密封件库存短缺预警",
+        "response_time_hours": 72,
+        "loss_prevented_yuan": 3000000
+      },
+      "technical_highlights": [
+        "需求预测准确率85%",
+        "库存周转天数从98天降至56天",
+        "备件资金占用下降45%",
+        "系统预警后72小时内完成补货"
+      ],
+      "business_impact": {
+        "efficiency": "库存周转效率提升78%",
+        "cost": "备件资金占用下降45%",
+        "risk_management": "避免300万元损失"
+      }
+    },
+    {
+      "case_id": "CASE-005",
+      "title": "化工行业预测性维护通用方案",
+      "source": "https://www.hongrax.com/predictive-maintenance-case-3/",
+      "company_type": "化工行业通用",
+      "implementation_period": "持续应用",
+      "key_metrics": {
+        "fault_handling_time_reduction_percent": 60,
+        "ar_assisted_maintenance": true
+      },
+      "technical_highlights": [
+        "化工行业普遍采用预测性维护方案",
+        "通过监测系统降低设备损耗和产能浪费",
+        "AR辅助维保将故障处理时间缩短60%"
+      ],
+      "business_impact": {
+        "efficiency": "故障处理时间缩短60%",
+        "reliability": "降低设备损耗和产能浪费"
+      }
+    }
+  ],
+  "summary_statistics": {
+    "total_cases": 5,
+    "average_cost_savings_percent": 28,
+    "average_downtime_reduction_percent": 65,
+    "average_prediction_accuracy": 0.885,
+    "average_prediction_lead_time_days": 14,
+    "total_annual_savings_yuan": 53000000,
+    "total_wells_covered": 672,
+    "total_energy_savings_kwh": 430000
+  }
+}

@@ -18,6 +18,12 @@ from backend.api.observability.router import router as observability_router
 from backend.api.optimize.router import router as optimize_router
 from backend.api.tools.router import router as tools_router
 
+# Demo API router
+try:
+    from demo.device_predictive_maintenance.backend.api.router import router as device_demo_router
+except ImportError:
+    device_demo_router = None
+
 
 def register_routes(app: FastAPI) -> None:
     # Existing scenario routes
@@ -42,3 +48,7 @@ def register_routes(app: FastAPI) -> None:
     # Evolution sub-routes
     app.include_router(evolution_online_router, prefix="/api/evolution/online", tags=["在线演进"])
     app.include_router(evolution_offline_router, prefix="/api/evolution/offline", tags=["离线进化"])
+
+    # Demo routes
+    if device_demo_router:
+        app.include_router(device_demo_router, tags=["设备维护演示"])

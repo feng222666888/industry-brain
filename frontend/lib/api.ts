@@ -59,6 +59,14 @@ export function sseStream(
       }
       onDone();
     })
-    .catch(() => onDone());
+    .catch((err) => {
+      console.error("[SSE Stream] Error:", err);
+      console.error("[SSE Stream] Error details:", {
+        name: err.name,
+        message: err.message,
+        stack: err.stack,
+      });
+      onDone();
+    });
   return ctrl;
 }

@@ -1,0 +1,163 @@
+{
+  "DEV-PUMP-001": {
+    "device_id": "DEV-PUMP-001",
+    "device_name": "循环水泵-001",
+    "diagnosis_time": "2026-03-05 10:30:00",
+    "issues": [
+      {
+        "id": "issue-1",
+        "severity": "high",
+        "category": "轴承故障",
+        "title": "轴承性能退化",
+        "description": "振动RMS值持续上升，频谱分析显示轴承内圈故障特征频率明显，预计剩余使用寿命约336小时",
+        "recommendation": "建议在48小时内安排停机检修，更换轴承组件"
+      },
+      {
+        "id": "issue-2",
+        "severity": "medium",
+        "category": "温度异常",
+        "title": "运行温度偏高",
+        "description": "当前温度73°C，超出正常范围(50-65°C)，可能由轴承摩擦增加或冷却系统效率下降导致",
+        "recommendation": "检查冷却系统，清理散热器，监控温度变化趋势"
+      },
+      {
+        "id": "issue-3",
+        "severity": "medium",
+        "category": "性能下降",
+        "title": "设备效率下降",
+        "description": "设备效率较正常值下降约8%，流量和扬程均有所降低，可能与叶轮磨损或密封件老化有关",
+        "recommendation": "安排预防性维护，检查叶轮和密封件状态"
+      },
+      {
+        "id": "issue-4",
+        "severity": "low",
+        "category": "振动异常",
+        "title": "振动值超过预警阈值",
+        "description": "振动RMS值3.6 mm/s，超过预警阈值(3.0 mm/s)，但未达到停机阈值",
+        "recommendation": "加强监控频率，关注振动趋势变化"
+      }
+    ],
+    "failure_probability": {
+      "3_days": 0.35,
+      "7_days": 0.68
+    },
+    "risk_level": "high",
+    "overall_assessment": "设备存在多个故障风险，轴承性能退化是主要威胁，建议尽快安排维护"
+  },
+  "DEV-COMPRESSOR-001": {
+    "device_id": "DEV-COMPRESSOR-001",
+    "device_name": "离心压缩机-001",
+    "diagnosis_time": "2026-03-05 10:30:00",
+    "issues": [
+      {
+        "id": "issue-1",
+        "severity": "medium",
+        "category": "密封泄漏",
+        "title": "密封件轻微泄漏",
+        "description": "检测到轻微气体泄漏，泄漏率在可接受范围内，但需要持续监控",
+        "recommendation": "定期检查密封件状态，准备备件"
+      },
+      {
+        "id": "issue-2",
+        "severity": "low",
+        "category": "性能波动",
+        "title": "压缩效率轻微下降",
+        "description": "压缩效率较基准值下降约3%，仍在正常范围内",
+        "recommendation": "继续监控，在下次计划维护时检查"
+      }
+    ],
+    "failure_probability": {
+      "3_days": 0.12,
+      "7_days": 0.28
+    },
+    "risk_level": "medium",
+    "overall_assessment": "设备整体状态良好，存在轻微性能下降，建议按计划维护"
+  },
+  "DEV-HEAT-EXCHANGER-001": {
+    "device_id": "DEV-HEAT-EXCHANGER-001",
+    "device_name": "换热器-001",
+    "diagnosis_time": "2026-03-05 10:30:00",
+    "issues": [
+      {
+        "id": "issue-1",
+        "severity": "medium",
+        "category": "传热效率",
+        "title": "传热效率下降",
+        "description": "传热系数较设计值下降约12%，可能由结垢或内部堵塞导致",
+        "recommendation": "安排清洗作业，检查内部管道状态"
+      },
+      {
+        "id": "issue-2",
+        "severity": "low",
+        "category": "压力损失",
+        "title": "压降略有增加",
+        "description": "进出口压差较正常值增加约5%，仍在可接受范围",
+        "recommendation": "监控压降趋势，如持续上升则安排清洗"
+      }
+    ],
+    "failure_probability": {
+      "3_days": 0.08,
+      "7_days": 0.18
+    },
+    "risk_level": "low",
+    "overall_assessment": "设备运行基本正常，传热效率下降需要关注，建议在计划维护时清洗"
+  },
+  "DEV-VALVE-001": {
+    "device_id": "DEV-VALVE-001",
+    "device_name": "调节阀-001",
+    "diagnosis_time": "2026-03-05 10:30:00",
+    "issues": [
+      {
+        "id": "issue-1",
+        "severity": "high",
+        "category": "执行器故障",
+        "title": "执行器响应延迟",
+        "description": "阀门响应时间较正常值增加约40%，可能由执行器老化或控制信号问题导致",
+        "recommendation": "立即检查执行器和控制系统，必要时更换执行器"
+      },
+      {
+        "id": "issue-2",
+        "severity": "medium",
+        "category": "密封性能",
+        "title": "阀门密封性能下降",
+        "description": "检测到轻微内漏，泄漏率在可接受范围内但需要监控",
+        "recommendation": "检查阀座和阀芯，准备维护计划"
+      }
+    ],
+    "failure_probability": {
+      "3_days": 0.28,
+      "7_days": 0.52
+    },
+    "risk_level": "high",
+    "overall_assessment": "执行器故障风险较高，可能影响工艺控制，建议尽快检修"
+  },
+  "DEV-TURBINE-001": {
+    "device_id": "DEV-TURBINE-001",
+    "device_name": "汽轮机-001",
+    "diagnosis_time": "2026-03-05 10:30:00",
+    "issues": [
+      {
+        "id": "issue-1",
+        "severity": "low",
+        "category": "振动",
+        "title": "轻微振动增加",
+        "description": "振动值略高于基准值，但仍在正常范围内，可能与负载变化有关",
+        "recommendation": "继续监控，关注振动趋势"
+      },
+      {
+        "id": "issue-2",
+        "severity": "low",
+        "category": "效率",
+        "title": "效率轻微下降",
+        "description": "热效率较设计值下降约2%，在正常波动范围内",
+        "recommendation": "按计划维护时检查叶片状态"
+      }
+    ],
+    "failure_probability": {
+      "3_days": 0.05,
+      "7_days": 0.12
+    },
+    "risk_level": "low",
+    "overall_assessment": "设备运行状态良好，各项指标正常，按计划维护即可"
+  }
+}
