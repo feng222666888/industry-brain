@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect, useRef } from "react";
-import { fetchAPI, sseStream } from "../../lib/api";
+import { useState, useCallback, useRef, useEffect } from "react";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -66,6 +65,79 @@ const FALLBACK_OBJECTS: CorrosionObject[] = [
   { id: "PL-H2S-001", name: "含硫污水管线-001", type: "pipeline", material: "碳钢(20#)", medium: "含H₂S酸性水", location: "硫磺回收装置", wall_thickness_mm: 8.0, install_date: "2020-01-10" },
   { id: "CP-PUMP-IMP01", name: "离心泵叶轮-01", type: "component", material: "双相不锈钢(2205)", medium: "含固催化剂浆液", location: "催化裂化装置", wall_thickness_mm: 12.0, install_date: "2021-04-18" },
 ];
+
+/** 本地模拟：数据域与模型概览，不请求后端 */
+const MOCK_DOMAINS: DomainStat[] = [
+  { name: "高温硫腐蚀", count: 120000, pct: "20.7%" },
+  { name: "H₂S/CO₂", count: 98000, pct: "16.9%" },
+  { name: "环烷酸", count: 85000, pct: "14.7%" },
+  { name: "氯化物应力开裂", count: 72000, pct: "12.4%" },
+  { name: "其他", count: 205000, pct: "35.3%" },
+];
+
+const MOCK_MODELS: ModelInfo[] = [
+  { id: "m1", name: "腐蚀风险分类模型", training_data: "58万条", domains: 5, accuracy: "94.2%" },
+  { id: "m2", name: "腐蚀速率预测", training_data: "58万条", domains: 5, accuracy: "91.8%" },
+];
+
+/** 本地模拟：根据选中对象生成 Agent 步骤与风险评估结果，不请求后端 */
+function mockAnalyze(obj: CorrosionObject): { steps: AgentStep[]; result: AnalysisResult } {
+  const hasH2S = obj.medium.includes("H₂S") || obj.medium.includes("硫");
+  const isCarbonSteel = obj.material.includes("碳钢");
+  const riskA = hasH2S && isCarbonSteel ? 1 : 0;
+  const riskB = hasH2S || isCarbonSteel ? 1 : 0;
+  const riskC = 2 - riskA - riskB;
+  const maxLevel = riskA ? "A" : riskB ? "B" : "C";
+  const interval = maxLevel === "A" ? 6 : maxLevel === "B" ? 12 : 24;
+  const rate1 = hasH2S ? 0.15 + Math.random() * 0.1 : 0.05 + Math.random() * 0.05;
+  const rate2 = isCarbonSteel && obj.medium.includes("酸") ? 0.12 + Math.random() * 0.08 : 0.03;
+
+  const steps: AgentStep[] = [
+    { label: "对象解析", result: `解析对象 ${obj.name}（${obj.id}），材质 ${obj.material}，介质 ${obj.medium}，位置 ${obj.location}。壁厚 ${obj.wall_thickness_mm} mm，投用日期 ${obj.install_date}。` },
+    { label: "腐蚀机理匹配", result: `基于材质与介质匹配到潜在腐蚀机理；${hasH2S ? "检测到 H₂S/酸性介质，存在硫化物应力开裂与氢致开裂风险。" : "未检测到高硫介质。"} ${isCarbonSteel ? "碳钢在高温/酸性环境下存在均匀腐蚀与局部腐蚀风险。" : ""}` },
+    { label: "风险评估汇总", result: `风险等级分布：A 级 ${riskA} 项，B 级 ${riskB} 项，C 级 ${riskC} 项；综合最高等级 ${maxLevel}。建议检修周期 ${interval} 个月。（此为前端本地模拟，未调用后端。）` },
+  ];
+
+  const result: AnalysisResult = {
+    object_type: obj.type,
+    object_name: obj.name,
+    max_risk_level: maxLevel,
+    recommended_inspection_interval_months: interval,
+    risk_summary: { A: riskA, B: riskB, C: riskC },
+    risk_results: [
+      {
+        mechanism: hasH2S ? "硫化物应力开裂 (SSC)" : "均匀腐蚀",
+        category: "腐蚀分子",
+        risk_level: hasH2S && isCarbonSteel ? "A" : "B",
+        risk_color: "red",
+        corrosion_rate_mm_yr: Math.round(rate1 * 1000) / 1000,
+        condition: hasH2S ? "H₂S 分压 > 0.0003 MPa" : "温度 > 200°C",
+        formula: hasH2S ? "Fe + H₂S → FeS + H₂" : "Fe → Fe²⁺",
+      },
+      {
+        mechanism: isCarbonSteel ? "环烷酸腐蚀" : "点蚀",
+        category: "腐蚀机理",
+        risk_level: riskB ? "B" : "C",
+        risk_color: "amber",
+        corrosion_rate_mm_yr: Math.round(rate2 * 1000) / 1000,
+        condition: "介质含酸 / 氯离子",
+        formula: "—",
+      },
+      {
+        mechanism: "CO₂ 腐蚀",
+        category: "腐蚀机理",
+        risk_level: "C",
+        risk_color: "green",
+        corrosion_rate_mm_yr: Math.round((0.02 + Math.random() * 0.03) * 1000) / 1000,
+        condition: "CO₂ 分压 > 0.02 MPa",
+        formula: "Fe + CO₂ + H₂O → FeCO₃ + H₂",
+      },
+    ],
+    conclusion: `对象「${obj.name}」本地模拟分析完成。综合风险等级为 ${maxLevel} 级，建议每 ${interval} 个月进行一次检修与测厚。${hasH2S ? " 介质含硫，请重点关注硫化物应力开裂与氢致开裂，必要时升级材质或加注缓蚀剂。" : ""}（本结论为前端演示数据，未调用后端智能防腐服务。）`,
+  };
+
+  return { steps, result };
+}
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -334,76 +406,55 @@ function RiskResultsPanel({
 /* ------------------------------------------------------------------ */
 
 export default function CorrosionPage() {
-  const [objects, setObjects] = useState<CorrosionObject[]>(FALLBACK_OBJECTS);
+  const [objects] = useState<CorrosionObject[]>(FALLBACK_OBJECTS);
   const [selectedId, setSelectedId] = useState(FALLBACK_OBJECTS[0].id);
-  const [domains, setDomains] = useState<DomainStat[]>([]);
-  const [models, setModels] = useState<ModelInfo[]>([]);
+  const [domains] = useState<DomainStat[]>(MOCK_DOMAINS);
+  const [models] = useState<ModelInfo[]>(MOCK_MODELS);
   const [analysisResult, setAnalysisResult] = useState<AnalysisResult | null>(null);
   const [agentSteps, setAgentSteps] = useState<AgentStep[]>([]);
   const [running, setRunning] = useState(false);
-  const abortRef = useRef<AbortController | null>(null);
+  const stepTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const selected = objects.find((o) => o.id === selectedId) || objects[0];
-
-  useEffect(() => {
-    Promise.allSettled([
-      fetchAPI<{ data_stats: { augmented: { balanced_domains: DomainStat[] } }; models: ModelInfo[] }>("/api/corrosion/overview"),
-      fetchAPI<{ objects: CorrosionObject[] }>("/api/corrosion/objects"),
-    ]).then(([ovRes, objRes]) => {
-      if (ovRes.status === "fulfilled") {
-        setDomains(ovRes.value.data_stats?.augmented?.balanced_domains || []);
-        setModels(ovRes.value.models || []);
-      }
-      if (objRes.status === "fulfilled" && objRes.value.objects?.length) {
-        setObjects(objRes.value.objects);
-        setSelectedId(objRes.value.objects[0].id);
-      }
-    });
-  }, []);
 
   const handleSelect = useCallback((id: string) => {
     setSelectedId(id);
     setAnalysisResult(null);
     setAgentSteps([]);
     setRunning(false);
-    abortRef.current?.abort();
+    if (stepTimerRef.current) {
+      clearInterval(stepTimerRef.current);
+      stepTimerRef.current = null;
+    }
   }, []);
 
+  /** 本地模拟分析：分步展示 Agent 步骤后输出结果，不请求后端 */
   const runAnalysis = useCallback(() => {
-    abortRef.current?.abort();
+    if (stepTimerRef.current) clearInterval(stepTimerRef.current);
     setRunning(true);
     setAgentSteps([]);
     setAnalysisResult(null);
 
-    const ctrl = sseStream(
-      "/api/corrosion/analyze",
-      { object_id: selectedId },
-      (event, data) => {
-        if (event === "agent_step") {
-          const step = data as { agent: string; action: string; result?: string; summary?: string };
-          setAgentSteps((prev) => [
-            ...prev,
-            {
-              label: `${step.agent} — ${step.action}`,
-              result: step.result || step.summary || JSON.stringify(step),
-            },
-          ]);
-        } else if (event === "complete") {
-          const result = data as { results?: Record<string, AnalysisResult> };
-          const risk = result?.results?.risk;
-          if (risk) {
-            setAnalysisResult(risk);
-          }
-          setRunning(false);
+    const { steps, result } = mockAnalyze(selected);
+    let stepIndex = 0;
+    stepTimerRef.current = window.setInterval(() => {
+      stepIndex += 1;
+      setAgentSteps(steps.slice(0, stepIndex));
+      if (stepIndex >= steps.length) {
+        if (stepTimerRef.current) {
+          clearInterval(stepTimerRef.current);
+          stepTimerRef.current = null;
         }
-      },
-      () => setRunning(false),
-    );
-    abortRef.current = ctrl;
-  }, [selectedId]);
+        setAnalysisResult(result);
+        setRunning(false);
+      }
+    }, 400);
+  }, [selected]);
 
   useEffect(() => {
-    return () => abortRef.current?.abort();
+    return () => {
+      if (stepTimerRef.current) clearInterval(stepTimerRef.current);
+    };
   }, []);
 
   return (

@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
-import { fetchAPI } from "../../lib/api";
 
 function Spinner() {
   return (
@@ -37,44 +36,138 @@ const NODE_COLORS: Record<string, string> = {
   active_site: "bg-orange-500",
 };
 
+/** 本地模拟：根据填写的参数生成分析结果，不请求后端 */
+function mockAnalyze(params: {
+  catalyst_type: string;
+  particle_size: string;
+  morphology: string;
+  carrier: string;
+  active_component: string;
+}): AnalysisResult {
+  const { catalyst_type, particle_size, morphology, carrier, active_component } = params;
+  const base = catalyst_type || "通用";
+  return {
+    identified_features: {
+      催化剂类型: base,
+      粒径分布: particle_size || "未填写",
+      形貌: morphology || "未填写",
+      载体: carrier || "未填写",
+      活性组分: active_component || "未填写",
+      结晶度: `${70 + Math.floor(Math.random() * 25)}%`,
+      比表面积: `${180 + Math.floor(Math.random() * 120)} m²/g`,
+    },
+    performance_prediction: {
+      预期活性: `${75 + Math.floor(Math.random() * 20)}%`,
+      稳定性指数: (0.82 + Math.random() * 0.15).toFixed(2),
+      择形选择性: `${60 + Math.floor(Math.random() * 35)}%`,
+      再生性能: "良好",
+      备注: `基于${base}与${carrier || "载体"}的本地模拟结果，未调用后端。`,
+    },
+    knowledge_references: [
+      "基于输入参数的本地模拟，无实际文献检索。",
+      `催化剂类型「${base}」常见于炼油与化工领域。`,
+      "如需真实分析请对接后端电镜图像识别服务。",
+    ],
+  };
+}
+
+/** 下拉选项 */
+const PARAM_OPTIONS = {
+  catalyst_type: [
+    { value: "FCC", label: "FCC（催化裂化）" },
+    { value: "加氢", label: "加氢" },
+    { value: "分子筛", label: "分子筛" },
+    { value: "重整", label: "重整" },
+  ],
+  particle_size: [
+    { value: "1-2 μm", label: "1-2 μm" },
+    { value: "2-3 μm", label: "2-3 μm" },
+    { value: "3-5 μm", label: "3-5 μm" },
+    { value: "5-10 μm", label: "5-10 μm" },
+  ],
+  morphology: [
+    { value: "球形", label: "球形" },
+    { value: "球形、部分团聚", label: "球形、部分团聚" },
+    { value: "不规则", label: "不规则" },
+    { value: "片状", label: "片状" },
+  ],
+  carrier: [
+    { value: "氧化铝", label: "氧化铝" },
+    { value: "氧化铝/分子筛", label: "氧化铝/分子筛" },
+    { value: "分子筛", label: "分子筛" },
+    { value: "硅藻土", label: "硅藻土" },
+  ],
+  active_component: [
+    { value: "稀土", label: "稀土" },
+    { value: "稀土/分子筛", label: "稀土/分子筛" },
+    { value: "贵金属", label: "贵金属" },
+    { value: "分子筛", label: "分子筛" },
+  ],
+} as const;
+
+/** 根据当前选择参数生成知识图谱：不同类型/载体对应不同节点与边 */
+function getGraphByParams(params: {
+  catalyst_type: string;
+  carrier: string;
+  active_component: string;
+}): { nodes: GraphNode[]; edges: GraphEdge[]; description: string } {
+  const { catalyst_type, carrier, active_component } = params;
+  const centerLabel = `${catalyst_type}催化剂`;
+  const carrierLabel = carrier || "载体";
+  const activeLabel = active_component || "活性组分";
+
+  // 通用节点 id，保证同类型选择下结构稳定
+  const nodes: GraphNode[] = [
+    { id: "n1", label: centerLabel, type: "catalyst" },
+    { id: "n2", label: carrier === "分子筛" || carrier === "氧化铝/分子筛" ? "Y型分子筛" : carrier || "基质", type: carrier?.includes("分子筛") ? "zeolite" : "carrier" },
+    { id: "n3", label: carrier === "氧化铝" ? "氧化铝基质" : "基质", type: "carrier" },
+    { id: "n4", label: "活性中心", type: "active_site" },
+    { id: "n5", label: catalyst_type === "FCC" ? "稀土改性" : catalyst_type === "加氢" ? "硫化态" : "酸中心", type: "modification" },
+    { id: "n6", label: catalyst_type === "分子筛" ? "择形催化" : "裂化/加氢", type: "effect" },
+    { id: "n7", label: "抗磨添加剂", type: "additive" },
+    { id: "n8", label: catalyst_type === "加氢" ? "脱硫活性" : "裂化活性", type: "effect" },
+  ];
+
+  const edges: GraphEdge[] = [
+    { source: "n1", target: "n2", relation: "含" },
+    { source: "n1", target: "n3", relation: "含" },
+    { source: "n2", target: "n4", relation: "提供" },
+    { source: "n1", target: "n5", relation: "可改性" },
+    { source: "n4", target: "n6", relation: "导致" },
+    { source: "n1", target: "n7", relation: "可含" },
+    { source: "n4", target: "n8", relation: "导致" },
+  ];
+
+  const description = `当前选择：${catalyst_type} · 载体 ${carrier} · 活性组分 ${activeLabel}。图谱随选择更新（本地数据）。`;
+  return { nodes, edges, description };
+}
+
 export default function CatalystPage() {
+  const [params, setParams] = useState({
+    catalyst_type: "FCC",
+    particle_size: "2-3 μm",
+    morphology: "球形、部分团聚",
+    carrier: "氧化铝/分子筛",
+    active_component: "稀土/分子筛",
+  });
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<AnalysisResult | null>(null);
   const [error, setError] = useState("");
-  const [nodes, setNodes] = useState<GraphNode[]>([]);
-  const [edges, setEdges] = useState<GraphEdge[]>([]);
-  const [graphDesc, setGraphDesc] = useState("");
 
-  useEffect(() => {
-    fetchAPI<{ nodes: GraphNode[]; edges: GraphEdge[]; description: string }>(
-      "/api/catalyst/knowledge-graph?query=FCC",
-    )
-      .then((data) => {
-        setNodes(data.nodes || []);
-        setEdges(data.edges || []);
-        setGraphDesc(data.description || "");
-      })
-      .catch(() => {});
-  }, []);
+  // 右侧图谱根据选择参数实时更新
+  const { nodes, edges, description: graphDesc } = useMemo(
+    () => getGraphByParams(params),
+    [params.catalyst_type, params.carrier, params.active_component],
+  );
 
-  const handleAnalyze = async () => {
+  const handleAnalyze = () => {
     setLoading(true);
     setError("");
     setResult(null);
-    try {
-      const data = await fetchAPI<AnalysisResult>("/api/catalyst/analyze-image", {
-        method: "POST",
-        body: JSON.stringify({
-          catalyst_type: "FCC",
-          image_description: "催化裂化催化剂SEM形貌，颗粒尺寸约2-3μm",
-        }),
-      });
-      setResult(data);
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "分析失败");
-    } finally {
+    window.setTimeout(() => {
+      setResult(mockAnalyze(params));
       setLoading(false);
-    }
+    }, 500);
   };
 
   const nodePositions: Record<number, { left: string; top: string }> = {
@@ -100,16 +193,35 @@ export default function CatalystPage() {
       <main className="grid gap-6 p-6 lg:grid-cols-2">
         <div className="space-y-6">
           <section className="rounded-xl border border-slate-700 bg-slate-800 p-6">
-            <h2 className="mb-4 text-lg font-semibold text-slate-200">上传电镜图像</h2>
-            <div className="flex min-h-[180px] cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-slate-600 bg-slate-900/50 transition hover:border-slate-500">
-              <span className="text-4xl text-slate-500">📷</span>
-              <p className="mt-2 text-sm text-slate-400">拖拽或点击上传电镜图像</p>
-              <p className="text-xs text-slate-500">支持 JPG、PNG</p>
+            <h2 className="mb-4 text-lg font-semibold text-slate-200">选择参数（本地模拟分析）</h2>
+            <div className="space-y-4">
+              {(Object.keys(PARAM_OPTIONS) as Array<keyof typeof PARAM_OPTIONS>).map((key) => (
+                <div key={key}>
+                  <label className="mb-1 block text-xs text-slate-400">
+                    {key === "catalyst_type" && "催化剂类型"}
+                    {key === "particle_size" && "粒径/颗粒尺寸"}
+                    {key === "morphology" && "形貌描述"}
+                    {key === "carrier" && "载体"}
+                    {key === "active_component" && "活性组分"}
+                  </label>
+                  <select
+                    value={params[key]}
+                    onChange={(e) => setParams((p) => ({ ...p, [key]: e.target.value }))}
+                    className="w-full rounded-lg border border-slate-600 bg-slate-900 px-3 py-2 text-slate-100 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  >
+                    {PARAM_OPTIONS[key].map((opt) => (
+                      <option key={opt.value} value={opt.value}>
+                        {opt.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              ))}
             </div>
             <button
               onClick={handleAnalyze}
               disabled={loading}
-              className="mt-4 w-full rounded-lg bg-blue-500 px-4 py-2.5 font-semibold text-white transition hover:bg-blue-600 disabled:cursor-not-allowed disabled:opacity-70"
+              className="mt-6 w-full rounded-lg bg-blue-500 px-4 py-2.5 font-semibold text-white transition hover:bg-blue-600 disabled:cursor-not-allowed disabled:opacity-70"
             >
               {loading ? <span className="flex items-center justify-center gap-2"><Spinner /> 分析中...</span> : "开始分析"}
             </button>

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { fetchAPI } from "../../lib/api";
 
 function Spinner() {
   return (
@@ -26,6 +25,66 @@ interface ComparisonResult {
   description: string;
 }
 
+/** 本地模拟寻优：根据当前参数生成推荐与对比数据，不请求后端 */
+function mockOptimize(current: { temp: number; catalyst: number; pressure: number; residence: number }): {
+  recommend: RecommendResult;
+  comparison: ComparisonResult;
+} {
+  // 模拟推荐参数：在当前值基础上微调
+  const afterTemp = Math.round(current.temp + (Math.random() * 20 - 5));
+  const afterCatalyst = Math.round((current.catalyst + (Math.random() * 0.02 - 0.005)) * 100) / 100;
+  const afterPressure = Math.round((current.pressure + (Math.random() * 0.4 - 0.1)) * 10) / 10;
+  const afterResidence = Math.round((current.residence + (Math.random() * 0.4 - 0.1)) * 10) / 10;
+
+  const beforeYield = 82 + (current.temp - 500) * 0.02 + current.catalyst * 50;
+  const afterYield = Math.min(98, beforeYield + 2 + Math.random() * 4);
+  const beforeEnergy = 120 - current.pressure * 2;
+  const afterEnergy = Math.max(85, beforeEnergy - 5 - Math.random() * 8);
+
+  const yieldIncrease = Math.round((afterYield - beforeYield) * 10) / 10;
+  const energySaving = Math.round((1 - afterEnergy / beforeEnergy) * 1000) / 10;
+
+  return {
+    recommend: {
+      recommended_params: {
+        reactor_temp: afterTemp,
+        catalyst_ratio: afterCatalyst,
+        pressure: afterPressure,
+        residence_time: afterResidence,
+      },
+      predicted_yield_pct: afterYield,
+      predicted_energy_kwh: afterEnergy,
+      strategy_source: "本地模拟",
+      strategy_generation: 1,
+      score: 0.85 + Math.random() * 0.1,
+    },
+    comparison: {
+      before: {
+        reactor_temp: current.temp,
+        catalyst_ratio: current.catalyst,
+        pressure: current.pressure,
+        residence_time: current.residence,
+        yield_pct: Math.round(beforeYield * 10) / 10,
+        energy_kwh_per_ton: Math.round(beforeEnergy * 10) / 10,
+      },
+      after: {
+        reactor_temp: afterTemp,
+        catalyst_ratio: afterCatalyst,
+        pressure: afterPressure,
+        residence_time: afterResidence,
+        yield_pct: Math.round(afterYield * 10) / 10,
+        energy_kwh_per_ton: Math.round(afterEnergy * 10) / 10,
+      },
+      improvements: {
+        yield_increase_pct: yieldIncrease,
+        energy_saving_pct: energySaving,
+        cost_reduction_pct: Math.round((yieldIncrease * 0.3 + energySaving * 0.2) * 10) / 10,
+      },
+      description: `基于当前工艺参数，本地模拟给出优化建议：温度 ${afterTemp}°C、催化剂配比 ${afterCatalyst}、压力 ${afterPressure} MPa、停留时间 ${afterResidence} min。模拟收率提升约 ${yieldIncrease}%，能耗降低约 ${energySaving}%。（此为前端演示数据，未调用后端）`,
+    },
+  };
+}
+
 export default function OptimizePage() {
   const [params, setParams] = useState({ temp: 510, catalyst: 0.08, pressure: 2.5, residence: 5.0 });
   const [loading, setLoading] = useState(false);
@@ -33,32 +92,18 @@ export default function OptimizePage() {
   const [comparison, setComparison] = useState<ComparisonResult | null>(null);
   const [error, setError] = useState("");
 
-  const handleOptimize = async () => {
+  const handleOptimize = () => {
     setLoading(true);
     setError("");
     setRecommend(null);
     setComparison(null);
-    try {
-      const [rec, cmp] = await Promise.all([
-        fetchAPI<RecommendResult>("/api/optimize/recommend", {
-          method: "POST",
-          body: JSON.stringify({
-            reactor_temp: params.temp,
-            catalyst_ratio: params.catalyst,
-            pressure: params.pressure,
-            residence_time: params.residence,
-            industry_id: "petrochemical",
-          }),
-        }),
-        fetchAPI<ComparisonResult>("/api/optimize/comparison"),
-      ]);
+    // 模拟短暂延迟后使用本地数据展示，不请求后端
+    window.setTimeout(() => {
+      const { recommend: rec, comparison: cmp } = mockOptimize(params);
       setRecommend(rec);
       setComparison(cmp);
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "请求失败");
-    } finally {
       setLoading(false);
-    }
+    }, 600);
   };
 
   const recParams = recommend?.recommended_params;
