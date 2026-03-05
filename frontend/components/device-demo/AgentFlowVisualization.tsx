@@ -216,15 +216,7 @@ export default function AgentFlowVisualization({
             defaultViewport={{ x: 0, y: 0, zoom: 1 }}
           >
             <Background color="#1e293b" gap={16} />
-            <Controls
-              style={{
-                button: {
-                  backgroundColor: "#334155",
-                  color: "#f1f5f9",
-                  border: "1px solid #475569",
-                },
-              }}
-            />
+            <Controls />
           </ReactFlow>
         </ReactFlowProvider>
       </div>

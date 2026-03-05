@@ -454,8 +454,8 @@ function AlertList({ alerts }: { alerts: Alert[] }) {
     );
   }
   
-  // 过滤掉info级别的告警（如果需要只显示warning和critical）
-  const displayAlerts = alerts.filter(a => a.level !== "info");
+  // 显示所有告警（warning和critical）
+  const displayAlerts = alerts;
   
   if (displayAlerts.length === 0) {
     return (
@@ -564,7 +564,7 @@ export default function DevicePage() {
               return {
                 id: `API-${i}`,
                 message: a.message || a.content || "告警信息",
-                level: (isCritical ? "critical" : "warning") as const,
+                level: (isCritical ? "critical" : "warning") as "warning" | "critical",
                 time: (a.since || a.timestamp || a.time || new Date().toISOString()).slice(0, 16).replace("T", " "),
               };
             }).filter((a: any) => a.message) || [];
@@ -668,14 +668,14 @@ export default function DevicePage() {
                 : (health < 0.75 ? [{
                     id: "FALLBACK-1",
                     message: health < 0.6 ? "设备健康评分过低，存在严重故障风险！" : "设备存在潜在风险，建议进行检查。",
-                    level: (health < 0.6 ? "critical" : "warning") as const,
+                    level: (health < 0.6 ? "critical" : "warning") as "warning" | "critical",
                     time: new Date().toISOString().slice(0, 16).replace("T", " "),
                   }] : []));
             
             const updatedDevice = {
               ...d,
               health,
-              status: health >= 0.8 ? "normal" : health >= 0.6 ? "degrading" : "fault",
+              status: (health >= 0.8 ? "normal" : health >= 0.6 ? "degrading" : "fault") as "normal" | "degrading" | "fault",
               trendData: finalTrendDataSafe, // 确保始终有数据
               alerts: finalAlertsSafe, // 确保始终有数据
             };

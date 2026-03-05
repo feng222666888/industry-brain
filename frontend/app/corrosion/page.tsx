@@ -413,7 +413,7 @@ export default function CorrosionPage() {
   const [analysisResult, setAnalysisResult] = useState<AnalysisResult | null>(null);
   const [agentSteps, setAgentSteps] = useState<AgentStep[]>([]);
   const [running, setRunning] = useState(false);
-  const stepTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const stepTimerRef = useRef<number | null>(null);
 
   const selected = objects.find((o) => o.id === selectedId) || objects[0];
 
